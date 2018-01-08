@@ -5,4 +5,4 @@ EARTH BIG DATA's open source repository.
   * EBD SAR Time Series [Data Guide](doc/EBD_DataGuide.md)
 
 * Open source code
-  * EBD Time Series plotting ([QGIS Plugin](QGIS/Timeseries_VRT))
+  * EBD Time Series plotting ([QGIS Plugin](QGIS/plugins/Timeseries_VRT)
