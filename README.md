@@ -6,3 +6,6 @@ EARTH BIG DATA's open source repository.
 
 * Open source code
   * EBD Time Series plotting ([QGIS Plugin](QGIS/plugins/Timeseries_vrt))
+
+* Training
+  * Material and Instructions for EBD [Training](training) Courses
