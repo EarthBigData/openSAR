@@ -30,7 +30,7 @@ The downlaod and installation instructions are available at:
 
 ### Creating a new Environment
 
-To create a new environment use the [conda_servir.yml](conda_servir.yml) file available at our github repository at [https://github.com/jkellndorfer/servir_training](https://github.com/jkellndorfer/servir_training). If you need to obtain access to the share please email [training@earthbigdata.com](mailto:training@earthbigdata.com).
+To create a new environment use the [conda_servir.yml](conda_servir.yml) file available at our github repository at [https://github.com/EarthBigData/openSAR/training](https://github.com/EarthBigData/openSAR/training). If you need to obtain access to the share please email [training@earthbigdata.com](mailto:training@earthbigdata.com).
 
 After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. In the new terminal type:
 
