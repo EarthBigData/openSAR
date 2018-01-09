@@ -22,7 +22,7 @@ satellite sensor that data stack is produced from. For example
 
 **BIOsS1**  describes a region where some "BIO"-related analysis (likely "biomass!") is done with the sensor (**s**) Sentinel-1 (**S1**)
 
-Within directories filenames are typically prefixed by a code for the spatial reference system identifier (*SRID*) which follows the codes of the EPSG system widely used in geospatial referenceing (See [spatialreference.org](http://spatialreference.org)). Following the SRID code, the lower left coordinates of the region of interest in X and Y coordinates in the spatial referencing system are given. Sensor designations typically completea the prefix.
+Within directories filenames are typically prefixed by a code for the spatial reference system identifier (*SRID*) which follows the codes of the EPSG system widely used in geospatial referencing (See [spatialreference.org](http://spatialreference.org)). Following the SRID code, the lower left coordinates of the region of interest in X and Y coordinates in the spatial referencing system are given. Sensor designations typically complete the prefix.
 
 Example:
 
