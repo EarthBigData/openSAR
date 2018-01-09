@@ -9,7 +9,7 @@ email: [training@earthbigdata.com](mailto:training@earthbigdata.com)
 Training materials and documents are maintained and distributed on the code sharing platform [github.com](http://github.com).
 To obtain training materials and documents, workshop participants should obtain a free github account if they don't already have one and email collaboration request to 
 
-[josef@earthbigdata.com](mailto:josef@earthbigdata.com)
+[training@earthbigdata.com](mailto:training@earthbigdata.com)
 
 Subject: SERVIR SAR TRAINING, githubusername: YOUR-GITHUB-USERNAME 
 
@@ -30,7 +30,7 @@ The downlaod and installation instructions are available at:
 
 ### Creating a new Environment
 
-To create a new environment use the [conda_servir.yml](https://github.com/jkellndorfer/servir_training/blob/master/conda_servir.yml) file available at our github repository at [https://github.com/jkellndorfer/servir_training](https://github.com/jkellndorfer/servir_training). If you need to obtain access to the share please email [josef@earthbigdata.com](mailto://josef@earthbigdata.com).
+To create a new environment use the [conda_servir.yml](https://github.com/jkellndorfer/servir_training/blob/master/conda_servir.yml) file available at our github repository at [https://github.com/jkellndorfer/servir_training](https://github.com/jkellndorfer/servir_training). If you need to obtain access to the share please email [training@earthbigdata.com](mailto:training@earthbigdata.com).
 
 After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. In the new terminal type:
 
