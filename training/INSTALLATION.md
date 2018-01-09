@@ -2,7 +2,7 @@
 
 Author: Josef Kellndorfer
 
-email: [josef@earthbigdata.com](mailto:josef@earthbigdata.com)
+email: [training@earthbigdata.com](mailto:training@earthbigdata.com)
 
 ## GITHUB: Software and Training Documents 
 
