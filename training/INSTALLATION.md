@@ -1,4 +1,4 @@
-# Software Installation for SAR TRAINING COURSES
+# Software Installation for EBD TRAINING COURSES
 
 Author: Josef Kellndorfer
 
@@ -11,7 +11,7 @@ To obtain training materials and documents, workshop participants should obtain 
 
 [training@earthbigdata.com](mailto:training@earthbigdata.com)
 
-Subject: SAR TRAINING, githubusername: YOUR-GITHUB-USERNAME 
+Subject: EBD TRAINING, githubusername: YOUR-GITHUB-USERNAME 
 
 We will add you as a collaborator to the code distrubution site, which will allow you to access and download all course material ,as well as make your own contributions to the code.  
 
