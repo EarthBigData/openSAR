@@ -41,6 +41,10 @@ This installs a new python environment "ebd". We will use this environment for e
 
 ## Jupyter Notebook
 
+To start the Jupyter notebook server witin the default webbrowser we change to the directory where the notebooks are.
+
+    > cd <PATH-TO-NOTEBOOK-DIRECTORY>
+
 On a commandline prompt enter: 
 
     > source activate root  # Linux
