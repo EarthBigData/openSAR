@@ -1,0 +1,13 @@
+name: ebd 
+channels:
+- conda-forge
+- defaults
+dependencies:
+- python>=3.6
+- nb_conda_kernels
+- bokeh
+- matplotlib
+- pandas
+- gdal
+- ffmpeg
+- scipy
