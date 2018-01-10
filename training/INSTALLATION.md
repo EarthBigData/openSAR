@@ -1,4 +1,4 @@
-# Software Installation for SERVIR SAR WORKSHOP
+# Software Installation for SAR TRAINING COURSES
 
 Author: Josef Kellndorfer
 
@@ -11,7 +11,7 @@ To obtain training materials and documents, workshop participants should obtain 
 
 [training@earthbigdata.com](mailto:training@earthbigdata.com)
 
-Subject: SERVIR SAR TRAINING, githubusername: YOUR-GITHUB-USERNAME 
+Subject: SAR TRAINING, githubusername: YOUR-GITHUB-USERNAME 
 
 We will add you as a collaborator to the code distrubution site, which will allow you to access and download all course material ,as well as make your own contributions to the code.  
 
@@ -30,7 +30,7 @@ The downlaod and installation instructions are available at:
 
 ### Creating a new Environment
 
-To create a new environment use the [conda_ebd.yml](conda_ebd.yml) file available at our github repository at [https://github.com/EarthBigData/openSAR](https://github.com/EarthBigData/openSAR). If you need to obtain access to the share please email [training@earthbigdata.com](mailto:training@earthbigdata.com).
+To create a new environment use the [conda_ebd.yml](conda_ebd.yml) file available at our github repository at [https://github.com/EarthBigData/openSAR/tree/master/training](https://github.com/EarthBigData/openSAR/tree/master/training). If you need to obtain access to the share please email [training@earthbigdata.com](mailto:training@earthbigdata.com).
 
 After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. In the new terminal type:
 
