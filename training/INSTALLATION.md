@@ -30,14 +30,14 @@ The downlaod and installation instructions are available at:
 
 ### Creating a new Environment
 
-To create a new environment use the [conda_servir.yml](conda_servir.yml) file available at our github repository at [https://github.com/EarthBigData/openSAR/training](https://github.com/EarthBigData/openSAR/training). If you need to obtain access to the share please email [training@earthbigdata.com](mailto:training@earthbigdata.com).
+To create a new environment use the [conda_ebd.yml](conda_ebd.yml) file available at our github repository at [https://github.com/EarthBigData/openSAR](https://github.com/EarthBigData/openSAR). If you need to obtain access to the share please email [training@earthbigdata.com](mailto:training@earthbigdata.com).
 
 After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. In the new terminal type:
 
-    > conda env create -f conda_servir.yml
+    > conda env create -f conda_ebd.yml
 
-This installs a new python environment "servir". We will use this environment for execution of all geoprocessing tasks in the workshop. 
-*servir* is also the environment kernel which we will choose in the jupyter notebooks as described below. 
+This installs a new python environment "ebd". We will use this environment for execution of all geoprocessing tasks in the workshop. 
+*ebd* is also the environment kernel which we will choose in the jupyter notebooks as described below. 
 
 ## Jupyter Notebook
 
@@ -90,7 +90,7 @@ A plugin for visualization of SAR Time series data is provided for the traning c
  
 - Windows:
 
-    TO BE UPDATED. (Contributors???)
+    Locate the .qgis2 path and unzip the Plugin into the python/plugins subdirectory
 
 
 ## DATA SETS FOR THE TRAINING
