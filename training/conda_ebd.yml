@@ -11,3 +11,4 @@ dependencies:
 - gdal
 - ffmpeg
 - scipy
+- scikit-image
