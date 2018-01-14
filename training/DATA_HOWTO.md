@@ -1,11 +1,12 @@
 # EBD TRAINING WORKSHOPS
 
-# Installation of the installation test data
+## Test data set for Installation check
 
-    Unpack the test data in the same directory where the notebook folder resides
+    Downloaad and unpack the test [data.zip](data.zip).
 
     > unzip data.zip
 
+    a folder <YOUR-DATA-PATH>/data/test will be created. This is the path to change to in the InstallationTest notebook.
 
 ## HOW TO OBTAIN THE TRAINING DATA
 
