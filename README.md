@@ -1,5 +1,5 @@
 # openSAR
-EARTH BIG DATA's open source repository. 
+EARTH BIG DATA's open source repository for Synthetic Aperture Radar Image Processing. 
 
 * Data documentations
   * EBD SAR Time Series [Data Guide](doc/EBD_DataGuide.md)
