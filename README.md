@@ -1,12 +1,12 @@
 # openSAR
-EARTH BIG DATA's open source repository. 
+EARTH BIG DATA's open source repository for Synthetic Aperture Radar Image Processing. 
 
 * Data documentations
   * EBD SAR Time Series [Data Guide](doc/EBD_DataGuide.md)
 
 * Open source code
-  * EBD Time Series plotting ([QGIS Plugin](QGIS/plugins/Timeseries_vrt))
+  * EBD SAR Time Series plotting ([QGIS Plugin](QGIS/plugins/Timeseries_vrt))
 
 * Training
   * Material and Instructions for EBD [Training](training) Courses
-  * Also contains INSTALLATION instructions for installation of python packages including a [html](training/html/InstallationTest.html) code for test output expected from running a [installation test notebook](training/notebooks/InstallationTest.ipynb)
+  * Also contains INSTALLATION instructions for installation of python and jupyter notebook packages including a [html](training/html/InstallationTest.html) code for test output expected from running a [installation test notebook](training/notebooks/InstallationTest.ipynb)
