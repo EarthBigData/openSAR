@@ -9,4 +9,4 @@ EARTH BIG DATA's open source repository for Synthetic Aperture Radar Image Proce
 
 * Training
   * Material and Instructions for EBD [Training](training) Courses
-  * Also contains INSTALLATION instructions for installation of python and jupyter notebook packages including a [html](training/html/InstallationTest.html) code for test output expected from running a [installation test notebook](training/notebooks/InstallationTest.ipynb)
+  * Also contains INSTALLATION instructions for installation of python and jupyter notebook packages including a ![html](training/html/InstallationTest.html) code for test output expected from running a [installation test notebook](training/notebooks/InstallationTest.ipynb)
