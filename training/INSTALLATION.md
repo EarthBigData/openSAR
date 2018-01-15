@@ -87,12 +87,12 @@ Install plugins with the menu in Qgis
 
 A plugin for visualization of SAR Time series data is provided for the traning course. To install the plugin, copy the Windows or Linux version to the QGIS python plugin directory
 
- - Linux:
+Linux:
  
-    > cd ~/.qgis2/python/plugins
-    > unzip Timeseries_SAR_linux.zip 
+     > cd \~/.qgis2/python/plugins 
+     > unzip Timeseries_SAR_linux.zip 
  
-- Windows:
+Windows:
 
     Locate the .qgis2 path and unzip the Plugin into the python/plugins subdirectory
 
