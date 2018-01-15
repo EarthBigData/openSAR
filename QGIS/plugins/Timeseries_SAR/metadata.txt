@@ -1,0 +1,40 @@
+# This file contains metadata for your plugin. Since 
+# version 2.0 of QGIS this is the proper way to supply 
+# information about a plugin. The old method of 
+# embedding metadata in __init__.py will 
+# is no longer supported since version 2.0.
+
+# This file should be included when you package your plugin.# Mandatory items:
+
+[general]
+name=Timeseries_SAR
+qgisMinimumVersion=2.0
+description=Plot timeseries of SAR Backscatter data from multi-layer data stack 
+version=0.1
+author=Earth Big Data, LLC
+authorName=Earth Big Data,LLC
+email=info@earthbigdata.com
+
+about=Plot timeseries of SAR Backscatter data from multi-layer data stack
+
+tracker=github.com
+repository=github.com
+# End of mandatory metadata
+
+# Recommended items:
+
+# Uncomment the following line and add your changelog:
+# changelog=
+
+# Tags are comma separated with spaces allowed
+tags=qgis
+
+homepage=https://github.com/jkellndorfer/seppo
+category=Plugins
+icon=icon.png
+# experimental flag
+experimental=True
+
+# deprecated flag (applies to the whole plugin, not just a single version)
+deprecated=False
+

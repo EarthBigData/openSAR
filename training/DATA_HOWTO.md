@@ -1,6 +1,6 @@
 # EBD TRAINING WORKSHOPS
 
-# Installation of the installation test data
+# Installation of the test data
 
     Unpack the test data in the same directory where the notebook folder resides
 

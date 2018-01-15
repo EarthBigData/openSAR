@@ -83,14 +83,14 @@ Install plugins with the menu in Qgis
 
 - MultiQml
 
-### Timeseries_vrt Plugin
+### Timeseries_SAR Plugin
 
 A plugin for visualization of SAR Time series data is provided for the traning course. To install the plugin, copy the Windows or Linux version to the QGIS python plugin directory
 
  - Linux:
  
     > cd ~/.qgis2/python/plugins
-    > unzip Timeseries_vrt_linux.zip 
+    > unzip Timeseries_SAR_linux.zip 
  
 - Windows:
 
