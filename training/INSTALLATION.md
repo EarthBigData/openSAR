@@ -30,7 +30,7 @@ The downlaod and installation instructions are available at:
 
 ### Creating a new Environment
 
-To create a new environment use the [conda_ebd.yml](conda_ebd.yml) file available at our github repository at [https://github.com/EarthBigData/openSAR/tree/master/training](https://github.com/EarthBigData/openSAR/tree/master/training). If you need to obtain access to the share please email [training@earthbigdata.com](mailto:training@earthbigdata.com).
+To create a new environment use the [conda_ebd.yml](conda_ebd.yml) file available at our github repository at [https://github.com/EarthBigData/openSAR/tree/master/training](https://github.com/EarthBigData/openSAR/tree/master/training). On most browsers you can *Right Click this link* to Download via *Save File as ...* or similar choice. Save the file into the same directory path from which you will execute the command below. 
 
 After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. In the new terminal type:
 
