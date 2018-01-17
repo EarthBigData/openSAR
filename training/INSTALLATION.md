@@ -70,7 +70,7 @@ As you see, if you don't answer "y" the server keeps running ...
 
 ## QGIS
 
-During the course we will also make etensive use of the open source Quantum GIS software **QGIS Version 2.18**, preferably the **64 bit** version. If you install QGIS new, choose the *Standalone Longterm Release* version.
+During the course we will also make etensive use of the open source Quantum GIS software **QGIS Version 2.18**, preferably the **64 bit** version. If you install QGIS new, choose the *Version 2.18* version.
 
 To install QGIS please see download and installation instructions at [qgis.org](https://qgis.org/en/site/forusers/download.html)
 
