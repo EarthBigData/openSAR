@@ -89,7 +89,7 @@ A plugin for visualization of SAR Time series data is provided for the traning c
 
 Linux:
  
-     > cd \~/.qgis2/python/plugins 
+     > cd ~/.qgis2/python/plugins 
      > unzip Timeseries_SAR_linux.zip 
  
 Windows:
