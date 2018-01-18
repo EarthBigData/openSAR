@@ -38,22 +38,20 @@ If you don't do this, you can have python conflict problems.
 
 For code management and distributing of our notebooks we use the code management system [git](https://git-scm.com/) and the code repository management platform [github](https://github.com].
 
-Once you have a git
+We recommend using git and *cloning* the openSAR distribution to your local computer. This way you can easily download updates and work offline with the repository. To clone the openSAR distribution:
 
+    > mkdir <<YOUR-GIT-REPOSOTORY-ROOT-PATH>   # or create a folder using your system's file manager 
+    > cd <YOUR-GIT-REPOSOTORY-ROOT-PATH>       # e.g. /Users/me/github (Linux/Mac)
+    > git clone git@github.com:EarthBigData/openSAR.git
 
-### Creating a new Environment
+### Creating a new conda environment
 
-To create a new environment use the [conda_ebd.yml](conda_ebd.yml) file available at our github repository at [https://github.com/EarthBigData/openSAR/tree/master/training](https://github.com/EarthBigData/openSAR/tree/master/training). On most browsers you can *Right Click*  this link to save the file to your local machine. Save or move the file into the same directory path from which you will execute the command below. 
+To work with the code and notebooks, you need to establish virtual environments within in Anaconda. THe advantage of virtual environments is the complete separation of different dependencies for projects. For our training programs we establish conda environments named **ebd**. THis will show up in the Jupyeter Notebook as the **Kernel ebd**.
+
+To create a new environment use the [conda_ebd.yml](ttps://github.com/EarthBigData/openSAR/tree/master/training/conda_ebd.yml) file available at our github repository at [https://github.com/EarthBigData/openSAR/tree/master/training](https://github.com/EarthBigData/openSAR/tree/master/training). On most browsers you can *Right Click*  this link to save the file to your local machine. Save or move the file into the same directory path from which you will execute the command below. 
 
 After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal (Anaconda Command Prompt in WINDOWS). 
-
-    OPTIONAL:
-    you can clone or download the openSAR repository from Earth Big Data which installs the notebooks for testing and the conda_ebd.yml file needed below
-    > cd <YOUR-PATH-TO-GITHUB-REPOSITORIES>
-    > git clone git@github.com:EarthBigData/openSAR.git
     
-
-
 In a new terminal (Anaconda Terminal on Windows) type:
 
     > conda env create -f conda_ebd.yml
@@ -67,16 +65,20 @@ To start the Jupyter notebook server witin the default webbrowser we change to t
 
     > cd <PATH-TO-NOTEBOOK-DIRECTORY>
 
-On a commandline prompt enter: 
+On a shell commandline prompt (Linux, Mac) or the Anaconda Command Prompt (Windows) enter: 
 
-    > source activate root  # Linux
+    > source activate root  # Linux/Mac
     > activate root         # Windows
 
 Then start the notebook server with:
 
     > jupyter notebook
 
-This last command starts a local jupyter server (localhost:8888). The default webbrowser will be openeded and the jupyter notebook browser will be active. From the file menu a notebook can be selected and opened via double-click.
+This last command starts a local jupyter server on 
+
+[https://localhost.com](https://localhost:8888) 
+
+The default webbrowser will be openeded and the jupyter notebook browser will be active. From the file menu a notebook can be selected and opened via double-click.
 
 To stop the notebook server, use the CRTL+C keystrokes and answer "y". With this keystroke you will also find at any time the notebook server http address with it's token code which you can use to paste into any webbrowser to get access to the server in case the browswer has been closed. E.g.:
 
@@ -89,6 +91,8 @@ To stop the notebook server, use the CRTL+C keystrokes and answer "y". With this
     > Shutdown this notebook server (y/[n])? No answer for 5s: resuming operation...
 
 As you see, if you don't answer "y" the server keeps running ...
+
+
 
 ## QGIS
 
