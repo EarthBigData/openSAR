@@ -2,7 +2,7 @@
 
 ## Test data set for Installation check
 
-Download and unzip the test [installation_testdata.zip](../data/installation_testdata.zip).
+Download and unzip the test [installation_testdata.zip](data/installation_testdata.zip).
 
 A folder <YOUR-DATA-PATH>/data/test will be created. This is the path to change to in the InstallationTest notebook.
 
