@@ -37,15 +37,15 @@ If you don't do this, you can have python conflict problems.
 
 ## Earth Big Data LLC's *openSAR* 
 
-For code management and distributing of our notebooks we use the code management system [git](https://git-scm.com/) and the code repository management platform [github](https://github.com).
+To install Earth Big Data's *openSAR* distribution you can either clone it with the *git clone* command or retrieve the zip archive. Cloning the archve as the benefit that any updates to the package are easily downloaded later with the *git pull* command. Or you can contribute to improve the open source software with git pull requests. 
 
-We recommend using git and *cloning* the *openSAR* distribution to your local computer. This way you can easily download updates and work offline with the repository. To clone the *openSAR* distribution:
+To clone the *openSAR* distribution:
 
     > mkdir YOUR-GIT-REPOSOTORY-ROOT-PATH   # or create a folder using your system's file manager 
     > cd YOUR-GIT-REPOSOTORY-ROOT-PATH      # e.g. /Users/me/github (Linux/Mac)
     > git clone git@github.com:EarthBigData/openSAR.git
     
-Alternatively you can also retrieve a *zip* archive of the openSAR distribution and install it on your local computer:
+To retrieve a *zip* archive of the openSAR distribution and install it on your local computer:
 
     > mkdir YOUR-GIT-REPOSOTORY-ROOT-PATH   # or create a folder using your system's file manager 
     GET THE ZIP ARHCIVE FROM [https://github.com/EarthBigData/openSAR/archive/master.zip](https://github.com/EarthBigData/openSAR/archive/master.zip) 
