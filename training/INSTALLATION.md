@@ -49,7 +49,7 @@ To retrieve a *zip* archive of the openSAR distribution and install it on your l
 
     mkdir YOUR-GIT-REPOSOTORY-ROOT-PATH   # or create a folder using your system's file manager 
 
-   GET THE ZIP ARHCIVE FROM [https://github.com/EarthBigData/openSAR/archive/master.zip](https://github.com/EarthBigData/openSAR/archive/master.zip). Unzip it in YOUR-GIT-REPOSOTORY-ROOT-PATH.
+   GET THE ZIP ARHCIVE FROM [https://github.com/EarthBigData/openSAR/archive/master.zip](https://github.com/EarthBigData/openSAR/archive/master.zip). Unzip it in YOUR-GIT-REPOSOTORY-ROOT-PATH. Note that with this donwload method the branch name of the dstribution is part of the unzipped directory name, e.g. openSAR-master. You can rename that to openSAR if you want.
    
 
 ## Other code repositories
