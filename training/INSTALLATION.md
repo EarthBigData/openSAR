@@ -36,12 +36,12 @@ If you don't do this, you can have python conflict problems.
 
 ## Earth Big Data LLC's *openSAR* 
 
-For code management and distributing of our notebooks we use the code management system [git](https://git-scm.com/) and the code repository management platform [github](https://github.com].
+For code management and distributing of our notebooks we use the code management system [git](https://git-scm.com/) and the code repository management platform [github](https://github.com).
 
-We recommend using git and *cloning* the *openSAR* distribution to your local computer. This way you can easily download updates and work offline with the repository. To clone the openSAR distribution:
+We recommend using git and *cloning* the *openSAR* distribution to your local computer. This way you can easily download updates and work offline with the repository. To clone the *openSAR* distribution:
 
     > mkdir <YOUR-GIT-REPOSOTORY-ROOT-PATH>   # or create a folder using your system's file manager 
-    > cd <YOUR-GIT-REPOSOTORY-ROOT-PATH>       # e.g. /Users/me/github (Linux/Mac)
+    > cd <YOUR-GIT-REPOSOTORY-ROOT-PATH>      # e.g. /Users/me/github (Linux/Mac)
     > git clone git@github.com:EarthBigData/openSAR.git
     
 Alternatively you can also retrieve a *zip* archive of the openSAR distribution and install it on your local computer:
