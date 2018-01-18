@@ -28,11 +28,33 @@ The downlaod and installation instructions are available at:
 
 [https://conda.io/miniconda.html](https://conda.io/miniconda.html)
 
+**NOTE FOR WINDOWS INSTALLATION:**
+
+When you run the miniconda installer on windows, you must make choices on whether to add miniconda to the system path and registry. We recommend not doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda command prompt** window, which adds miniconda to the path. From there you can type your conda commands.
+
+If you don't do this, you can have python conflict problems.
+
+### Download *openSAR* from Github
+
+For code management and distributing of our notebooks we use the code management system [git](https://git-scm.com/) and the code repository management platform [github](https://github.com].
+
+Once you have a git
+
+
 ### Creating a new Environment
 
 To create a new environment use the [conda_ebd.yml](conda_ebd.yml) file available at our github repository at [https://github.com/EarthBigData/openSAR/tree/master/training](https://github.com/EarthBigData/openSAR/tree/master/training). On most browsers you can *Right Click*  this link to save the file to your local machine. Save or move the file into the same directory path from which you will execute the command below. 
 
-After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. In the new terminal type:
+After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal (Anaconda Command Prompt in WINDOWS). 
+
+    OPTIONAL:
+    you can clone or download the openSAR repository from Earth Big Data which installs the notebooks for testing and the conda_ebd.yml file needed below
+    > cd <YOUR-PATH-TO-GITHUB-REPOSITORIES>
+    > git clone git@github.com:EarthBigData/openSAR.git
+    
+
+
+In a new terminal (Anaconda Terminal on Windows) type:
 
     > conda env create -f conda_ebd.yml
 
