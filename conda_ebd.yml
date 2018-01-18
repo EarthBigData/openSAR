@@ -12,3 +12,4 @@ dependencies:
 - ffmpeg
 - scipy
 - scikit-image
+- scikit-learn
