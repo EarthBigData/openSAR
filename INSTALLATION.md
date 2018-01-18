@@ -1,4 +1,4 @@
-# INSATLLATION INSTRUCTIONS FOR EBD OPEN SOURCE CODE AND TRAINING COURSES
+# INSTALLATION INSTRUCTIONS FOR EBD OPEN SOURCE CODE AND TRAINING COURSES
 
 Author: Josef Kellndorfer
 
@@ -68,7 +68,7 @@ As an example, the 2018 SERVIR SAR Training course material can be obtained as a
 
 To work with the code and notebooks, you need to establish virtual environments within Anaconda. THe advantage of virtual environments is the complete separation of different dependencies for projects. For example, for our training programs we establish a conda environment named **ebd**. This will show up in the Jupyeter Notebook (see below( as the **Kernel ebd**.
 
-To create the *ebd* environment use the [conda_ebd.yml](ttps://github.com/EarthBigData/openSAR/tree/master/training/conda_ebd.yml) file available at our github repository at [https://github.com/EarthBigData/openSAR/tree/master/training](https://github.com/EarthBigData/openSAR/tree/master/training). On most browsers you can *Right Click*  this link to save the file to your local machine. Save or move the file into the same directory path from which you will execute the command below. 
+To create the *ebd* environment use the [conda_ebd.yml](https://github.com/EarthBigData/openSAR/tree/master/conda_ebd.yml) file available at [https://github.com/EarthBigData/openSAR](https://github.com/EarthBigData/openSAR). On most browsers you can *Right Click*  this link to save the file to your local machine. Save or move the file into the same directory path from which you will execute the command below. 
 
 After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal (Anaconda Command Prompt in WINDOWS). 
     
