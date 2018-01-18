@@ -94,7 +94,7 @@ Then start the notebook server with:
 
 This last command starts a local jupyter server on 
 
-[https://localhost.com](https://localhost:8888) 
+[https://localhost:8888](https://localhost:8888) 
 
 The default webbrowser will be openeded and the jupyter notebook browser will be active. From the file menu a notebook can be selected and opened via double-click.
 
