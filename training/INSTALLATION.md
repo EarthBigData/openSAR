@@ -41,13 +41,13 @@ To install Earth Big Data's *openSAR* distribution you can either clone it with 
 
 To clone the *openSAR* distribution:
 
-    > mkdir YOUR-GIT-REPOSOTORY-ROOT-PATH   # or create a folder using your system's file manager 
-    > cd YOUR-GIT-REPOSOTORY-ROOT-PATH      # e.g. /Users/me/github (Linux/Mac)
-    > git clone git@github.com:EarthBigData/openSAR.git
+    mkdir YOUR-GIT-REPOSOTORY-ROOT-PATH   # or create a folder using your system's file manager 
+    cd YOUR-GIT-REPOSOTORY-ROOT-PATH      # e.g. /Users/me/github (Linux/Mac)
+    git clone git@github.com:EarthBigData/openSAR.git
     
 To retrieve a *zip* archive of the openSAR distribution and install it on your local computer:
 
-    > mkdir YOUR-GIT-REPOSOTORY-ROOT-PATH   # or create a folder using your system's file manager 
+    mkdir YOUR-GIT-REPOSOTORY-ROOT-PATH   # or create a folder using your system's file manager 
     GET THE ZIP ARHCIVE FROM [https://github.com/EarthBigData/openSAR/archive/master.zip](https://github.com/EarthBigData/openSAR/archive/master.zip) 
     UNZIP the archive in YOUR-GIT-REPOSOTORY-ROOT-PATH
 
