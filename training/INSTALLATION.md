@@ -47,27 +47,25 @@ We recommend using git and *cloning* the *openSAR* distribution to your local co
 Alternatively you can also retrieve a *zip* archive of the openSAR distribution and install it on your local computer:
 
     > mkdir YOUR-GIT-REPOSOTORY-ROOT-PATH   # or create a folder using your system's file manager 
-    > # GET THE ZIP ARHCIVE FROM [https://github.com/EarthBigData/openSAR/archive/master.zip](https://github.com/EarthBigData/openSAR/archive/master.zip) 
-    > UNZIP the archive in <YOUR-GIT-REPOSOTORY-ROOT-PATH> 
+    GET THE ZIP ARHCIVE FROM [https://github.com/EarthBigData/openSAR/archive/master.zip](https://github.com/EarthBigData/openSAR/archive/master.zip) 
+    UNZIP the archive in YOUR-GIT-REPOSOTORY-ROOT-PATH
 
-### Creating a new conda environment
+## conda environment *ebd*
 
-To work with the code and notebooks, you need to establish virtual environments within in Anaconda. THe advantage of virtual environments is the complete separation of different dependencies for projects. For our training programs we establish conda environments named **ebd**. THis will show up in the Jupyeter Notebook as the **Kernel ebd**.
+To work with the code and notebooks, you need to establish virtual environments within Anaconda. THe advantage of virtual environments is the complete separation of different dependencies for projects. For example, for our training programs we establish a conda environment named **ebd**. This will show up in the Jupyeter Notebook (see below( as the **Kernel ebd**.
 
-To create a new environment use the [conda_ebd.yml](ttps://github.com/EarthBigData/openSAR/tree/master/training/conda_ebd.yml) file available at our github repository at [https://github.com/EarthBigData/openSAR/tree/master/training](https://github.com/EarthBigData/openSAR/tree/master/training). On most browsers you can *Right Click*  this link to save the file to your local machine. Save or move the file into the same directory path from which you will execute the command below. 
+To create the *ebd* environment use the [conda_ebd.yml](ttps://github.com/EarthBigData/openSAR/tree/master/training/conda_ebd.yml) file available at our github repository at [https://github.com/EarthBigData/openSAR/tree/master/training](https://github.com/EarthBigData/openSAR/tree/master/training). On most browsers you can *Right Click*  this link to save the file to your local machine. Save or move the file into the same directory path from which you will execute the command below. 
 
 After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal (Anaconda Command Prompt in WINDOWS). 
     
 In a new terminal (Anaconda Terminal on Windows) type:
 
-    > conda env create -f conda_ebd.yml
-
-This installs a new python environment "ebd". We will use this environment for execution of all geoprocessing tasks in the workshop. 
-*ebd* is also the environment kernel which we will choose in the jupyter notebooks as described below. 
+    > conda env create -f conda_ebd.yml 
 
 ## Jupyter Notebook
 
-To start the Jupyter notebook server witin the default webbrowser we change to the directory where the notebooks are.
+To start the Jupyter notebook server working on your local webbrowser,  change to the root directory where you want to keep the notebooks.
+Typically this would be *YOUR-GIT-REPOSOTORY-ROOT-PATH*
 
     > cd <PATH-TO-NOTEBOOK-DIRECTORY>
 
