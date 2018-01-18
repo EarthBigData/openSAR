@@ -1,6 +1,11 @@
 # openSAR
 EARTH BIG DATA's open source repository for Synthetic Aperture Radar Image Processing. 
 
+* Installation Instructions
+  * Follow these [INSTRUCTIONS](INSTRUCTIONS.md) to set up EBD's *openSAR*
+  * [InstallationTest.ipynb](notebooks/InstallationTest.ipynb) notebook to test the installation
+  * [data.zip](data/data.zip)
+
 * Data documentations
   * EBD SAR Time Series [Data Guide](doc/EBD_DataGuide.md)
 
@@ -9,4 +14,5 @@ EARTH BIG DATA's open source repository for Synthetic Aperture Radar Image Proce
 
 * Training
   * Material and Instructions for EBD [Training](training) Courses
-  * Also contains INSTALLATION instructions for installation of python and jupyter notebook packages including a [html](training/html/InstallationTest.html) code for test output expected from running a [installation test notebook](training/notebooks/InstallationTest.ipynb)
+  * including a [html](training/html/InstallationTest.html) code for test output expected from running a 
+  * Jupyter Notebook to test [installation test notebook](training/notebooks/InstallationTest.ipynb)
