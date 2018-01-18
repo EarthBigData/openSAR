@@ -64,7 +64,7 @@ As an example, the 2018 SERVIR SAR Training course material can be obtained as a
     
     [https://github.com/jkellndorfer/servir_training/archive/master.zip](https://github.com/jkellndorfer/servir_training/archive/master.zip)
 
-## conda environment *ebd*
+## Setup the conda environment *ebd*
 
 To work with the code and notebooks, you need to establish virtual environments within Anaconda. THe advantage of virtual environments is the complete separation of different dependencies for projects. For example, for our training programs we establish a conda environment named **ebd**. This will show up in the Jupyeter Notebook (see below( as the **Kernel ebd**.
 
@@ -76,7 +76,7 @@ In a new terminal (Anaconda Terminal on Windows) type:
 
     > conda env create -f conda_ebd.yml 
 
-## Jupyter Notebook
+## Jupyter Notebook 
 
 To start the Jupyter notebook server working on your local webbrowser,  change to the root directory where you want to keep the notebooks.
 Typically this would be *YOUR-GIT-REPOSOTORY-ROOT-PATH*
