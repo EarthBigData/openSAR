@@ -1,19 +1,20 @@
-# Software Installation for EBD TRAINING COURSES
+# Software Installation for EBD TRAINING COURSES AND OPEN SOURCE CODE
 
 Author: Josef Kellndorfer
 
-email: [training@earthbigdata.com](mailto:training@earthbigdata.com)
+email: [support@earthbigdata.com](mailto:support@earthbigdata.com)
 
-## GITHUB: Software and Training Documents 
+## Software and Training Documents on Github
 
-Training materials and documents are maintained and distributed on the code sharing platform [github.com](http://github.com).
-To obtain training materials and documents, workshop participants should obtain a free github account if they don't already have one and email collaboration request to 
+We maintain and distribute our open source software, training materials, and documents (often as Jupyter notebooks)  on the code sharing platform [github.com](http://github.com).
 
-[training@earthbigdata.com](mailto:training@earthbigdata.com)
+To establish collaboration between colleagues and the Earth Big Data Team you benefit from obtaining a free github account if you don't already have one.  Email collaboration/access request to 
 
-Subject: EBD TRAINING, githubusername: YOUR-GITHUB-USERNAME 
+[support@earthbigdata.com](mailto:support@earthbigdata.com)
 
-We will add you as a collaborator to the code distrubution site, which will allow you to access and download all course material ,as well as make your own contributions to the code.  
+Subject: EBD GITHUB ACCESS, githubusername: YOUR-GITHUB-USERNAME 
+
+We will add you as a collaborator to the code distrubution site, which will allow you to access and download specific course material. You can participate in the discussion forums and  make your own code contributions to share with colleagues.  
 
 
 ## Python
@@ -49,6 +50,18 @@ Alternatively you can also retrieve a *zip* archive of the openSAR distribution 
     > mkdir YOUR-GIT-REPOSOTORY-ROOT-PATH   # or create a folder using your system's file manager 
     GET THE ZIP ARHCIVE FROM [https://github.com/EarthBigData/openSAR/archive/master.zip](https://github.com/EarthBigData/openSAR/archive/master.zip) 
     UNZIP the archive in YOUR-GIT-REPOSOTORY-ROOT-PATH
+
+## Other code repositories
+
+Just like the installation for EBD's *openSAR* package, you can install all other packages found on github to YOUR-GIT-REPOSOTORY-ROOT-PATH. For some packages you need to be added as a collaborator to be able to access them.
+
+As an example, the 2018 SERVIR SAR Training course material can be obtained as a package as 
+
+    > git clone git@github.com:jkellndorfer/servir_training.git
+    
+    OR 
+    
+    [https://github.com/jkellndorfer/servir_training/archive/master.zip](https://github.com/jkellndorfer/servir_training/archive/master.zip)
 
 ## conda environment *ebd*
 
@@ -97,7 +110,6 @@ To stop the notebook server, use the CRTL+C keystrokes and answer "y". With this
 As you see, if you don't answer "y" the server keeps running ...
 
 
-
 ## QGIS
 
 During the course we will also make etensive use of the open source Quantum GIS software **QGIS Version 2.18**, preferably the **64 bit** version. If you install QGIS new, choose *Version 2.18*.
@@ -127,7 +139,7 @@ Windows:
     Locate the .qgis2 path and unzip the Plugin into the python/plugins subdirectory
 
 
-## DATA SETS FOR THE TRAINING
+## EXAMPLE DATA SETS FOR TRAINING AND PLAYING
 
 See the [DATA_HOWTO.md](./DATA_HOWTO.md) for download instructions to obtain the training data sets.
 
