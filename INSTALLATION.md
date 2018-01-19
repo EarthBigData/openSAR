@@ -29,6 +29,8 @@ The downlaod and installation instructions are available at:
 
 [https://www.anaconda.com/download/](https://www.anaconda.com/download/)
 
+Depending on your Internet connection speed,this might take a while!
+
 **NOTE FOR WINDOWS INSTALLATION:**
 
 When you run the anaconda installer on Windows, you must make choices on whether to add anaconda to the system path and registry. We recommend not doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda Prompt** window, which adds anaconda to the path. From there you can type your conda commands.
