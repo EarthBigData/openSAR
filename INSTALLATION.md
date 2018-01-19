@@ -43,13 +43,13 @@ When you run the Miniconda installer on Windows, you must make choices on whethe
 
 ## Earth Big Data LLC's *openSAR* 
 
-To install Earth Big Data's *openSAR* distribution you can either clone it with the *[git](https://git-scm.com/downloads) clone* command or retrieve the zip archive. Cloning the archive has the benefit that any updates to the package are easily downloaded later with the *git pull* command. Or you can contribute to improve the open source software with git pull requests. To install git on or system go to  [https://git-scm.com/downloads](https://git-scm.com/downloads). 
+To install Earth Big Data's *openSAR* distribution you can clone it with the *[git](https://git-scm.com/downloads) clone* command. Cloning the archive has the benefit that any updates to the package are easily downloaded later with the *git pull* command. Or you can contribute to improve the open source software with git pull requests. To install git on or system go to  [https://git-scm.com/downloads](https://git-scm.com/downloads). 
 
 To clone the *openSAR* distribution with git open a terminal (Linux/Mac) or the **GIT Prompt** (Windows):
 
-> NOTE FOR WINDOWS: Replace "mkdir" with "md".
+NOTE FOR WINDOWS: Replace "mkdir" with "md".
   
-    mkdir YOUR-GIT-REPOSOTORY-ROOT-PATH   # 
+    mkdir YOUR-GIT-REPOSOTORY-ROOT-PATH   # Optional, in case you already have a favorite path
     cd YOUR-GIT-REPOSOTORY-ROOT-PATH      # e.g. /Users/me/github (Linux/Mac)
     git clone git@github.com:EarthBigData/openSAR.git
     
