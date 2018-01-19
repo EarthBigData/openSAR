@@ -71,7 +71,7 @@ download this zip archive: [https://github.com/jkellndorfer/servir_training/arch
 
 ## Setup the conda environment *ebd*
 
-To work with the code and notebooks, you need to establish virtual environments within Anaconda. The advantage of virtual environments is the complete separation of different dependencies for projects. For example, for our training programs we establish a conda environment named **ebd**. This will show up in the Jupyeter Notebook (see below( as the **Kernel ebd**.
+To work with the code and notebooks, you need to establish virtual environments within Anaconda. The advantage of virtual environments is the complete separation of different dependencies for projects. For example, for our training programs we establish a conda environment named **ebd**. This will show up in the Jupyeter Notebook (see below) as the **ebd kernel**.
 
 To create the *ebd* environment use the [conda_ebd.yml](https://github.com/EarthBigData/openSAR/tree/master/conda_ebd.yml) file available at [https://github.com/EarthBigData/openSAR](https://github.com/EarthBigData/openSAR). On most browsers you can *Right Click*  this link to save the file to your local machine. Save or move the file into the same directory path from which you will execute the command below. 
 
