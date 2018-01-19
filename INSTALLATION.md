@@ -85,7 +85,7 @@ After *anaconda* is installed, ensure that the environment variables are set cor
     
 In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
       
-     conda env create --quiet --file conda_ebd.yml
+     conda env create --quiet --file conda_ebd.yml.  # --quiet is optional if you want to see what's going on
 
 Now you have a new virutal environment built called **ebd**.
 
