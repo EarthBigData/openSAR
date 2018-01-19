@@ -75,8 +75,8 @@ After *anaconda* is installed, ensure that the environment variables are set cor
 In a new terminal (Anaconda Terminal on Windows) type:
       
      > conda config --add channels conda-forge 
-     > conda install nb_conda_kernels           
-     > conda env create -f conda_ebd.yml        
+     > conda install nb_conda_kernels
+     > conda env create -f conda_ebd.yml        
 
 ## Jupyter Notebook 
 
