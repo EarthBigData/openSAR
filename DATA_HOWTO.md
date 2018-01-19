@@ -2,7 +2,7 @@
 
 ## Test data set for Installation check
 
-Download and unzip the test [installation_testdata.zip](data/installation_testdata.zip).
+Download (if needed) and unzip the test [testdata.zip](data/testdata.zip).
 
 A folder *testdata* will be created.
 
