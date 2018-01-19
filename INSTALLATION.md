@@ -22,7 +22,7 @@ Many aspects of geospatial data analysis can now be performed within the [**pyth
 
 Python is as a scripting/programming language very similar to *Matlab* or *IDL*. As such, users familiar with these languages should readlily be able to read and write python code. Python also has a tight integration with the statistical programming language [R](https://www.r-project.org) via a RPy interface, such that many statistical routines available in R can be called from within a python program. R DataFrames are mimicked in python with the powerful [**pandas**](https://pandas.pydata.org) package. Numerical computations and matrix operations for image analysis is tightly integrated with the [**numpy**](http://www.numpy.org) \(*num*erical *py*thon) package. Raster data stacks are typically loaded with the powerful python implementation of the *Geospatial Data Abstraction Library* [**gdal**](http://gdal.org). Data visualiation in python has advanced quite fast and parallels the capabilities of plotting of R via the main python plotting package [**matplotlib**](https://matplotlib.org) . The python [**bokeh**](https://bokeh.pydata.org/) package provides powerful interactive data visualization tools ready for web integration. Scientific data analysis and image processing with python also leans heavily on the scikit packages like image processing with [**scikit-image**](http://scikit-image.org/) or machine learning with [**scikit-learn**](http://scikit-learn.org/).
 
-### Anaconda Python Installation with Miniconda
+### Anaconda Python Installation
 Obtain and install **anaconda** from the Anaconda python distribution. We prefer to work with the latest python 3 version (3.6), 64-bit distribution.
 
 The downlaod and installation instructions are available at:
@@ -31,7 +31,7 @@ The downlaod and installation instructions are available at:
 
 **NOTE FOR WINDOWS INSTALLATION:**
 
-When you run the anaconda installer on windows, you must make choices on whether to add anaconda to the system path and registry. We recommend not doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda command prompt** window, which adds anaconda to the path. From there you can type your conda commands.
+When you run the anaconda installer on Windows, you must make choices on whether to add anaconda to the system path and registry. We recommend not doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda Prompt** window, which adds anaconda to the path. From there you can type your conda commands.
 
 If you don't do this, you can have python conflict problems.
 
