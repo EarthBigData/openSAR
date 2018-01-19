@@ -40,9 +40,9 @@ In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
     conda update --yes --all
     conda install nb_conda_kernels
 
-    **NOTE FOR WINDOWS INSTALLATION:**
+**NOTE FOR WINDOWS INSTALLATION:**
 
-    When you run the Miniconda installer on Windows, you must make choices on whether to add Mniconda to the system path and registry. We recommend not doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda Prompt** window, which adds anaconda to the path. From there you can type your conda commands. If you don't do this, you can have python conflict problems.
+When you run the Miniconda installer on Windows, you must make choices on whether to add Mniconda to the system path and registry. We recommend not doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda Prompt** window, which adds anaconda to the path. From there you can type your conda commands. If you don't do this, you can have python conflict problems.
 
 
 ## Earth Big Data LLC's *openSAR* 
@@ -68,7 +68,7 @@ Just like the installation for EBD's *openSAR* package, you can install all othe
 
 As an example, the 2018 SERVIR SAR Training course material can be obtained as a package as 
 
-    > git clone git@github.com:jkellndorfer/servir_training.git
+    git clone git@github.com:jkellndorfer/servir_training.git
     
 OR 
     
@@ -95,16 +95,16 @@ Now you have a new virutal environment built called **ebd**.
 To start the Jupyter notebook server working on your local webbrowser,  change to the root directory where you want to keep the notebooks.
 Typically this would be *YOUR-GIT-REPOSOTORY-ROOT-PATH*
 
-    > cd <PATH-TO-NOTEBOOK-DIRECTORY>
+    cd <PATH-TO-NOTEBOOK-DIRECTORY>
 
 On a shell commandline prompt (Linux, Mac) or the Anaconda Command Prompt (Windows) enter: 
 
-    > source activate root  # Linux/Mac
-    > activate root         # Windows
+    source activate root  # Linux/Mac
+    activate root         # Windows
 
 Then start the notebook server with:
 
-    > jupyter notebook
+    jupyter notebook
 
 This last command starts a local jupyter server on 
 
@@ -146,12 +146,12 @@ A plugin for visualization of SAR Time series data is provided for the traning c
 
 Linux:
  
-    > cd ~/.qgis2/python/plugins 
-    > unzip Timeseries_SAR_linux.zip 
+    cd ~/.qgis2/python/plugins 
+    unzip Timeseries_SAR_linux.zip 
  
 Windows:
 
-    Locate the .qgis2 path and unzip the Plugin into the python/plugins subdirectory
+    # Locate the .qgis2 path and unzip the Plugin into the python/plugins subdirectory
 
 
 ## EXAMPLE DATA SETS FOR TRAINING AND PLAYING
