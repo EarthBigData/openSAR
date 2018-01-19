@@ -56,7 +56,7 @@ To clone the *openSAR* distribution with git open a terminal (Linux/Mac) or the 
     cd YOUR-GIT-REPOSOTORY-ROOT-PATH      # e.g. /Users/me/github (Linux/Mac)
     git clone https://github.com/EarthBigData/openSAR.git
     
-Alternatively, if you don't use git or prefer not to clone, retrieve a *zip* archive of the openSAR distribution and install it on your local computer. Get the zip archive from: [https://github.com/EarthBigData/openSAR/archive/master.zip](https://github.com/EarthBigData/openSAR/archive/master.zip). Unzip it in YOUR-GIT-REPOSOTORY-ROOT-PATH. Note that with this donwload method the branch name of the dstribution is part of the unzipped directory name, e.g. openSAR-master. You can rename that to openSAR if you want.
+Alternatively, if you don't use git or prefer not to clone, retrieve a *zip* archive of the openSAR distribution and install it on your local computer. Get the zip archive from: [https://github.com/EarthBigData/openSAR](https://github.com/EarthBigData/openSAR/archive/). Click the green **CLone or Download** button and choose **Download ZIP**. Unzip it in YOUR-GIT-REPOSOTORY-ROOT-PATH. Note that with this donwload method the branch name of the dstribution is part of the unzipped directory name, e.g. openSAR-master. You can rename that to openSAR if you want.
    
 
 ## Other code repositories
