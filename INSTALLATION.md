@@ -76,9 +76,9 @@ After *anaconda* is installed, ensure that the environment variables are set cor
     
 In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
       
-     > conda config --add channels conda-forge 
-     > conda install nb_conda_kernels
-     > conda env create -f conda_ebd.yml        
+     > conda config --add channels conda-forge
+     > conda install nb_conda_kernels -y
+     > conda env create -f conda_ebd.yml -y        
 
 ## Jupyter Notebook 
 
@@ -136,8 +136,8 @@ A plugin for visualization of SAR Time series data is provided for the traning c
 
 Linux:
  
-     > cd ~/.qgis2/python/plugins 
-     > unzip Timeseries_SAR_linux.zip 
+    > cd ~/.qgis2/python/plugins 
+    > unzip Timeseries_SAR_linux.zip 
  
 Windows:
 
