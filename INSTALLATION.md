@@ -72,7 +72,7 @@ To create the *ebd* environment use the [conda_ebd.yml](https://github.com/Earth
 
 After *anaconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal (Anaconda Command Prompt in WINDOWS). 
     
-In a new terminal (Anaconda Terminal on Windows) type:
+In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
       
      > conda config --add channels conda-forge 
      > conda install nb_conda_kernels
