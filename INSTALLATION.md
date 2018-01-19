@@ -18,7 +18,9 @@ We will add you as a collaborator to the code distribution site, which will allo
 
 ### Code management with *git*
 
-If you don't have the code management software **git** installed on your system, we highly recommend to install it. Using **git** and **Github**, you can easily "clone" code repositories to your local computer. Cloning from Github has the benefit that any updates to a repository is easily updated later with the *git pull* command. Or you can contribute to improve the shared repository by pushing your modifications back to Github with *git push*. To install **git** on or system go to  [https://git-scm.com/downloads](https://git-scm.com/downloads). 
+If you don't have the code management software **git** installed on your system, we highly recommend to install it. Using **git** and **Github**, you can easily "clone" code repositories to your local computer. Cloning from Github has the benefit that any updates to a repository is easily updated later with the *git pull* command. Or you can contribute to improve the shared repository by pushing your modifications back to Github with *git push*. To install **git** on or system go to 
+
+[https://git-scm.com/downloads](https://git-scm.com/downloads). 
 
 ## Python
 Many aspects of geospatial data analysis can now be performed within the [**python**](https://www.python.org) programming language and its vast suite of open source contributed modules. Many python bindings exist today in major open source and commercial image processing and geographic information systems like [QGIS](https://qgis.org) and ArcGIS. Learning and using python for all spatial data analysis tasks prepares a trainee well for the future. 
