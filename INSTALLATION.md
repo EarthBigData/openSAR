@@ -24,9 +24,7 @@ Python is as a scripting/programming language very similar to *Matlab* or *IDL*.
 
 ### Anaconda Python Installation
 
-**ATTENTION: WE ARE WORKING ON A SOLUTION TO USE MINICONDA WHICH WOULD REQUIRE LESS RESOURCES. STAY TUNED. FOR NOW YOU HAVE TO OBTAIN THE FULL ANACONDA DISTRIBUTION.**
-
-Obtain and install the free **Anaconda python** distribution. We prefer to work with the latest python 3 version (3.6), 64-bit distribution.
+Obtain and install the free **Miniconda python** distribution. We prefer to work with the latest python 3 version (3.6), 64-bit distribution.
 
 The downlaod and installation instructions are available at:
 
@@ -34,11 +32,18 @@ The downlaod and installation instructions are available at:
 
 Depending on your Internet connection speed, this might take a while!
 
-**NOTE FOR WINDOWS INSTALLATION:**
+After *anaconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. 
+    
+In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
+      
+    conda config --add channels conda-forge --force
+    conda update --yes --all
+    conda install nb_conda_kernels
 
-When you run the anaconda installer on Windows, you must make choices on whether to add anaconda to the system path and registry. We recommend not doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda Prompt** window, which adds anaconda to the path. From there you can type your conda commands.
+    **NOTE FOR WINDOWS INSTALLATION:**
 
-If you don't do this, you can have python conflict problems.
+    When you run the Miniconda installer on Windows, you must make choices on whether to add Mniconda to the system path and registry. We recommend not doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda Prompt** window, which adds anaconda to the path. From there you can type your conda commands. If you don't do this, you can have python conflict problems.
+
 
 ## Earth Big Data LLC's *openSAR* 
 
@@ -81,9 +86,9 @@ After *anaconda* is installed, ensure that the environment variables are set cor
     
 In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
       
-     > conda config --add channels conda-forge
-     > conda install nb_conda_kernels -y
-     > conda env create -f conda_ebd.yml -y        
+     conda env create --quiet --file cond_edb.yml
+
+Now you have a new virutal environment built called **ebd**.
 
 ## Jupyter Notebook 
 
