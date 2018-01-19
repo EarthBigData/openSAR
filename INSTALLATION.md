@@ -24,7 +24,7 @@ Python is as a scripting/programming language very similar to *Matlab* or *IDL*.
 
 ### Anaconda Python Installation
 
-**ATTENTION: WE ARE WORKING ON A SOLUTION TO USE MINICONDA WHICH WOULD REQUIRE LESS RESOURCES. STAY TUNED. FOR NOW YOU HAVE TO OBTAIN THE FULL ANACONDA DISTRIBTION.**
+**ATTENTION: WE ARE WORKING ON A SOLUTION TO USE MINICONDA WHICH WOULD REQUIRE LESS RESOURCES. STAY TUNED. FOR NOW YOU HAVE TO OBTAIN THE FULL ANACONDA DISTRIBUTION.**
 
 Obtain and install the free **Anaconda python** distribution. We prefer to work with the latest python 3 version (3.6), 64-bit distribution.
 
