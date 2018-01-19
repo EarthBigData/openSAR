@@ -16,6 +16,7 @@ Subject: EBD GITHUB ACCESS, githubusername: YOUR-GITHUB-USERNAME
 
 We will add you as a collaborator to the code distribution site, which will allow you to access and download specific course material or project specific software. You can participate in the discussion forums and  make your own code contributions to share with colleagues.  
 
+If you don't have the code management software **git** installed on your system, you should download and install it from this location: [https://git-scm.com/downloads](https://git-scm.com/downloads).
 
 ## Python
 Many aspects of geospatial data analysis can now be performed within the [**python**](https://www.python.org) programming language and its vast suite of open source contributed modules. Many python bindings exist today in major open source and commercial image processing and geographic information systems like [QGIS](https://qgis.org) and ArcGIS. Learning and using python for all spatial data analysis tasks prepares a trainee well for the future. 
