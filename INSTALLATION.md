@@ -30,9 +30,7 @@ The downlaod and installation instructions are available at:
 
 [https://conda.io/miniconda.html](https://conda.io/miniconda.html)
 
-After *anaconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. 
-    
-In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
+After *anaconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
       
     conda config --add channels conda-forge --force
     conda update --yes --all
