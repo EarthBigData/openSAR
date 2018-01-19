@@ -4,7 +4,7 @@
 
 Download and unzip the test [installation_testdata.zip](data/installation_testdata.zip).
 
-A folder <YOUR-DATA-PATH>/testdata will be created. This is the path to change to in the InstallationTest notebook.
+A folder *testdata* will be created.
 
 ## HOW TO OBTAIN THE TRAINING DATA
 
