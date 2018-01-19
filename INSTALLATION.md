@@ -28,9 +28,7 @@ Obtain and install the free **Miniconda python** distribution. We prefer to work
 
 The downlaod and installation instructions are available at:
 
-[https://www.anaconda.com/download/](https://www.anaconda.com/download/)
-
-Depending on your Internet connection speed, this might take a while!
+[https://conda.io/miniconda.html](https://conda.io/miniconda.html)
 
 After *anaconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. 
     
