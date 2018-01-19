@@ -62,7 +62,7 @@ Just like the installation for EBD's *openSAR* package, you can install all othe
 
 As an example, the 2018 SERVIR SAR Training course material can be obtained as a package as 
 
-    git clone git@github.com:jkellndorfer/servir_training.git
+    git clone https://github.com/jkellndorfer/servir_training.git
     
 OR 
     
