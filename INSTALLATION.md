@@ -73,11 +73,11 @@ download this zip archive: [https://github.com/jkellndorfer/servir_training/arch
 
 To work with the code and notebooks, you need to establish virtual environments within Anaconda. The advantage of virtual environments is the complete separation of different dependencies for projects. For example, for our training programs we establish a conda environment named **ebd**. This will show up in the Jupyeter Notebook (see below) as the **ebd kernel**.
 
-To create the *ebd* environment use the [conda_ebd.yml](https://raw.githubusercontent.com/EarthBigData/openSAR/master/conda_ebd.yml). On most browsers you can *Right Click*  this link to save the file to your local machine. Make sure you are have the "raw" file and not an html verion. Some browsers may add a ".txt" ending, so you may have to rename the file after download to "conda_ebd.yml. "Save or move the file into the same directory path from which you will execute the command below. 
+To create the *ebd* environment use the [conda_ebd.yml](https://raw.githubusercontent.com/EarthBigData/openSAR/master/conda_ebd.yml). On most browsers you can *Right Click*  this link to save the file to your local machine. Make sure you are have the "raw" file and not an html version. Some browsers may add a ".txt" ending, so you may have to rename the file after download to "conda_ebd.yml". Save or move the file into the same directory path from which you will execute the command below. 
 
 If you have cloned or downloaded the *openSAR* repository, the *conda_ebd.yml* is included in the root directory.
 
-After *anaconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal (Anaconda Command Prompt in WINDOWS). 
+After *anaconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. 
     
 In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
       
