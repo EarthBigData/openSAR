@@ -60,9 +60,9 @@ As an example, the 2018 SERVIR SAR Training course material can be obtained as a
 
     > git clone git@github.com:jkellndorfer/servir_training.git
     
-    OR 
+OR 
     
-    [https://github.com/jkellndorfer/servir_training/archive/master.zip](https://github.com/jkellndorfer/servir_training/archive/master.zip)
+download this zip archive: [https://github.com/jkellndorfer/servir_training/archive/master.zip](https://github.com/jkellndorfer/servir_training/archive/master.zip)
 
 ## Setup the conda environment *ebd*
 
