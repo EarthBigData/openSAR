@@ -6,7 +6,7 @@ email: [support@earthbigdata.com](mailto:support@earthbigdata.com)
 
 ## Software and Training Documents on Github
 
-We maintain and distribute our open source software, training materials, and documents (often as Jupyter notebooks)  on the code sharing platform [github.com](http://github.com).
+We maintain and distribute our open source software, training materials, and documents (often as Jupyter notebooks)  as **repositories** on the code sharing platform [github.com](http://github.com).
 
 To establish collaboration between colleagues and the Earth Big Data Team you benefit from obtaining a free github account if you don't already have one. Once you have an account name,  email us at: 
 
