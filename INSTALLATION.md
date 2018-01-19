@@ -42,7 +42,7 @@ If you don't do this, you can have python conflict problems.
 
 ## Earth Big Data LLC's *openSAR* 
 
-To install Earth Big Data's *openSAR* distribution you can either clone it with the *git clone* command or retrieve the zip archive. Cloning the archive as the benefit that any updates to the package are easily downloaded later with the *git pull* command. Or you can contribute to improve the open source software with git pull requests. 
+To install Earth Big Data's *openSAR* distribution you can either clone it with the *git clone* command or retrieve the zip archive. Cloning the archive has the benefit that any updates to the package are easily downloaded later with the *git pull* command. Or you can contribute to improve the open source software with git pull requests. 
 
 To clone the *openSAR* distribution:
 
