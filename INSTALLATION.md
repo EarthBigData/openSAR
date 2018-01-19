@@ -32,7 +32,7 @@ The downlaod and installation instructions are available at:
 
 [https://www.anaconda.com/download/](https://www.anaconda.com/download/)
 
-Depending on your Internet connection speed,this might take a while!
+Depending on your Internet connection speed, this might take a while!
 
 **NOTE FOR WINDOWS INSTALLATION:**
 
