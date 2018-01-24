@@ -4,7 +4,7 @@ channels:
 - defaults
 dependencies:
 - python>=3.6
-- ipykernel
+- nb_conda_kernels
 - bokeh
 - matplotlib
 - pandas
