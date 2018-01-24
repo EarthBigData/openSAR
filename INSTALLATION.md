@@ -98,8 +98,8 @@ Typically this would be *YOUR-GIT-REPOSOTORY-ROOT-PATH*
 
 On a shell commandline prompt (Linux, Mac) or the Anaconda Command Prompt (Windows) enter: 
 
-    source activate root  # Linux/Mac
-    activate root         # Windows
+    source activate ebd  # Linux/Mac
+    activate ebd         # Windows
 
 Then start the notebook server with:
 
