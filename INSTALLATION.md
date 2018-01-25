@@ -36,10 +36,26 @@ The download and installation instructions are available at:
 [https://conda.io/miniconda.html](https://conda.io/miniconda.html)
 
 After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
-      
+
+#### Installation from conda-forge 
+Typiccally you want to install packages from the conda-forge community channel:
+
     conda config --add channels conda-forge --force
     conda update --yes --all
     conda install nb_conda_kernels
+    
+#### Alternative installation from a local file channel
+Alternatively, you can also use a custom channel, e.g. from a file if provided:
+
+    conda config --add channels PATH-TO-CHANNEL-DIRECTORY --force
+    conda update --yes --all
+    conda install nb_conda_kernels
+
+Examples for PATH-TO-CHANNEL-DIRECTORY-NAME
+
+    Windows: c:\Users\Administrator\ebdchannel
+    Linux:   /home/josefk/ebdchannel
+
 
 **NOTE FOR WINDOWS INSTALLATION:**
 
@@ -85,7 +101,39 @@ After *anaconda* is installed, ensure that the environment variables are set cor
     
 In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
       
+    cd PATH-TO-openSAR  # Change directory to the openSAR installation
+    
+### Standard Installation from conda-forge channel
+
     conda env create --quiet --file conda_ebd.yml  # --quiet is optional if you want to see what's going on
+
+### Installation with file-based channel
+If you are using a local file channel as the source for the installation files, you have to add the path to the file channel directory as the first channels entry in your environment file. 
+
+- Open the *conda_ebd.yml* file in a text editor.
+- Undder the *channels:* line add the path to the file channel directory preceded with a '-'
+
+Your conda_ebd.yml file should look some thing like this:
+
+    name: ebd
+    channels:
+    - c:\users\administrator\ebdchannel
+    - conda-forge
+    - defaults
+    dependencies:
+    - python>=3.6
+    - nb_conda_kernels
+    - bokeh
+    - matplotlib
+    - pandas
+    - gdal
+    - ffmpeg
+    - scipy
+    - scikit-image
+    - scikit-learn
+
+ 
+    conda  env create --offline --override-channels --channel c:\users\administrator\ebdchannel --file conda_ebd.yml
 
 Now you have a new virutal environment built called **ebd**.
 
@@ -98,8 +146,8 @@ Typically this would be *YOUR-GIT-REPOSOTORY-ROOT-PATH*
 
 On a shell commandline prompt (Linux, Mac) or the Anaconda Command Prompt (Windows) enter: 
 
-    source activate ebd  # Linux/Mac
-    activate ebd         # Windows
+    source activate root  # Linux/Mac
+    activate root         # Windows
 
 Then start the notebook server with:
 
