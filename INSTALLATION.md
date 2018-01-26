@@ -90,7 +90,6 @@ OR
 Download this zip archive: [https://github.com/jkellndorfer/servir_training/archive/master.zip](https://github.com/jkellndorfer/servir_training/archive/master.zip)
 
 ## Setup the conda environment *ebd*
-
 To work with the code and notebooks, you need to establish virtual environments within Anaconda. The advantage of virtual environments is the complete separation of different dependencies for projects. For example, for our training programs we establish a conda environment named **ebd**. This will show up in the Jupyeter Notebook (see below) as the **ebd kernel**.
 
 To create the *ebd* environment use the [conda_ebd.yml](https://raw.githubusercontent.com/EarthBigData/openSAR/master/conda_ebd.yml). On most browsers you can *Right Click* this link to save the file to your local machine. Make sure you are have the "raw" file and not an html version. Some browsers may add a ".txt" ending, so you may have to rename the file after download to "conda_ebd.yml". Save or move the file into the same directory path from which you will execute the command below. 
@@ -102,18 +101,15 @@ After *anaconda* is installed, ensure that the environment variables are set cor
 In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
       
     cd PATH-TO-openSAR  # Change directory to the openSAR installation
-    
-### Standard Installation from conda-forge channel
-
     conda env create --quiet --file conda_ebd.yml  # --quiet is optional if you want to see what's going on
 
-### Installation with file-based channel
-If you are using a local file channel as the source for the installation files, you have to add the path to the file channel directory as the first channels entry in your environment file. 
+**Alternative installation with file-based channel:**
 
+If you are using a local file channel as the source for the installation files, you can add the path to the file channel directory as the first channels entry in your environment file before your rund the *conda env create* command 
 - Open the *conda_ebd.yml* file in a text editor.
 - Undder the *channels:* line add the path to the file channel directory preceded with a '-'
 
-Your conda_ebd.yml file should look some thing like this:
+Your conda_ebd.yml file should then look some thing like this:
 
     name: ebd
     channels:
@@ -132,8 +128,7 @@ Your conda_ebd.yml file should look some thing like this:
     - scikit-image
     - scikit-learn
 
- 
-    conda  env create --offline --override-channels --channel c:\users\administrator\ebdchannel --file conda_ebd.yml
+Once you have added the path to your local channel run the *conda env create* command from above.
 
 Now you have a new virutal environment built called **ebd**.
 
