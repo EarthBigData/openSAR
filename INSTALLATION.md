@@ -35,6 +35,10 @@ The download and installation instructions are available at:
 
 [https://conda.io/miniconda.html](https://conda.io/miniconda.html)
 
+    **NOTE FOR WINDOWS INSTALLATION:**
+
+    When you run the Miniconda installer on Windows, you must make choices on whether to add Mniconda to the system path and registry. We recommend not doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda Prompt** window, which adds anaconda to the path. From there you can type your conda commands. If you don't do this, you can have python conflict problems.
+
 After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
 
 #### Installation from conda-forge 
@@ -44,10 +48,11 @@ Typiccally you want to install packages from the conda-forge community channel:
     conda update --yes --all
     conda install nb_conda_kernels
     
-#### Alternative installation from a local file channel
+#### Alternative installation from a local file channel (e.g. without Internet)
 Alternatively, you can also use a custom channel, e.g. from a file if provided:
 
     conda config --add channels PATH-TO-CHANNEL-DIRECTORY --force
+    conda config --remove channels defaults # if internet is slow or off
     conda update --yes --all
     conda install nb_conda_kernels
 
@@ -55,12 +60,6 @@ Examples for PATH-TO-CHANNEL-DIRECTORY-NAME
 
     Windows: c:\Users\Administrator\ebdchannel
     Linux:   /home/josefk/ebdchannel
-
-
-**NOTE FOR WINDOWS INSTALLATION:**
-
-When you run the Miniconda installer on Windows, you must make choices on whether to add Mniconda to the system path and registry. We recommend not doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda Prompt** window, which adds anaconda to the path. From there you can type your conda commands. If you don't do this, you can have python conflict problems.
-
 
 ## Earth Big Data LLC's *openSAR* 
 
