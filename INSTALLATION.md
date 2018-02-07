@@ -123,9 +123,7 @@ Your conda_ebd.yml file should then look some thing like this:
 
     name: ebd
     channels:
-    - c:\users\administrator\ebdchannel
-    - conda-forge
-    - defaults
+    - c:\TEMP\ebdchannel
     dependencies:
     - python>=3.6
     - nb_conda_kernels
