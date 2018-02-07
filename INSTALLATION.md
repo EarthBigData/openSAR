@@ -38,6 +38,7 @@ The download and installation instructions are available at:
 [https://conda.io/miniconda.html](https://conda.io/miniconda.html)
 
 **NOTE FOR WINDOWS INSTALLATION:**
+PLEASE AVOID ALL SPACES IN FILENAMES,PATHNAMES, AND USERNAMES! IT's EASIEST TO INSTALL Miniconda at the root level, e.g. *C:\Miniconda3*
 When you run the Miniconda installer on Windows, you must make choices on whether to add Mniconda to the system path and registry. We recommend not doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda Prompt** window, which adds anaconda to the path. From there you can type your conda commands. If you don't do this, you can have python conflict problems.
 
     Fix for no Anaconda prompt:
@@ -48,9 +49,9 @@ When you run the Miniconda installer on Windows, you must make choices on whethe
 
     Also set the correct starting directory, e.g. to the user's home c:\Users\MYUSERNAME 
 
-After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
+After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type the lines from one of the online or off line instructions:
 
-#### Installation from conda-forge 
+#### ONLINE Installation from conda-forge 
 Typiccally you want to install packages from the conda-forge community channel:
 
     conda config --add channels conda-forge --force
@@ -58,7 +59,7 @@ Typiccally you want to install packages from the conda-forge community channel:
     conda install nb_conda_kernels
     
 
-#### Alternative installation from a local file channel (e.g. without Internet)
+#### OFFLINE Alternative installation from a local file channel (e.g. without Internet)
 Alternatively, you can also use a custom channel, e.g. from a file if provided:
 
     conda config --add channels PATH-TO-CHANNEL-DIRECTORY --force
@@ -68,8 +69,8 @@ Alternatively, you can also use a custom channel, e.g. from a file if provided:
 
 Examples for PATH-TO-CHANNEL-DIRECTORY-NAME
 
-    Windows: c:\Users\Administrator\ebdchannel
-    Linux:   /home/josefk/ebdchannel
+    Windows: c:\TEMP\ebdchannel
+    Linux:   /tmp/ebdchannel
 
 ## Earth Big Data LLC's *openSAR* 
 
