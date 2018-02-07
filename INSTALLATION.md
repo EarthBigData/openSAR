@@ -39,7 +39,8 @@ The download and installation instructions are available at:
 When you run the Miniconda installer on Windows, you must make choices on whether to add Mniconda to the system path and registry. We recommend not doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda Prompt** window, which adds anaconda to the path. From there you can type your conda commands. If you don't do this, you can have python conflict problems.
 
     Fix for no Anaconda prompt:
-    If there is no Anaconda Prompt (or it got lost), create a "New Shortcut" from the desktop. Use the following as the target (Replace with the correct shortcut to where Miniconda is installed):
+    If there is no Anaconda Prompt (or it got lost), create a "New Shortcut" from the desktop. 
+    Use the following as the target (Replace with the correct shortcut to where Miniconda is installed):
 
             %windir%\System32\cmd.exe "/K" C:\miniconda3\Scripts\activate.bat C:\miniconda3
 
