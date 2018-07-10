@@ -52,7 +52,7 @@ When you run the Miniconda installer on Windows, you must make choices on whethe
 After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type the lines from one of the online or off line instructions:
 
 #### ONLINE Installation from conda-forge 
-Typiccally you want to install packages from the conda-forge community channel:
+Typically you want to install packages from the conda-forge community channel:
 
     conda config --add channels conda-forge --force
     conda update --yes --all
