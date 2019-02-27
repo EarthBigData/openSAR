@@ -35,7 +35,7 @@ S32631X398020Y1315440sS1_<FILETYPES>
 
 ### Geographic 1 x 1 degree tiles 
 
-Geographic tiles are named in analogy to the SRTM 1x1 degree tiling scheme:
+Geographic tiles are named based on the upper left corner:
 
 NnnEeee, NnnWwww, SssEeee, or SssWwww
 
@@ -46,7 +46,7 @@ NnnEeee, NnnWwww, SssEeee, or SssWwww
 
 The thus specified full degree coordinate pair refers to the lower left coordinate of the tile.
 
-Example: N46W078
+Example: N47W078
 
     47 ---------
       |         |
@@ -126,13 +126,18 @@ Often other designators are added to explain the nature of the data in the file 
 
 GeoTIFF Images that are resulting from some standard time series metrics computation are organized in a _tsmetrics subfolder and have the following filename endings:
 
-* Count:              _tsmetrics_count.tif
-* Covariance:         _tsmetrics_cov.tif
-* Maximum:            _tsmetrics_max.tif
-* Mean:               _tsmetrics_mean.tif
-* Minimum:            _tsmetrics_min.tif
-* Range (max-min):    _tsmetrics_range.tif
-* Std.Deviation:      _tsmetrics_stddev.tif
+* 95th Percentile:        _p95.tif
+* 5th Percentile:         _p5.tif
+* 95th-5th Percentile:    _prange.tif
+* Median:                 _median.tif
+* Maximum:                _max.tif
+* Minimum:                _min.tif
+* Range (max-min):        _range.tif
+* Mean:                   _mean.tif
+* Variance:               _var.tif
+* Coeff. of Variation:    _cov.tif
+* Sdiff (experimental)    _sdiff.tif
+* Count:                  _count.tif
 
 These, or a subset of these metrics are typically organized via a vrt stack named in the parent directory of the subfolder
 
