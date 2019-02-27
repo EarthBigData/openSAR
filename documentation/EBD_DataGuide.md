@@ -2,6 +2,7 @@
 
 # EARTH BIG DATA Data Guide
 Author: Josef Kellndorfer, October 2017
+Latest Update: 2/2019
 
 ********************
 
