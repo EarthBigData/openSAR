@@ -102,8 +102,13 @@ class TimeSeriesSAR3:
         self.line1 = None
         self.line2 = None
 
+        self.geo_crs=QgsCoordinateReferenceSystem()
+        self.geo_crs.createFromString("EPSG:4326")
+
         _px = None
         _py = None
+
+
 
     # noinspection PyMethodMayBeStatic
     def tr(self, message):
@@ -315,29 +320,28 @@ class TimeSeriesSAR3:
         layer=self.layers[0]
         layer_crs = layer.crs()
         map_crs=self.canvas.mapSettings().destinationCrs()
+        # Get the position in geo coordinates for the plot header
+        if map_crs==self.geo_crs:
+        	pos_geo=pos
+        else:
+        	geo_transform=QgsCoordinateTransform(layer_crs,self.geo_crs,QgsProject.instance())
+        	pos_geo=geo_transform.transform(pos)
+        print(pos,pos_geo)
+
         if not map_crs == layer_crs:
-            print('Layer\n'+layer_crs.toWkt())
-            print('Map\n'+map_crs.toWkt())
-            print('TODO')
-            return
-            if self.canvas.hasCrsTransformEnabled():
-                crs_transform = QgsCoordinateTransform(map_crs, layer_crs)
-                try:
-                    pos = crs_transform.transform(pos)
-                except:
-                    self.iface.messageBar().pushMessage('Error',
+            try:
+                print('Converting')
+                crs_transform = QgsCoordinateTransform(map_crs, layer_crs,QgsProject.instance())
+                print('Canvas proj4 ({}): {}'.format(map_crs.toProj4(),pos))
+                pos = crs_transform.transform(pos)
+                print('Layer  proj4 ({}): {}'.format(layer_crs.toProj4(),pos))
+            except:
+                self.iface.messageBar().pushMessage('Error',
                         'Could not convert map CRS to layer CRS',
                         level=QgsMessageBar.WARNING,
                         duration = 5)
-                    return
-            else:
-                self.iface.messageBar().pushMessage('Error',
-                    'Could not convert map CRS to layer CRS',
-                    level=QgsMessageBar.WARNING,
-                    duration = 5)
                 return
 
-        # print(pos)
         # Fetch data if inside raster
         validpol=['VV','VH','HH','HV','vv','vh','hh','hv']
         # validpol=['VV','VH','vv','vh']   # HARDCODE ALERT SENTINEL
@@ -450,7 +454,13 @@ class TimeSeriesSAR3:
             plt.yticks(range(-30, 1, 5), fontsize=18)
             plt.ylabel('$\gamma^0$ [dB]',fontsize=18)
             plt.xticks(alldates_datetime,labels, rotation=30,ha='right',fontsize=10)
-            plt.title("Geogr. Coordinates X/Y {} - Raster P/L ({} {})".format(pos,self._px,self._py,fontsize=18))
+            # Title line based on projection or geographic coordinate system of layer
+            geo=int(layer_crs.authid().split(':')[1])==4326
+
+            if geo:
+                plt.title("Lon/Lat {:.5f} {:.5f} - Raster P/L {} {}".format(pos.x(),pos.y(),self._px,self._py,fontsize=18))
+            else:
+                plt.title("Lon/Lat {:.5f} {:.5f} - {} X/Y {:.1f} {:.1f} - Raster P/L {} {}".format(pos_geo.x(),pos_geo.y(),layer_crs.authid(),pos.x(),pos.y(),self._px,self._py,fontsize=18))
             plt.legend()
             plt.grid()
             plt.show()
