@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/timeseries_sar3" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
