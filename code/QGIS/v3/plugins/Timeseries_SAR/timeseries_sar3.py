@@ -38,7 +38,7 @@ import glob
 # from .timeseries_SAR3_helperFunctions import *
 
 ### QGIS PLUGIN BUILDER CODE
-from qgis.PyQt.QtCore import QSettings, QTranslator, QCoreApplication, QVariant
+from qgis.PyQt.QtCore import QSettings, QTranslator, QCoreApplication, QVariant, QDate, QDateTime
 from qgis.PyQt.QtGui import QIcon
 from qgis.PyQt.QtWidgets import QAction
 from qgis.gui import QgsMapToolEmitPoint, QgsMessageBar
@@ -107,8 +107,6 @@ class TimeSeriesSAR3:
 
         _px = None
         _py = None
-
-
 
     # noinspection PyMethodMayBeStatic
     def tr(self, message):
@@ -245,21 +243,6 @@ class TimeSeriesSAR3:
         else: 
             self.y_range=int(round(100.0/ymres))
 
-
-    # def pushButton_OpenKMLFiles_Clicked(self):
-    #     tuple=QFileDialog.getOpenFileNames(self, u'Files', QgsProject.instance().homePath(), 'VRT Files (*.vrt)')
-    #     if tuple:
-    #         filePaths=tuple[0]
-    #         if filePaths and len(filePaths) > 0:
-    #             model=QStandardItemModel()
-    #             for filePath in filePaths:
-    #                 fileName=os.path.basename(filePath)
-    #                 item=QStandardItem(fileName)
-    #                 item.setData(filePath)
-    #                 model.appendRow(item)
-    #             self.listView_Files.setModel(model)
-
-
     def run(self):
         """Run method that performs all the real work"""
 
@@ -267,7 +250,6 @@ class TimeSeriesSAR3:
         # Only create GUI ONCE in callback, so that it will only load when the plugin is started
         if self.first_start == True:
             self.first_start = False
-            # self.dlg = TimeSeriesSAR3Dialog()
 
         # Fetch the currently loaded layers
         layers = QgsProject.instance().layerTreeRoot().children()
@@ -291,28 +273,37 @@ class TimeSeriesSAR3:
         result = self.dlg.exec_()
         # See if OK was pressed
         if result:
-            # Do something useful here - delete the line containing pass and
-            # substitute with your code.
-            #pass
+            # Selected Layers
             self.selectedLayers = self.dlg.listWidget.selectedItems()
+            if len(self.selectedLayers)==0:
+                print ('Select a valid layer')
+                return
+
             self.layers=[]
-            for i in  self.selectedLayers:
-               #print(dir(i))
-               # for attr in dir(i):
-               #  if hasattr( i, attr ):
-               #      print( "obj.%s = %s" % (attr, getattr(i, attr)))
-               #print(i.text())
-               self.layers.append(layer_lookup[i.text()])
+            for layer in self.selectedLayers:
+                if layer_lookup[layer.text()].type() == QgsMapLayer.RasterLayer:
+                    self.layers.append(layer_lookup[layer.text()])
+                    print('Plotting layer {}'.format(layer.text()))
+                else: 
+                    print('Ignore invalid layer {}'.format(layer.text()))
 
-        # for i in self.layers:
-        #     print(i.name())
-        #     print(dir(i))
+            # Selected dB range to display
+            self.dB_low = self.dlg.dB_low.value()
+            self.dB_high = self.dlg.dB_high.value()
+            # Selected min and max dates to display
+            self.date_start=self.dlg.date_start.date().toPyDate()
+            self.date_end=self.dlg.date_end.date().toPyDate()
+            self.date_start=datetime.datetime(self.date_start.year,self.date_start.month,self.date_start.day)
+            self.date_end=datetime.datetime(self.date_end.year,self.date_end.month,self.date_end.day)
 
-        self.tool_enabled = True
-        self.canvas.setMapTool(self.plottool) 
+            self.tool_enabled = True
+            self.canvas.setMapTool(self.plottool) 
+        else:
+            print('No valid selections')
 
     def plot_request(self, pos, button=None):
         """ Request handler for QgsMapToolEmitPoint. """
+
         if self.tool_enabled is False or len(self.layers)==0:
             print ('Select a valid layer')
             return
@@ -326,7 +317,6 @@ class TimeSeriesSAR3:
         else:
         	geo_transform=QgsCoordinateTransform(layer_crs,self.geo_crs,QgsProject.instance())
         	pos_geo=geo_transform.transform(pos)
-        print(pos,pos_geo)
 
         if not map_crs == layer_crs:
             try:
@@ -342,29 +332,15 @@ class TimeSeriesSAR3:
                         duration = 5)
                 return
 
-        # Fetch data if inside raster
-        validpol=['VV','VH','HH','HV','vv','vh','hh','hv']
-        # validpol=['VV','VH','vv','vh']   # HARDCODE ALERT SENTINEL
-        validpol=validpol + [x.lower() for x in validpol]
+        # Fetch data if inside raster 
+
         if layer and layer.extent().contains(pos):
             #Fetch data
             # Convert position into pixel location
-            selectedLayers = self.layers
-            if 'pol' not in locals():
-                pol=[]
-            for layer in selectedLayers:
-                if layer.type() == QgsMapLayer.VectorLayer:
-                    print(layer.name())
-                elif layer.type() == QgsMapLayer.RasterLayer:
-                    print(layer.name())
-                elif layer.type() == QgsMapLayer.PluginLayer:
-                    print(layer.name())
-                else:
-                    raise Exception('Should never happen')
-                pol.append(layer.name())
-
-            imagearr = []
-            for layer in selectedLayers:
+            layer_name = []
+            imagearr   = []
+            for layer in self.layers:
+                layer_name.append(layer.name())
                 imagearr.append(layer.source())
  
             clicked=False
@@ -383,6 +359,9 @@ class TimeSeriesSAR3:
                     xlim[1] = xlim_tmp[1]
                 xlim[0] = min(xlim[0],xlim_tmp[0])
                 xlim[1] = max(xlim[1],xlim_tmp[1])
+            # Now check against selected dates:
+            xlim[0] = max(xlim[0],self.date_start)
+            xlim[1] = min(xlim[1],self.date_end)
             xlim=tuple(xlim)
 
             i=0
@@ -401,7 +380,7 @@ class TimeSeriesSAR3:
                     if not clicked:
                         self.show_click(pos, geo, proj, self.x_range, self.y_range)
                         clicked=True
-                    tmpdB, tmpdate, tmpdatearr,tmpbands = self.make_val_dates(ds,img,datatype,sf) 
+                    tmpdB, tmpdate, tmpdatearr,tmpbands = self.make_values_dates(ds,img,datatype,sf) 
                     self.save_output(pos, tmpdB, tmpdatearr, img)
                     mydB.append(tmpdB)
                     mydate.append(tmpdate) 
@@ -423,18 +402,20 @@ class TimeSeriesSAR3:
             color=['r','b','r','b']
             self.line=[]
             alldates_datetime=[]
+            print(xlim)
             for i in range(len(imagearr)):
                 tmpplt, = plt.plot(mydate[i], mydB[i], color[i],marker=marker[i])
+                plt.xlim(*xlim)
                 self.line.append(tmpplt)  
-                self.line[i].axes.set_ylim(-31, 0)
-                self.line[i].set_label(pol[i])   
+                self.line[i].axes.set_ylim(self.dB_low, self.dB_high)
+                self.line[i].set_label(layer_name[i])   
                 alldates_datetime += mydate[i]
 
             # Make lables and ticks, 
             # Bands will be displayed for the first layer only
             alldates_datetime = list(set(alldates_datetime))
             alldates_datetime.sort()
-            xlim=(min(alldates_datetime),max(alldates_datetime))
+            # xlim=(min(alldates_datetime),max(alldates_datetime))
 
 
             # Get the bands from the first layer
@@ -445,15 +426,24 @@ class TimeSeriesSAR3:
                     allbands[i]='%3d' % mybands[0][j]
                     j+=1
                               
-            self.line[0].axes.set_ylim(-31, 0)
+            # self.line[0].axes.set_ylim(-31, 0)
+            self.line[0].axes.set_ylim(self.dB_low, self.dB_high)
             self.line[0].axes.set_xlim(xlim[0], xlim[1])
             # labels=['%s-%s-%s' % (i[:4],i[4:6],i[6:]) for i in datearr[0]]
-            labels=['%4d-%02d-%02d' % (i.year,i.month,i.day) for i in alldates_datetime]
-            labels=['%s %s' % (allbands[i],labels[i]) for i in range(len(labels))]
+            alllabels=['%4d-%02d-%02d' % (i.year,i.month,i.day) for i in alldates_datetime]
+            # alllabels=['%s %s' % (allbands[i],labels[i]) for i in range(len(labels))]
 
-            plt.yticks(range(-30, 1, 5), fontsize=18)
-            plt.ylabel('$\gamma^0$ [dB]',fontsize=18)
-            plt.xticks(alldates_datetime,labels, rotation=30,ha='right',fontsize=10)
+            labels_index=[]
+            for i in range(len(alldates_datetime)):
+                if alldates_datetime[i]>=xlim[0] and alldates_datetime[i]<=xlim[1]:
+                    labels_index.append(i)
+            xlabels=[alllabels[i] for i in labels_index]
+            xticks =[alldates_datetime[i] for i in labels_index]
+
+            # plt.yticks(range(-30, 1, 5), fontsize=18)
+            plt.yticks(range(self.dB_low, self.dB_high, 5), fontsize=14)
+            plt.ylabel('$\gamma^0$ [dB]',fontsize=14)
+            plt.xticks(xticks,xlabels, rotation=30,ha='right',fontsize=9)
             # Title line based on projection or geographic coordinate system of layer
             geo=int(layer_crs.authid().split(':')[1])==4326
 
@@ -465,15 +455,14 @@ class TimeSeriesSAR3:
             plt.grid()
             plt.show()
             plt.draw()
-
+        else:
+            print('No valid position.')
 
     def show_click(self, pos, gt, projection, x_range, y_range):
         """
         Receives QgsPoint and adds vector boundary of raster pixel clicked
         """
 
-        # last_selected = self.iface.activeLayer()
-        # BELOW NOT REPLACED
         # Get raster pixel px py for pos
         px = int(round((pos[0] - gt[0]) / gt[1]))
         py = int(round((pos[1] - gt[3]) / gt[5]))
@@ -494,21 +483,6 @@ class TimeSeriesSAR3:
             QgsPointXY(b_ulx, b_uly + gt[5]*y_range) # lower left
             ]])
 
-        # # NOT REPLACED WITH:
-        # b_ulx = gt[0]+self._px*gt[1]-gt[1]/2
-        # b_uly = gt[3]+self._py*gt[5]+gt[5]/2
-        # b_lrx = b_ulx + self.x_range*gt[1]
-        # b_lry = b_uly + self.y_range*gt[5]
-        # px = self._px
-        # py = self._py
-
-        # # Creat Geometry
-        # gSquare = QgsGeometry.fromPolygonXY([[
-        #     QgsPointXY(b_ulx, b_uly), # uper left
-        #     QgsPointXY(b_lrx, b_uly), # upper right
-        #     QgsPointXY(b_lrx,b_lry),  # lower right
-        #     QgsPointXY(b_ulx, b_lry)  # lower left
-        #     ]])
 
         if self.vlayer_id is not None:
             # Update the vector layer to new clicked pixel
@@ -558,10 +532,7 @@ class TimeSeriesSAR3:
 
             self.vlayer_id = QgsProject.instance().addMapLayer(vlayer).id()
 
-        # Restore active layer
-        # self.iface.setActiveLayer(last_selected)
-
-    def make_val_dates(self,dataset, image,datatype=1,sf=[0.15,-31]):
+    def make_values_dates(self,dataset, image,datatype=1,sf=[0.15,-31]):
         nbands = dataset.RasterCount
         imgbuf = dataset.ReadRaster(int(self._px),int(self._py),int(self.x_range),int(self.y_range))
         #imgbuf = dataset.ReadRaster(2500,2500,10,10)
@@ -620,7 +591,6 @@ class TimeSeriesSAR3:
         bands2=list(np.array(bands)[mask])
 
         return mydB2, mydate2, datearr2, bands2
-
 
     def check_pos(self, pos, geo, ds):            
         x_size = ds.RasterXSize
@@ -692,6 +662,9 @@ class TimeSeriesSAR3:
             wf.writerow(outarr)
                  
 
+# HELPER FUNCTIONS
+# Time series helper functions
+# (c) Josef Kellndorfer, Earth Big Data LLC
 
 def max_date_range(img):
     '''Checks for other datefiles at the same directory level, parses them and returns the min/max data range as a tuple to use as x axis scaling'''
@@ -710,12 +683,6 @@ def max_date_range(img):
     else:
         return None,(None,None)
 
-
-# HELPER FUNCTIONS
-
-
-#Time series helper functions
-# (c) Josef Kellndorfer, Earth Big Data LLC
 def lsf (srcmin,srcmax,dstmin,dstmax):
     '''Linear Scale Factors: Generate the scaling factors from in and out ranges'''
     delta=(np.float32(srcmax)-srcmin)/(dstmax-dstmin+1)
@@ -774,7 +741,6 @@ def amp2pwr (amp,ndv=None):
     out[pwr.mask] = 0.   
     return 'pwr', out
 
-
 def ReadInfo(img):
     ds = gdal.Open(img, gdal.GA_ReadOnly)
     datatype=ds.GetRasterBand(1).DataType
@@ -797,7 +763,6 @@ def max_date_range(img):
     alldates.sort()
     alldates  = [datetime.datetime.strptime(str(x),'%Y%m%d') for x in alldates]
     return alldates, (min(alldates),max(alldates))
-
 
 def dates_from_meta(src_dataset):
     img_handle=gdal.Open(src_dataset)
