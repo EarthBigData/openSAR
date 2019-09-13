@@ -26,6 +26,7 @@ import matplotlib
 if sys.platform.startswith('linux'):
 	matplotlib.use("TkAgg")
 from matplotlib import pyplot as plt 
+import matplotlib.dates
 
 import numpy as np
 import struct
@@ -112,8 +113,9 @@ class TimeSeriesSAR3:
 		_px = None
 		_py = None
 
-		self.marker=['o','o','x','x']
-		self.color=['r','b','r','b']
+		self.marker=['o','o','x','x','o','o','x','x']
+		self.color=['r','b','r','b','g','m','g','m']
+		self.linestyle=['-','-','-','-',':',':',':',':']
 
 	def tr(self, message):
 		"""Get the translation for a string using Qt translation API.
@@ -289,6 +291,7 @@ class TimeSeriesSAR3:
 			l = self.layer_lookup[layer.text()]
 			self.selected_urls.append(l.source())
 		self.selected_urls=list(set(self.selected_urls))
+		self.selected_urls.sort()
 
 	def select_files(self):
 		"""Optionally select files"""
@@ -296,6 +299,7 @@ class TimeSeriesSAR3:
 		self.dlg.selectFiles_listWidget.addItems([os.path.basename(i) for i in self.selected_files])
 		self.selected_urls+=self.selected_files
 		self.selected_urls=list(set(self.selected_urls))
+		self.selected_urls.sort()
 
 	def clear_selections(self):
 		"""Optionally select files"""
@@ -310,6 +314,7 @@ class TimeSeriesSAR3:
 		# Selected dB range to display
 		self.dB_low = self.dlg.dB_low.value()
 		self.dB_high = self.dlg.dB_high.value()
+		self.dB_step = self.dlg.dB_step.value()
 		# Selected pixel buffers
 		self.x_range = self.dlg.pixel_Buffer_X.value()
 		self.y_range = self.dlg.pixel_Buffer_Y.value()
@@ -319,6 +324,7 @@ class TimeSeriesSAR3:
 		self.date_start=datetime.datetime(self.date_start.year,self.date_start.month,self.date_start.day)
 		self.date_end=datetime.datetime(self.date_end.year,self.date_end.month,self.date_end.day)
 		self.save_points = self.dlg.save_points.isChecked()
+		self.show_exact_dates = self.dlg.show_exact_dates.isChecked()
 
 	def get_pos_geo(self,pos):
 		# Get the map crs and compare to geo_crs to obtain position in geographic coordinates
@@ -334,6 +340,10 @@ class TimeSeriesSAR3:
 		for url in self.selected_urls:
 			shortname=os.path.basename(url)
 			legendname=shortname
+			for layer in self.dlg.listWidget.selectedItems():
+				if url == self.layer_lookup[layer.text()].source():
+					legendname=layer.text()
+					break
 			try:
 				ds, geotrans, proj, srs, unit, datatype = ReadInfo(url)
 				crs=QgsCoordinateReferenceSystem()
@@ -354,6 +364,20 @@ class TimeSeriesSAR3:
 				self.get_url_dates(url)
 			except Exception as e:
 				print(e)
+
+	def make_sorted_urls(self):
+		# Sort the urls based on layer and file selection for ordering the lines to display
+		key_dict={}
+		# make the legend names=key, url=value dict
+		for url in self.url_dict:
+			key_dict[self.url_dict[url]['legendname']]=url
+		legendnames=list(key_dict.keys())
+		# Sort the list of legendnames
+		legendnames.sort()
+		self.sorted_urls=[]
+		for l in legendnames:
+			self.sorted_urls.append(key_dict[l])
+
 
 	def get_pos_proj(self,url):
 		# Get the projected position
@@ -485,12 +509,17 @@ class TimeSeriesSAR3:
 		self.xlabels=[alllabels[i] for i in labels_index]
 		self.xticks =[alldates_datetime[i] for i in labels_index]
 
+
+
 	def plot(self, pos):
 		"""Data extraction and plotting call"""
 
 		# Set up the plot figure
 		if not plt.fignum_exists(1):
-			plt.figure()
+			fig=plt.figure()
+			datefmt = matplotlib.dates.DateFormatter("%d-%b-%Y")
+			fmt = lambda x,y : "{}, {:.5g}".format(datefmt(x), y)
+			plt.gca().format_coord = fmt
 		else:
 			plt.cla()
 
@@ -502,10 +531,10 @@ class TimeSeriesSAR3:
 		self.show_click(pos, geo, proj, self.x_range, self.y_range)
 		# Loop over the url_dict to extract values and dates for each layer at the buffered point location display
 		i=0
-		j=0
 		self.line=[]
 		self.alldates=[]
-		for url in self.url_dict:
+		self.make_sorted_urls()
+		for url in self.sorted_urls:
 			# Get pos in url crs
 			self.get_rastercoords_url(url)
 			# print(self.url_dict[url])
@@ -523,23 +552,25 @@ class TimeSeriesSAR3:
 				self.alldates+=dates2
 				data2 = list(np.array(data)[mask])
 
-				tmpplt, = plt.plot(dates2, data2, self.color[i%4],marker=self.marker[i%4])
+				tmpplt, = plt.plot(dates2, data2, self.color[i%8],marker=self.marker[i%8],linestyle=self.linestyle[i%8],picker=5)
 				self.line.append(tmpplt)  
-				self.line[j].axes.set_ylim(self.dB_low, self.dB_high)
-				self.line[j].set_label(self.url_dict[url]['legendname'])
+				self.line[i].axes.set_ylim(self.dB_low, self.dB_high)
+				self.line[i].set_label(self.url_dict[url]['legendname'])
 				if self.save_points:
 					self.save_output(self.pos_geo,data,dates,self.url_dict[url]['shortname'])
 				i+=1
-				j+=1  
 		self.alldates=list(set(self.alldates))
 		self.alldates.sort()
 		self.set_xlabels_xticks()
 		plt.xlim(*self.xlim)
 
 		# plt.yticks(range(-30, 1, 5), fontsize=18)
-		plt.yticks(range(self.dB_low, self.dB_high, 5), fontsize=14)
+		plt.yticks(range(self.dB_low, self.dB_high, self.dB_step), fontsize=14)
 		plt.ylabel('$\gamma^0$ [dB]',fontsize=14)
-		plt.xticks(self.xticks,self.xlabels, rotation=30,ha='right',fontsize=9)
+		if self.show_exact_dates:
+			plt.xticks(self.xticks,self.xlabels, rotation=30,ha='right',fontsize=9)
+		else:
+			plt.xticks(rotation=30,ha='right',fontsize=11)
 		# Title line based on projection or geographic coordinate system of layer
 		# Use from the last url added
 		u=self.url_dict[url]
@@ -550,6 +581,7 @@ class TimeSeriesSAR3:
 		else:
 			# print(u['pos_raster'][0],u['pos_raster'][1])
 			plt.title("Lon/Lat {:.5f} {:.5f} - {} X/Y {:.1f} {:.1f} - Raster P/L {} {}".format(self.pos_geo.x(),self.pos_geo.y(),u['crs'].authid(),u['pos_proj'].x(),u['pos_proj'].y(),u['pos_raster'][0],u['pos_raster'][1]),fontsize=18)
+
 		plt.legend()
 		plt.grid()
 		plt.show()
@@ -650,3 +682,4 @@ class TimeSeriesSAR3:
 				wf.writerow(header)
 			wf.writerow(outarr)
 				 
+
