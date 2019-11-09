@@ -13,3 +13,6 @@ dependencies:
 - scipy
 - scikit-image
 - scikit-learn
+- json
+- urllib
+- boto3
