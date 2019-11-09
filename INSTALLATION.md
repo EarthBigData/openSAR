@@ -31,7 +31,7 @@ For a basic introduction to python see [https://www.learnpython.org/](https://ww
 
 ### Anaconda Python Installation
 
-Obtain and install the free **Miniconda python** distribution. We prefer to work with the latest python 3 version (3.6), 64-bit distribution.
+Obtain and install the free **Miniconda python** distribution. We prefer to work with the latest python 3 version (>=3.6), 64-bit distribution.
 
 The download and installation instructions are available at:
 
