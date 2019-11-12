@@ -16,7 +16,7 @@ Subject: EBD GITHUB ACCESS, githubusername: YOUR-GITHUB-USERNAME
 
 We will add you as a collaborator to the code distribution site, which will allow you to access and download specific course material or project specific software. You can participate in the discussion forums and  make your own code contributions to share with colleagues.  
 
-**NOTE: YOU DO NOT NEED THE ACCOUNT TO PROCEED WITH INSTALLATION OF SOFTWARE ABOVE. AND WE TYPICALLY SHARE ALL MATERIAL DURING A COURSE AS WELL. BUT UPDATES WILL BE POSTED ON THE GITHUB ACCOUNT openSAR**
+**NOTE: YOU DO NOT NEED THE ACCOUNT TO PROCEED WITH INSTALLATION OF SOFTWARE LISTED HERE. AND WE TYPICALLY SHARE ALL MATERIAL DURING A COURSE AS WELL. BUT UPDATES WILL BE POSTED ON THE GITHUB ACCOUNT openSAR**
 
 ### Code management with *git*
 
