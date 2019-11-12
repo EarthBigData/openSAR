@@ -200,6 +200,13 @@ Install plugins with the menu in Qgis
 
 A plugin for visualization of SAR Time series data is provided for the traning course. To install the plugin, copy the Windows or Linux version to the QGIS python plugin directory
 
+The plugins can be found is [here](
+https://github.com/EarthBigData/openSAR/blob/master/code/QGIS/).
+
+Select the  v3/Timeseries_SAR_v3.zip
+
+Note that version 2 is no longer maintained but provides an older version for QGIS version 2.
+
 Linux:
  
     cd ~/.qgis2/python/plugins 
