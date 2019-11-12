@@ -203,7 +203,7 @@ A plugin for visualization of SAR Time series data is provided for the traning c
 The plugins can be found is [here](
 https://github.com/EarthBigData/openSAR/blob/master/code/QGIS/).
 
-Select the  v3/Timeseries_SAR_v3.zip
+Select the  v3/plugins/Timeseries_SAR_v3.zip
 
 Note that version 2 is no longer maintained but provides an older version for QGIS version 2.
 
