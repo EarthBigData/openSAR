@@ -23,8 +23,8 @@
 """
 import os,sys
 import matplotlib
-if sys.platform.startswith('linux'):
-	matplotlib.use("TkAgg")
+# if sys.platform.startswith('linux'):
+# 	matplotlib.use("TkAgg")
 from matplotlib import pyplot as plt 
 import matplotlib.dates
 
