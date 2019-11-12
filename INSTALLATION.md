@@ -135,6 +135,10 @@ Your conda_ebd.yml file should then look some thing like this:
     - scipy
     - scikit-image
     - scikit-learn
+    - json
+    - urllib
+    - boto3
+
 
 Once you have added the path to your local channel run the *conda env create* command from above.
 
@@ -177,7 +181,7 @@ As you see, if you don't answer "y" the server keeps running ...
 
 ## QGIS
 
-During the course we will also make etensive use of the open source Quantum GIS software **QGIS Version 2.18**, preferably the **64 bit** version. If you install QGIS new, choose *Version 2.18*.
+During the course we will also make etensive use of the open source Quantum GIS software **QGIS Version 3.10**, preferably the **64 bit** version. If you install QGIS new, choose *Version 3.10*.
 
 To install QGIS please see download and installation instructions at [qgis.org](https://qgis.org/en/site/forusers/download.html)
 
@@ -190,7 +194,7 @@ Install plugins with the menu in Qgis
 
 - MultiQml
 
-### Timeseries_SAR Plugin
+### QGIS Timeseries_SAR Plugin
 
 A plugin for visualization of SAR Time series data is provided for the traning course. To install the plugin, copy the Windows or Linux version to the QGIS python plugin directory
 
