@@ -13,4 +13,3 @@ dependencies:
 - scipy
 - scikit-image
 - scikit-learn
-- boto3

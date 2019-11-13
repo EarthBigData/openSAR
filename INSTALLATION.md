@@ -137,7 +137,6 @@ Your conda_ebd.yml file should then look some thing like this:
     - scipy
     - scikit-image
     - scikit-learn
-    - boto3
 
 
 Once you have added the path to your local channel run the *conda env create* command from above.
