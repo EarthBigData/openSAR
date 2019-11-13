@@ -214,7 +214,10 @@ Linux:
  
 Windows:
 
-    # Locate the .qgis2 path and unzip the Plugin into the python/plugins subdirectory
+    # Locate the .qgis2 path and unzip the Plugin into the python/plugins subdirectory. Look for something like  
+    C:/Users/Administrator/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins 
+ 
+
 
 
 ## EXAMPLE DATA SETS FOR TRAINING AND PLAYING
