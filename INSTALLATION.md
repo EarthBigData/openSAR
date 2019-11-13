@@ -200,7 +200,7 @@ Install plugins with the menu in Qgis
 
 Earth Big Data's SAR Time series Plotter is an open source tool and  used for the traning courses. To install the plugin, download it and while running QGIS select in the *Plugins -> Manage and Install Plugins* the **Install from Zip** option.
 
-The plugins can be found is [here](
+The plugins can be found [here](
 https://github.com/EarthBigData/openSAR/blob/master/code/QGIS/).
 
 Select the  
