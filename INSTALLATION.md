@@ -41,7 +41,7 @@ The download and installation instructions are available at:
 
 **NOTE FOR WINDOWS INSTALLATION:**
 PLEASE AVOID ALL SPACES IN FILENAMES,PATHNAMES, AND USERNAMES! IT's EASIEST TO INSTALL Miniconda at the root level, e.g. *C:\Miniconda3*
-When you run the Miniconda installer on Windows, you must make choices on whether to add Mniconda to the system path and registry. We recommend not doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda Prompt** window, which adds anaconda to the path. From there you can type your conda commands. If you don't do this, you can have python conflict problems.
+When you run the Miniconda installer on Windows, you must make choices on whether to add Mniconda to the system path and registry. We recommend **not** doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda Prompt** window, which adds anaconda to the path. From there you can type your conda commands. If you don't do this, you can have python conflict problems.
 
     Fix for no Anaconda prompt:
     If there is no Anaconda Prompt (or it got lost), create a "New Shortcut" from the desktop. 
@@ -137,8 +137,6 @@ Your conda_ebd.yml file should then look some thing like this:
     - scipy
     - scikit-image
     - scikit-learn
-    - json
-    - urllib
     - boto3
 
 
