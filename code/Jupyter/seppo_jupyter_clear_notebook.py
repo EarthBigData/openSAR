@@ -118,10 +118,10 @@ def processing(args):
 				cmd='jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace {}'.format(nb_name)
 				print(cmd)
 				if not args.DryRun:
-						sp.call(cmd.split())
-				# set the notebook to the previous nb_time so it wouldn't sync later if nothing changes
-				# print(nb_time,nb_executed_time,nb_set_time)
-				os.utime(nb_name,times=(nb_set_time,nb_set_time))
+					sp.call(cmd.split())
+					# set the notebook to the previous nb_time so it wouldn't sync later if nothing changes
+					# print(nb_time,nb_executed_time,nb_set_time)
+					os.utime(nb_name,times=(nb_set_time,nb_set_time))
 				return nb_name
 			except Exception as e:
 				print(e)
