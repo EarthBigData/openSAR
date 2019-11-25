@@ -63,9 +63,10 @@ Typically you want to install packages from the conda-forge community channel:
 
 #### OFFLINE Alternative installation from a local file channel (e.g. without Internet)
 Alternatively, you can also use a custom channel, e.g. from a file if provided:
+Important is to execute the second line to remove the defaults channel if the internet is slow
 
     conda config --add channels PATH-TO-CHANNEL-DIRECTORY --force
-    conda config --remove channels defaults # if internet is slow or off
+    conda config --remove channels defaults 
     conda update --yes --all
     conda install nb_conda_kernels
 
@@ -82,8 +83,8 @@ To clone the *openSAR* distribution with git open a terminal (Linux/Mac) or the 
 
 *NOTE FOR WINDOWS: Replace "mkdir" with "md"*
 
-    mkdir YOUR-GIT-REPOSOTORY-ROOT-PATH  # Optional, in case you already have a favorite path
-    cd YOUR-GIT-REPOSOTORY-ROOT-PATH     # e.g. /Users/me/github (Linux/Mac)
+    mkdir YOUR-GIT-REPOSOTORY-ROOT-PATH  
+    cd YOUR-GIT-REPOSOTORY-ROOT-PATH     
     git clone https://github.com/EarthBigData/openSAR.git
     
 Alternatively, if you don't use git or prefer not to clone, retrieve a *zip* archive of the openSAR distribution and install it on your local computer. Get the zip archive from: [https://github.com/EarthBigData/openSAR](https://github.com/EarthBigData/openSAR). Click the green **Clone or Download** button and choose **Download ZIP**. Unzip it in YOUR-GIT-REPOSOTORY-ROOT-PATH. Note that with this donwload method the branch name of the dstribution is part of the unzipped directory name, e.g. openSAR-master. You can rename that to openSAR if you want.
@@ -111,9 +112,11 @@ If you have cloned or downloaded the *openSAR* repository, the ***conda_ebd.yml*
 After *anaconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. 
     
 In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
-      
-    cd PATH-TO-openSAR  # Change directory to the openSAR installation
-    conda env create --quiet --file conda_ebd.yml  # --quiet is optional if you want to see what's going on
+
+    cd PATH-TO-openSAR  
+    conda env create --quiet --file conda_ebd.yml  
+   
+The --quiet flag is optional.  If you want to see what's going on, don't use this flag.
 
 **Alternative installation with file-based channel:**
 
