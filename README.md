@@ -14,6 +14,7 @@ EARTH BIG DATA's open source repository for Synthetic Aperture Radar Image Proce
 
 * Open source code
   * EBD SAR Time Series Plotting Tool as a [QGIS Plugin](code/QGIS)
+  * Tools to [manage Jupyter notebooks](code/Jupyter)
 
 * Training
   * [Material and Instructions](TRAINING_MATERIAL.md) for EBD/SERVIR Training Courses
