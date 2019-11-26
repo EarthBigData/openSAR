@@ -1,5 +1,5 @@
 # openSAR
-EARTH BIG DATA's open source repository for Synthetic Aperture Radar Image Processing. 
+[EARTH BIG DATA's](https://earthbigdata.com) open source repository for Synthetic Aperture Radar Image Processing. 
 
 * Installation Instructions
   * Follow these [INSTALLATION](INSTALLATION.md) instructions to set up EBD's *openSAR*
@@ -17,4 +17,4 @@ EARTH BIG DATA's open source repository for Synthetic Aperture Radar Image Proce
   * Tools to [manage Jupyter notebooks](code/Jupyter)
 
 * Training
-  * [Material and Instructions](TRAINING_MATERIAL.md) for EBD/SERVIR Training Courses
+  * [Material and Instructions](TRAINING_MATERIAL.md) for [EBD](https://earthbigdata.com)/[SERVIR](https://www.servirglobal.net/) Training Courses
