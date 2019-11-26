@@ -14,3 +14,4 @@ NOTE: You need to be logged into your github account  and have requested to be a
 The request being added as collaborator: send email to [training@earthbigdata.com](mailto:training@earthbigdata.com), 
 Subject: EBD/SERVIR TRAINING,Name,Affiliation,githubname 
 
+<a href="http://example.com/" target="_blank">Hello, world!</a>
