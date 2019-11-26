@@ -7,13 +7,10 @@
 SERVIR Training Material is available on
 [https://github.com/jkellndorfer/servir_training](https://github.com/jkellndorfer/servir_training)
 
-(NOTE: You need to be logged into your github account  and have requested to be added to the collaborator list)
+NOTE: You need to be logged into your github account  and have requested to be added to the collaborator list.
 
-To get access to training jupyter notebooks and data download instructions a github username is required to be added to the list of collaborators.
-(Obtain a free githubname at [https://github.com](https://github.com))
+ Get a free githubname at [https://github.com](https://github.com))
 
-Please send and email with your **githubname** to: 
-
-[training@earthbigdata.com](mailto:training@earthbigdata.com), 
+The request being added as collaborator: send email to [training@earthbigdata.com](mailto:training@earthbigdata.com), 
 Subject: EBD/SERVIR TRAINING,Name,Affiliation,githubname 
 
