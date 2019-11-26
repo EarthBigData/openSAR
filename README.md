@@ -3,7 +3,7 @@ EARTH BIG DATA's open source repository for Synthetic Aperture Radar Image Proce
 
 * Installation Instructions
   * Follow these [INSTALLATION](INSTALLATION.md) instructions to set up EBD's *openSAR*
-  * [conda_ebd.yml](notebooks/conda_ebd.yml) is the conda environment file to use with the instructions (Experts can just go ahead and use this with conda.)
+    * [conda_ebd.yml](notebooks/conda_ebd.yml) is the conda environment file to use with the instructions (Experts can just go ahead and use this with conda.)
   * To test the installation use the [InstallationTest.ipynb](notebooks/InstallationTest.ipynb) notebook and [testdata.zip](data/testdata.zip) data
   
 * notebooks
