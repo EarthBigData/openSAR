@@ -1,6 +1,6 @@
 # EBD/SERVIR Training Course Material
 
-- [To prepare for a training course, follow the [INSTALLATION](../INSTALLATION.md) instructions to set up **[Jupyter Notebooks](https://jupyter.org)**.  We use this installation for the  **[SERVIR](https://www.servirglobal.net/)** SAR Training Courses on Forest Monitoring
+- To prepare for a training course, follow the [INSTALLATION](../INSTALLATION.md) instructions to set up **[Jupyter Notebooks](https://jupyter.org)**.  We use this installation for the  **[SERVIR](https://www.servirglobal.net/)** SAR Training Courses on Forest Monitoring
 
 **All training material is available to anyone.**
 
