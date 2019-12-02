@@ -63,7 +63,7 @@ Typically you want to install packages from the conda-forge community channel:
 
 #### OFFLINE Alternative installation from a local file channel (e.g. without Internet)
 Alternatively, you can also use a custom channel, e.g. from a file if provided:
-Important is to execute the second line to remove the defaults channel if the internet is slow
+Important is to execute the second line *conda config --remove channels defaults* to avoid conflicts and if the internet is slow. For later updates one can add the channel back later with *conda config --add channels defaults*
 
     conda config --add channels PATH-TO-CHANNEL-DIRECTORY --force
     conda config --remove channels defaults 
