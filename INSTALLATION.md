@@ -155,8 +155,10 @@ Typically this would be *YOUR-GIT-REPOSOTORY-ROOT-PATH*
 
 On a shell commandline prompt (Linux, Mac) or the Anaconda Command Prompt (Windows) enter: 
 
-    source activate root  # Linux/Mac
-    activate root         # Windows
+    # Linux/Mac
+    source activate root  
+    # Windows:
+    activate root
 
 Then start the notebook server with:
 
