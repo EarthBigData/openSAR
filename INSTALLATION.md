@@ -68,7 +68,7 @@ Important is to execute the second line *conda config --remove channels defaults
     conda config --add channels PATH-TO-CHANNEL-DIRECTORY --force
     conda config --remove channels defaults 
     conda update --yes --all
-    conda install nb_conda_kernels
+    conda install --yes nb_conda_kernels
 
 Examples for PATH-TO-CHANNEL-DIRECTORY-NAME
 
