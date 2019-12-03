@@ -58,7 +58,7 @@ Typically you want to install packages from the conda-forge community channel:
 
     conda config --add channels conda-forge --force
     conda update --yes --all
-    conda install nb_conda_kernels
+    conda install --yes nb_conda_kernels
     
 
 #### OFFLINE Alternative installation from a local file channel (e.g. without Internet)
