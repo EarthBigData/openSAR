@@ -156,7 +156,7 @@ Typically this would be *YOUR-GIT-REPOSOTORY-ROOT-PATH*
 On a shell commandline prompt (Linux, Mac) or the Anaconda Command Prompt (Windows) enter: 
 
     # Linux/Mac
-    source activate root  
+    conda activate root  
     # Windows:
     activate root
 
