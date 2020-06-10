@@ -1,0 +1,14 @@
+name: jhub
+channels:
+- conda-forge
+- defaults
+dependencies:
+- nb_conda_kernels
+- jupyter
+- jupyterlab
+- jupyter_contrib_nbextensions
+- ipyleaflet
+- ipykernel
+- ipywidgets
+- jupyter-server-proxy
+- nodejs

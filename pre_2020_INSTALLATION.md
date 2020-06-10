@@ -27,13 +27,13 @@ If you don't have the code management software **git** installed on your system,
 ## Python
 Many aspects of geospatial data analysis can now be performed within the [**python**](https://www.python.org) programming language and its vast suite of open source contributed modules. Many python bindings exist today in major open source and commercial image processing and geographic information systems like [QGIS](https://qgis.org) and ArcGIS. Learning and using python for all spatial data analysis tasks prepares a trainee well for the future. 
 
-Python is as a scripting/programming language very similar to *Matlab* or *IDL*. As such, users familiar with these languages should readlily be able to read and write python code. Python also has a tight integration with the statistical programming language [R](https://www.r-project.org) via a RPy interface, such that many statistical routines available in R can be called from within a python program. R DataFrames are mimicked in python with the powerful [**pandas**](https://pandas.pydata.org) package. Numerical computations and matrix operations for image analysis is tightly integrated with the [**numpy**](http://www.numpy.org) \(*num*erical *py*thon) package. Raster data stacks are typically loaded with the powerful python implementation of the *Geospatial Data Abstraction Library* [**gdal**](http://gdal.org). NEW 2020: A very powerful new approach to big data processing is with [**xarray**](https://xarray.pydata.org) and [**dask**](https://dask.org). Data visualiation in python has advanced quite fast and parallels the capabilities of plotting of R via the main python plotting package [**matplotlib**](https://matplotlib.org) . The python [**bokeh**](https://bokeh.pydata.org/) and [**holoviews**](http://holoviews.org)packages provides powerful interactive data visualization tools ready for web integration. Scientific data analysis and image processing with python also leans heavily on the scikit packages like image processing with [**scikit-image**](http://scikit-image.org/) or machine learning with [**scikit-learn**](http://scikit-learn.org/).
+Python is as a scripting/programming language very similar to *Matlab* or *IDL*. As such, users familiar with these languages should readlily be able to read and write python code. Python also has a tight integration with the statistical programming language [R](https://www.r-project.org) via a RPy interface, such that many statistical routines available in R can be called from within a python program. R DataFrames are mimicked in python with the powerful [**pandas**](https://pandas.pydata.org) package. Numerical computations and matrix operations for image analysis is tightly integrated with the [**numpy**](http://www.numpy.org) \(*num*erical *py*thon) package. Raster data stacks are typically loaded with the powerful python implementation of the *Geospatial Data Abstraction Library* [**gdal**](http://gdal.org). Data visualiation in python has advanced quite fast and parallels the capabilities of plotting of R via the main python plotting package [**matplotlib**](https://matplotlib.org) . The python [**bokeh**](https://bokeh.pydata.org/) package provides powerful interactive data visualization tools ready for web integration. Scientific data analysis and image processing with python also leans heavily on the scikit packages like image processing with [**scikit-image**](http://scikit-image.org/) or machine learning with [**scikit-learn**](http://scikit-learn.org/).
 
 For a basic introduction to python see [https://www.learnpython.org/](https://www.learnpython.org/)
 
 ### Anaconda Python Installation
 
-Obtain and install the free **Miniconda python** distribution. We prefer to work with the latest python 3 version, 64-bit distribution.
+Obtain and install the free **Miniconda python** distribution. We prefer to work with the latest python 3 version (>=3.6), 64-bit distribution.
 
 The download and installation instructions are available at:
 
@@ -41,7 +41,7 @@ The download and installation instructions are available at:
 
 **NOTE FOR WINDOWS INSTALLATION:**
 PLEASE AVOID ALL SPACES IN FILENAMES,PATHNAMES, AND USERNAMES! IT's EASIEST TO INSTALL Miniconda at the root level, e.g. *C:\Miniconda3*
-When you run the Miniconda installer on Windows, you must make choices on whether to add Miniconda to the system path and registry. We recommend **NOT** doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda Prompt** window, which adds anaconda to the path. From there you can type your conda commands. If you don't do this, you can have python conflict problems.
+When you run the Miniconda installer on Windows, you must make choices on whether to add Mniconda to the system path and registry. We recommend **not** doing that (unchecking the two boxes), so that you can keep your system clean, like on Mac and Linux. To work with conda python, you then fire up a **Anaconda Prompt** window, which adds anaconda to the path. From there you can type your conda commands. If you don't do this, you can have python conflict problems.
 
     Fix for no Anaconda prompt:
     If there is no Anaconda Prompt (or it got lost), create a "New Shortcut" from the desktop. 
@@ -54,8 +54,6 @@ When you run the Miniconda installer on Windows, you must make choices on whethe
 After *miniconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type the lines from one of the online or off line instructions:
 
 #### ONLINE Installation from conda-forge 
-This is the preferred way if you have a decent internet connection.
-
 Typically you want to install packages from the conda-forge community channel:
 
     conda config --add channels conda-forge --force
@@ -91,7 +89,25 @@ To clone the *openSAR* distribution with git open a terminal (Linux/Mac) or the 
     
 Alternatively, if you don't use git or prefer not to clone, retrieve a *zip* archive of the openSAR distribution and install it on your local computer. Get the zip archive from: [https://github.com/EarthBigData/openSAR](https://github.com/EarthBigData/openSAR). Click the green **Clone or Download** button and choose **Download ZIP**. Unzip it in YOUR-GIT-REPOSOTORY-ROOT-PATH. Note that with this donwload method the branch name of the dstribution is part of the unzipped directory name, e.g. openSAR-master. You can rename that to openSAR if you want.
    
-## Setup the conda environments
+
+## Other code repositories
+
+Just like the installation for EBD's *openSAR* package, you can install all other packages found on github to YOUR-GIT-REPOSOTORY-ROOT-PATH. For some packages you need to be added as a collaborator to be able to access them.
+
+As an example, the 2018 SERVIR SAR Training course material can be obtained as a package as 
+
+    git clone https://github.com/jkellndorfer/servir_training.git
+    
+OR 
+    
+Download this zip archive: [https://github.com/jkellndorfer/servir_training/archive/master.zip](https://github.com/jkellndorfer/servir_training/archive/master.zip)
+
+## Setup the conda environment *ebd*
+To work with the code and notebooks, you need to establish virtual environments within Anaconda. The advantage of virtual environments is the complete separation of different dependencies for projects. For example, for our training programs we establish a conda environment named **ebd**. This will show up in the Jupyeter Notebook (see below) as the **ebd kernel**.
+
+To create the *ebd* environment use the [conda_ebd.yml](https://raw.githubusercontent.com/EarthBigData/openSAR/master/notebooks/conda_ebd.yml). On most browsers you can *Right Click* this link to save the file to your local machine. Make sure you are have the "raw" file and not an html version. Some browsers may add a ".txt" ending, so you may have to rename the file after download to "conda_ebd.yml". Save or move the file into the same directory path from which you will execute the command below. 
+
+If you have cloned or downloaded the *openSAR* repository, the ***conda_ebd.yml* is included in the openSAR root directory**.
 
 After *anaconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. 
     
@@ -101,26 +117,6 @@ In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
     conda env create --quiet --file conda_ebd.yml  
    
 The --quiet flag is optional.  If you want to see what's going on, don't use this flag.
-
-To work with the code and notebooks, you need to establish virtual environments within Anaconda. The advantage of virtual environments is the complete separation of different dependencies for projects. We provide environemnt files to create kernels in the conda environment to work with. You can obtain these files in the **openSAR/notebooks** folder or download directly from github:
-
-- [jhub.yml](https://raw.githubusercontent.com/EarthBigData/openSAR/master/notebooks/jhub.yml)
-- [ebd.yml](https://raw.githubusercontent.com/EarthBigData/openSAR/master/notebooks/ebd.yml)
-
-On most browsers you can *Right Click* this link to save the file to your local machine. Make sure you are have the "raw" file and not an html version. Some browsers may add a ".txt" ending, so you may have to rename the file after download to "conda_ebd.yml". Save or move the file into the same directory path from which you will execute the command below. 
-
-### jhub kernel
-We run our notebooks in jupyter lab (or notebook if you prefer) started from a separate **jhub** kernel. To install this kernel use the **jhub.yml** conda environment file found in the openSAR/notebooks folder
-
-In your Anaconda/Miniconda aware shell locate the environment files and type:
-
-    conda create env -f jhub.yml
-
-### ebd kernel
-For our training programs we establish a conda environment named **ebd**. This will show up in the Jupyter Lab/Notebook (see below) as the **ebd kernel**. To create the **ebd kernel** type:
-
-    conda create env -f ebd.yml
-
 
 **Alternative installation with file-based channel:**
 
@@ -152,24 +148,27 @@ Now you have a new virutal environment built called **ebd**.
 
 ## Jupyter Notebook 
 
-To start the Jupyter Lab server working on your local webbrowser,  change to the root directory where you want to keep the notebooks (advanced users can change the default directory for notebooks in a configuration file).
+To start the Jupyter notebook server working on your local webbrowser,  change to the root directory where you want to keep the notebooks.
 Typically this would be *YOUR-GIT-REPOSOTORY-ROOT-PATH*
 
     cd <PATH-TO-NOTEBOOK-DIRECTORY>
 
 On a shell commandline prompt (Linux, Mac) or the Anaconda Command Prompt (Windows) enter: 
 
-    conda activate jhub  
+    # Linux/Mac
+    conda activate root  
+    # Windows:
+    activate root
 
-Then start the Jupyter Lab server with:
+Then start the notebook server with:
 
-    jupyter lab
+    jupyter notebook
 
 This last command starts a local jupyter server on 
 
 [https://localhost:8888](https://localhost:8888) 
 
-The default webbrowser will be openeded and the jupyter lab  browser will be active. From the file menu a notebook can be selected and opened via double-click.
+The default webbrowser will be openeded and the jupyter notebook browser will be active. From the file menu a notebook can be selected and opened via double-click.
 
 To stop the notebook server, use the CRTL+C keystrokes and answer "y". With this keystroke you will also find at any time the notebook server http address with it's token code which you can use to paste into any webbrowser to get access to the server in case the browswer has been closed. E.g.:
 
@@ -184,24 +183,9 @@ To stop the notebook server, use the CRTL+C keystrokes and answer "y". With this
 As you see, if you don't answer "y" the server keeps running ...
 
 
-## Other code repositories
-
-Just like the installation for EBD's *openSAR* package, you can install all other packages found on github to YOUR-GIT-REPOSOTORY-ROOT-PATH. For some packages you need to be added as a collaborator to be able to access them.
-
-As an example, the SERVIR SAR Training course material can be obtained as a package as 
-
-    git clone https://github.com/jkellndorfer/servir_training.git
-    
-OR 
-    
-Download this zip archive: [https://github.com/jkellndorfer/servir_training/archive/master.zip](https://github.com/jkellndorfer/servir_training/archive/master.zip)
-
-
-
-
 ## QGIS
 
-In our courses we will also make etensive use of the open source Quantum GIS software **QGIS Version 3.10+**, preferably the **64 bit** version. If you install QGIS new, choose *Version 3.12*.
+During the course we will also make etensive use of the open source Quantum GIS software **QGIS Version 3.10**, preferably the **64 bit** version. If you install QGIS new, choose *Version 3.10*.
 
 To install QGIS please see download and installation instructions at [qgis.org](https://qgis.org/en/site/forusers/download.html)
 
@@ -228,6 +212,8 @@ Select the
 
     Windows:
     v3/plugins/Timeseries_SAR_v3_Windows.zip
+
+Note that version 2 is no longer maintained but provides an older version for QGIS version 2.
 
 
 ## EXAMPLE DATA SETS FOR TRAINING AND PLAYING
