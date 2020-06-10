@@ -94,13 +94,6 @@ Alternatively, if you don't use git or prefer not to clone, retrieve a *zip* arc
 ## Setup the conda environments
 
 After *anaconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. 
-    
-In the terminal (e.g. *bash* on Linux/Mac, *Anaconda Prompt* on Windows) type:
-
-    cd PATH-TO-openSAR  
-    conda env create --quiet --file conda_ebd.yml  
-   
-The --quiet flag is optional.  If you want to see what's going on, don't use this flag.
 
 To work with the code and notebooks, you need to establish virtual environments within Anaconda. The advantage of virtual environments is the complete separation of different dependencies for projects. We provide environemnt files to create kernels in the conda environment to work with. You can obtain these files in the **openSAR/notebooks** folder or download directly from github:
 
@@ -125,7 +118,7 @@ For our training programs we establish a conda environment named **ebd**. This w
 **Alternative installation with file-based channel:**
 
 If you are using a local file channel as the source for the installation files, you can add the path to the file channel directory as the first channels entry in your environment file before your rund the *conda env create* command 
-- Open the *conda_ebd.yml* file in a text editor.
+- Create for example a  *conda_ebd.yml* file in a text editor.
 - Undder the *channels:* line add the path to the file channel directory preceded with a '-'
 
 Your conda_ebd.yml file should then look some thing like this:
