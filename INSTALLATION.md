@@ -107,12 +107,12 @@ We run our notebooks in jupyter lab (or notebook if you prefer) started from a s
 
 In your Anaconda/Miniconda aware shell locate the environment files and type:
 
-    conda create env -f jhub.yml
+    conda env create -f jhub.yml
 
 ### ebd kernel
 For our training programs we establish a conda environment named **ebd**. This will show up in the Jupyter Lab/Notebook (see below) as the **ebd kernel**. To create the **ebd kernel** type:
 
-    conda create env -f ebd.yml
+    conda env create -f ebd.yml
 
 
 **Alternative installation with file-based channel:**
