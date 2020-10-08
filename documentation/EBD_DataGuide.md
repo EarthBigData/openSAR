@@ -80,7 +80,7 @@ Example:  18NZJ
 To idendify image data the following naming conventions are applied.
 
 - Fields are separated by an underscore '_'
-- Tile names are followed by a lowercase 's' (for sensor or satellite) and a two digit code for a sensor or satellite identification e.g. S1 (Sentinel-1), A1 (ALOS-1), A2 (ALOS-2), L8 (Landsat-8), S2 (Sentinel-2), N1 (NISAR-1) 
+- Tile names might be  followed by a lowercase 's' (for sensor or satellite) and a two digit code for a sensor or satellite identification e.g. S1 (Sentinel-1), A1 (ALOS-1), A2 (ALOS-2), L8 (Landsat-8), S2 (Sentinel-2), N1 (NISAR-1) 
 - Sentinel-1 is the default if no sensor or satellite qualifer is added after the tile ID
 - A series of indentifiers follows. See examples below.
 
@@ -93,8 +93,8 @@ To idendify image data the following naming conventions are applied.
 * Resolution:   20 meters
 * Flight direction: DESCENDING
 * Polarization: VH
-* Path: 068    (Leading 0s)
-* Processing level: multitemporally filtered (mtfil)
+* Path: 068    (three digit number with leading 0s)
+* Processing level identifier: e.g., multitemporally filtered (mtfil)
 * Image format: VRT File
 
 #### 20NRKsA1_A_HH_0118_mtfil.vrt
@@ -103,8 +103,8 @@ To idendify image data the following naming conventions are applied.
 * Sensor: A1    (ALOS-1)
 * Flight direction: ASCENDING
 * Polarization: HH
-* Path: 0118    (Leading 0s)
-* Processing level: multitemporally filtered (mtfil)
+* Path: 0118    (four digit number with leading 0s)
+* Processing level identifier: e.g., multitemporally filtered (mtfil)
 * Image format: VRT File
 
 #### 20NRKsS1_D_vv_0083_B_mtfil.vrt
@@ -147,7 +147,7 @@ GeoTIFF Images that are resulting from some standard time series metrics computa
 * Minimum:                _min.tif
 * Range (max-min):        _range.tif
 * Mean:                   _mean.tif
-* Variance:               _var.tif
+* Standard Deviation:     _std.tif
 * Coeff. of Variation:    _cov.tif
 * Sdiff (experimental)    _sdiff.tif
 * Count:                  _count.tif
