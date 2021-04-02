@@ -1,3 +1,8 @@
+NOTE: PLEASE CHANGE ALL `import gdal` imports to
+```
+from osgeo import gdal
+```
+
 # openSAR
 [EARTH BIG DATA's](https://earthbigdata.com) open source repository for Synthetic Aperture Radar Image Processing. 
 
