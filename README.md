@@ -2,6 +2,7 @@ NOTE: PLEASE CHANGE ALL `import gdal` imports to
 ```
 from osgeo import gdal
 ```
+in all python programs and notebooks
 
 # openSAR
 [EARTH BIG DATA's](https://earthbigdata.com) open source repository for Synthetic Aperture Radar Image Processing. 
