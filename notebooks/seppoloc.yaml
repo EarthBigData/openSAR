@@ -5,7 +5,7 @@ dependencies: [adlfs, aiobotocore, awscli, bokeh=2.2.3, boto3, cartopy, dask-lab
   gcsfs, geoviews, go, graphviz, h5netcdf, h5py, hologridgen, holoviews=1.14.1, hvplot,
   intake, intake-geopandas, intake-stac, intake-xarray, ipykernel, ipyleaflet, ipywidgets,
   jinja2, jq, lxml, lz4, metpy, nbgitpuller, nodejs, nomkl, numba, opencv, owslib,
-  panel, pip, psycopg2, pyepsg, python-gist, python=3.8, pyyaml, rasterio, rechunker,
+  pandas=1.2, panel, pip, psycopg2, pyepsg, python-gist, python=3.8, pyyaml, rasterio, rechunker,
   requests, rioxarray, rsync, s3fs, sat-search, sat-stac, satpy, scikit-image, scikit-learn,
   scipy, tornado, utide, vim, xarray, xarray-spatial, zarr, cdsdashboards-singleuser>=0.5.6]
   
