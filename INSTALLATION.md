@@ -99,6 +99,7 @@ To work with the code and notebooks, you need to establish virtual environments 
 
 - [jhub.yml](https://raw.githubusercontent.com/EarthBigData/openSAR/master/notebooks/jhub.yml)
 - [ebd.yml](https://raw.githubusercontent.com/EarthBigData/openSAR/master/notebooks/ebd.yml)
+- [seppoloc.yml - newest kernel. Use for local visualization installations, e.g. with global_coherence notebooks](https://raw.githubusercontent.com/EarthBigData/openSAR/master/notebooks/seppoloc.yml)
 
 On most browsers you can *Right Click* this link to save the file to your local machine. Make sure you are have the "raw" file and not an html version. Some browsers may add a ".txt" ending, so you may have to rename the file after download to "conda_ebd.yml". Save or move the file into the same directory path from which you will execute the command below. 
 
