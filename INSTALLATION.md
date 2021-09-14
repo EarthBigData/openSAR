@@ -97,11 +97,11 @@ After *anaconda* is installed, ensure that the environment variables are set cor
 
 To work with the code and notebooks, you need to establish virtual environments within Anaconda. The advantage of virtual environments is the complete separation of different dependencies for projects. We provide environemnt files to create kernels in the conda environment to work with. You can obtain these files in the **openSAR/notebooks** folder or download directly from github:
 
-- [jhub.yml](https://raw.githubusercontent.com/EarthBigData/openSAR/master/notebooks/jhub.yml)
-- [ebd.yml](https://raw.githubusercontent.com/EarthBigData/openSAR/master/notebooks/ebd.yml)
-- [seppoloc.yml - newest kernel. Use for local visualization installations, e.g. with global_coherence notebooks](https://raw.githubusercontent.com/EarthBigData/openSAR/master/notebooks/seppoloc.yml)
+- [jhub.yml](https://raw.githubusercontent.com/EarthBigData/openSAR/master/yaml/jhub.yml)
+- [ebd.yml](https://raw.githubusercontent.com/EarthBigData/openSAR/master/yaml/ebd.yml)
+- [seppoloc.yml - newest kernel. Use for local visualization installations, e.g. with global_coherence notebooks](https://raw.githubusercontent.com/EarthBigData/openSAR/master/yaml/seppoloc.yml)
 
-On most browsers you can *Right Click* this link to save the file to your local machine. Make sure you are have the "raw" file and not an html version. Some browsers may add a ".txt" ending, so you may have to rename the file after download to "conda_ebd.yml". Save or move the file into the same directory path from which you will execute the command below. 
+On most browsers you can *Right Click* this link to save the file to your local machine. Make sure you are have the "raw" file and not an html version. Some browsers may add a ".txt" ending, so you may have to rename the file after download to "ebd.yml". Save or move the file into the same directory path from which you will execute the command below. 
 
 ### jhub kernel
 We run our notebooks in jupyter lab (or notebook if you prefer) started from a separate **jhub** kernel. To install this kernel use the **jhub.yml** conda environment file found in the openSAR/notebooks folder
@@ -119,10 +119,10 @@ For our training programs we establish a conda environment named **ebd**. This w
 **Alternative installation with file-based channel:**
 
 If you are using a local file channel as the source for the installation files, you can add the path to the file channel directory as the first channels entry in your environment file before your rund the *conda env create* command 
-- Create for example a  *conda_ebd.yml* file in a text editor.
+- Create for example a  *ebd.yml* file in a text editor.
 - Undder the *channels:* line add the path to the file channel directory preceded with a '-'
 
-Your conda_ebd.yml file should then look some thing like this:
+Your ebd.yml file should then look some thing like this:
 
     name: ebd
     channels:
