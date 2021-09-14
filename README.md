@@ -15,7 +15,7 @@ in all python programs and notebooks
   * Collection of Jupyter [notebooks](notebooks) around all things SAR
 
 * yaml
-  * Collenction of environment files to be used with `conda` (see  [InstallationTest.ipynb](notebooks/InstallationTest.ipynb))
+  * Collenction of environment files to be used with `conda` (see  [INSTALLATION](INSTALLATION.md))
 
 * Data documentations
   * EBD SAR Time Series [Data Guide](documentation/EBD_DataGuide.md)
