@@ -21,3 +21,4 @@ do
 	gdalbuildvrt -separate -input_file_list optfile ${TILE}_${P}.vrt
 	seppo_name_bands.py ${TILE}_${P}.vrt optfile
 done
+rm -rf optfile
