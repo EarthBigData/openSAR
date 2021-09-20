@@ -19,6 +19,9 @@ do
 		ls ${TILE}_${S}_*${P}*.tif >> optfile
 	done
 	gdalbuildvrt -separate -input_file_list optfile ${TILE}_${P}.vrt
-	seppo_name_bands.py ${TILE}_${P}.vrt optfile
+	if [ $(which seppo_name_bands.py) ]
+	then 
+	   	seppo_name_bands.py ${TILE}_${P}.vrt optfile
+	fi
 done
 rm -rf optfile
