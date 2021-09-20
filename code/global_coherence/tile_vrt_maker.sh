@@ -23,5 +23,6 @@ do
 	then 
 	   	seppo_name_bands.py ${TILE}_${P}.vrt optfile
 	fi
+	cp optfile ${TILE}_${P}.vrt-bandnames.txt
 done
 rm -rf optfile
