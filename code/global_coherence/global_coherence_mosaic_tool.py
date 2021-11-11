@@ -196,7 +196,7 @@ def myargsparse(a):
 	p.add_argument("-sm","--show_metrics",required=False,help='Show all available metrics',action='store_true',default=False)
 	p.add_argument("-n","--name",required=False,help='Name prefix for region of interest (Note: "_" in name will be replaced with "-"). If "ULLR", name will be generated from Lon/Lat ranges extracted from the selected tiles, e.g. UL-N50W090-LR-N48W088' ,action='store',default='ULLR')
 	p.add_argument("-tileids","--tileids",nargs='*',help="List of tileids OR file with tileids.",action='store',default=None)
-	p.add_argument("-m","--metrics",required=False,help='Selection of metrics. Defaults to all (see -sm for valid selections)',action='store',default=None,nargs='*')
+	p.add_argument("-m","--metrics",required=False,help='List of metrics OR file with metrics. Defaults to all (see -sm for valid selections)',action='store',default=None,nargs='*')
 	p.add_argument("-ullr","--ullr",nargs=4,type=float,required=False,help='Extent of region given by upper left lon/lat and  lower right lon/lat coordinates (can be fractional)', action='store',default=None,metavar=('ULlon','ULlat','LRlon','LRlat'))
 	p.add_argument("-u","--url_root",required=False,help=help_url_root,action='store',default='s3://sentinel-1-global-coherence-earthbigdata')
 	p.add_argument("-p","--path",required=False,help='Path or key (s3 Bucket) prefix where tiles are stored, e.g. "tiles" and -u /mnt/e would result in a search path of /mnt/e/tiles' ,action='store',default='data/tiles')
