@@ -222,7 +222,7 @@ def myargsparse(a):
 
 	args.save_to_s3=False
 
-	if not args.make_geotiff:
+	if not args.make_geotiff and not args.show_metrics:
 		print(f'Not makeing geotiffs, hence setting cachedir to outdir {args.outdir} and not allowing -delete')
 		args.cache_path=args.outdir
 		args.delete_cached=False
