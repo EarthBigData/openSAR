@@ -11,12 +11,13 @@ These scripts are source code based on Gamma Remote Sensing AG Software to gener
 - coherence decay model parameters
 - incidence angle and layover shadow files
 
-- step-1-1-slc2bursts.py
-- step-1-2-bursts2burstGroups.py
-- step-2-1-insar_processor.py
-- step-3-1-compositing.py
-- step-4.1-mosaics.py
-
+```
+step-1-1-slc2bursts.py
+step-1-2-bursts2burstGroups.py
+step-2-1-insar_processor.py
+step-3-1-compositing.py
+step-4.1-mosaics.py
+```
 
 ### 2. Subsetting/Mosaicking tool to access the data located on AWS in the bucket s3://sentinel-1-global-coherence-earthbigdata
 
