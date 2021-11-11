@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 '''
-Mosaicking and subsetting tool for Global Coherence and Backscatter Data Set
+Mosaicking tool for Global Coherence Data set
 
 Author: Josef Kellndorfer
 (c) 2021, Earth Big Data LLC
@@ -20,10 +20,6 @@ from multiprocessing import cpu_count
 from pathlib import Path
 
 import datetime
-
-# S3 access credentials for opendata
-aws_access_key_id = 'AKIAYDYYUJYBIJWSVDW5'
-aws_secret_access_key = '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'
 
 
 MAXWORKERS=12
@@ -133,96 +129,69 @@ def myargsparse(a):
 
 	epilog=\
 	f"""
-	\r**************************************************************
-	\r*                                                            *
-	\r*  Earth Big Data LLC/Gamma Remote Sensing                   *
-	\r*  Global Coherence and Backscatter Products Mosaicking      *
-	\r*                                                            *
-	\r*                                                            *
-	\r*  Version 1.2, 2021-09-20,jmk                               *
-	\r*                                                            *
-	\r*  (c) 2021 Earth Big Data LLC Creative Commons License 4.0  * 
-	\r*  https://creativecommons.org/licenses/by/4.0/              *
-	\r*                                                            *
-	\r**************************************************************
-
-	\r Requirements: 
-	\r 1) AWSCLI Client (aws). Obtain at: https://aws.amazon.com/cli
-	\r 2) GDAL Software. Obtain at: https://gdal.org
+	\r***************************************************
+	\r*                                                 *
+	\r*  Earth Big Data LLC/Gamma Remote Sensing        *
+	\r*  Global Cohernce Products Mosaicking            *
+	\r*  for NASA Jet Propulsion Laboratory Project     *
+	\r*                                                 *
+	\r*  Version 1.0, 2020-04-13,jmk                    *
+	\r*                                                 *
+	\r***************************************************
 
 	\r Note: Geographic tile names refer to a 1x1 degree tile identified by the UPPER LEFT lat/lon coordinate pair
 	\r e.g. 'N45W090' covers the tile from longitude W090 to W089 and latitude N44 to N45
 
-	\r***** Extent of subset via tileids or ULLR:
+	\r REQUIRED PARAMETER:
+	\r -n NAME 
+
+
+	\nEXAMPLES:
+
+	\r*** Extent
 	\r- from geographic coordinates provided as upper left lon/lat and lower right lon/lat coordinates
 	\r- List of tile names provided in a in a text file
 	\r- list of tile names as input list 
 
+	******* cache from s3 bucket, keep locally
+	\r{thisprog} -n Myregion -u s3://ebd-sentinel-1-l3-coherence  -c /dev/shm/tiles -ullr -115 50 -100 40
+	******* cache from s3 bucket, upload back to s3 bucket and delete locally
+	\r{thisprog} -n NorthAmerica -u s3://ebd-sentinel-1-l3-coherence  -c /dev/shm/tiles -t NAtiles.txt -s3 -delete
+	\r{thisprog} -n NorthAmerica -u s3://ebd-sentinel-1-l3-coherence  -c /dev/shm/tiles -t s3://ebd-scratch-w/jpl_coherence/north_america/NAtiles.txt -s3 -delete
 
-	\nEXAMPLES:
-	\r******* Get http download urls for AWS resource:
-	\r{thisprog} -ullr -115 50 -105 40 -http /tmp/coherence/download_urls.txt
-
-	\r******* Make GeoTIFF files of a set of metrics for an extent given by upper left and lower right tile coordinates
-	\r{thisprog} -ullr -90 45 -88 43 -o /tmp/global_coherence -v -mg -delete -m winter_vv_COH12 spring_vv_COH12 summer_vv_COH12 fall_vv_COH12
-	\r******* Make GeoTIFF files of a set of metrics for an extent given by Tile IDs
-	\r{thisprog} -tileids N45W095 N44W095 -o /tmp/global_coherence -v -mg -delete -m winter_vv_COH12 spring_vv_COH12 summer_vv_COH12 fall_vv_COH12
-
-	\r******* Make VRTs of cached files locally with a name of MyRegion for backscatter amplitudes
-	\r{thisprog} -n Myregion -o /tmp/global_coherence_vrts -ullr -115 50 -110 45 -m winter_vv_AMP winter_vh_AMP
-
-
-
-	\r******* Metrics selection (default all)
+	\r*** Metrics selection (default all)
 	\r- explicit on commandline
 	\r- via text file
-	\r{thisprog} -m summer_vv_COH12 summer_vv_AMP summer_vh_AMP
-	\r{thisprog} -m metrics.txt
+	\r{thisprog} -n Global -m summer_vv_COH12 summer_vv_AMP summer_vh_AMP
+	\r{thisprog} -n Global -m metrics.txt
 
-	\r******* No caching, e.g., assuming all tiles are available in /home/me/tiles
+	\r*** No caching, e.g., assuming all tiles are available in /home/me/tiles
 	\r {thisprog} -n ULLR -ullr -115 50 -100 40 -m winter_hh_AMP -u / -p home/me/tiles -c ""
 	"""
 
-	help_url_root="\
-	\r  Source of tiles on cloud or locally. Options:\
-	\n  1) AWS S3    access: s3://sentinel-1-global-coherence-earthbigdata\
-	\n  2) Local     access: /<path>/<to>/<downloaded>/<tile>/<root>\
-	"
 
 	p = argparse.ArgumentParser(description=epilog,prog=thisprog,formatter_class=CustomFormatter)
-	p.add_argument("-sm","--show_metrics",required=False,help='Show all available metrics',action='store_true',default=False)
-	p.add_argument("-n","--name",required=False,help='Name prefix for region of interest (Note: "_" in name will be replaced with "-"). If "ULLR", name will be generated from Lon/Lat ranges extracted from the selected tiles, e.g. UL-N50W090-LR-N48W088' ,action='store',default='ULLR')
+	p.add_argument("-n","--name",required=True,help='Name prefix for region of interest, e.g. "Global", NorthAmerica" (Note: "_" in name will be replaced with "-"). If "ULLR", name will be generated from Lon/Lat ranges extracted from the selected tiles, e.g. UL-N50W090-LR-N48W088' ,action='store')
 	p.add_argument("-tileids","--tileids",nargs='*',help="List of tileids OR file with tileids.",action='store',default=None)
-	p.add_argument("-m","--metrics",required=False,help='Selection of metrics. Defaults to all (see -sm for valid selections)',action='store',default=None,nargs='*')
+	p.add_argument("-m","--metrics",required=False,help='Selection of metrics to produce VRTs for. Defaults to all (see -sm for valid selections)',action='store',default=None,nargs='*')
+	p.add_argument("-sm","--show_metrics",required=False,help='Show all available metrics',action='store_true',default=False)
 	p.add_argument("-ullr","--ullr",nargs=4,type=float,required=False,help='Extent of region given by upper left lon/lat and  lower right lon/lat coordinates (can be fractional)', action='store',default=None,metavar=('ULlon','ULlat','LRlon','LRlat'))
-	p.add_argument("-u","--url_root",required=False,help=help_url_root,action='store',default='s3://sentinel-1-global-coherence-earthbigdata')
-	p.add_argument("-p","--path",required=False,help='Path or key (s3 Bucket) prefix where tiles are stored, e.g. "tiles" and -u /mnt/e would result in a search path of /mnt/e/tiles' ,action='store',default='data/tiles')
-	p.add_argument("-c","--cache_path",required=False,help='local directory path to cache tiles. For no caching, this can be set to "", if -url_root <URL_RROT> is a local or nfs mounted file system. If -mg is not set, make this the output dir and do not set -delete!',action='store',default='/tmp/cached_tiles')
-	p.add_argument("-delete","--delete_cached",required=False,help='delete cached files after processing (only viable with either -mg or -s3)', action='store_true',default=False)
-	# p.add_argument("-s3","--save_to_s3",required=False,help='Writes the .vrt and .vrt.ovr files back to the bucket', action='store_true',default=False)
+	p.add_argument("-u","--url_root",required=False,help='URL root for tiles, e.g. "s3://<Bucket>" (AWS/Wasabi s3 Bucket) or "/" (local filesystem), "/mnt/t" (nfs mounted file system) where tiles are stored.',action='store',default='s3://ebd-sentinel-1-l3-coherence')
+	p.add_argument("-p","--path",required=False,help='Path or key (s3 Bucket) prefix where tiles are stored, e.g. "tiles" and -u /mnt/e would result in a search path of /mnt/e/tiles' ,action='store',default='')
+	p.add_argument("-c","--cache_path",required=False,help='local directory path to cache tiles. For no caching, this can be set to "", if -url_root <URL_RROT> is a local or nfs mounted file system',action='store',default='/dev/shm/cached_tiles')
+	p.add_argument("-delete","--delete_cached",required=False,help='delete cached files after processing (only allowed with -s3)', action='store_true',default=False)
+	p.add_argument("-s3","--save_to_s3",required=False,help='Writes the .vrt and .vrt.ovr files back to the bucket', action='store_true',default=False)
 	p.add_argument("-mo","--make_overviews",required=False,help='Make overviews with gdaladdo (external). Levels can be set with -ol', action='store_true',default=False)
 	p.add_argument("-ol","--overview_levels",nargs='*',type=int,required=False,help='Overview levels for gdaladdo', action='store',default=[3,9,27,81])
 	p.add_argument("-tr","--target_resolution",nargs=2,type=float,required=False,help='target_resolution for "gdal_translate -tr XRES YRES -r average ..." call. When provided will generate cloud optimized geotiff output at -o OUTDIR', action='store',default=None,metavar=('XRES','YRES'))
-	p.add_argument("-mg","--make_geotiff",required=False,help='Make geotiffs at native resolution', action='store_true',default=False)
-	p.add_argument("-o","--outdir",required=False,help='URL root to store generated COGs if -tr is provided. Can filesystem path or s3 url. e.g. s3://<my-bucket>/coherence ',action='store',default='/tmp/global_coherence')
+	p.add_argument("-o","--outdir",required=False,help='URL root to store generated COGs if -tr is provided. Can filesystem path or s3 url. e.g. s3://ebd-jpl ',action='store',default='s3://ebd-sentinel-1-l3-coherence/mosaics')
 	p.add_argument("-t","--threads",type=int,required=False,help='maximum number of threads', action='store',default=4)
-	p.add_argument("-http","--http_urls",required=False,help='If set, produces http download URLs as output into a file. No other action performed.', action='store',default=None)
 	p.add_argument("-dryrun","--DryRun",required=False,help='DryRun.', action='store_true',default=False)
 	p.add_argument("-v","--verbose",required=False,help="Verbose output",action='store_true',default=False)
 	args=p.parse_args(a[1:])
 
 	if args.verbose:
-		d=vars(args)
-		print('Parameter settings:')
-		for i in d:
-			print(i,'=',d[i])
-
-	args.save_to_s3=False
-
-	if not args.make_geotiff:
-		print(f'Not makeing geotiffs, hence setting cachedir to outdir {args.outdir} and not allowing -delete')
-		args.cache_path=args.outdir
-		args.delete_cached=False
+		print(args)
 
 	return args
 
@@ -271,7 +240,7 @@ def make_optfile(tiles,metric,dst_tilepath,optfilename=None):
 	rootpath=Path(dst_tilepath)
 	for t in tiles:
 		path=rootpath.joinpath(t)
-		files+=[os.path.join(path.name,x.name) for x in path.rglob(f'{t}_*{metric}.tif')]
+		files+=[os.path.join(path.name,x.name) for x in path.rglob(f'*{metric}.tif')]
 
 	files.sort()
 	if optfilename:
@@ -285,7 +254,7 @@ def make_optfile(tiles,metric,dst_tilepath,optfilename=None):
 
 def get_tiles(args):
 	if args.url_root.startswith('s3://'):
-		fs = fsspec.filesystem('s3',key=aws_access_key_id,secret=aws_secret_access_key,client_kwargs={'endpoint_url':'https://s3.us-west-2.amazonaws.com'})
+		fs = fsspec.filesystem('s3')
 		src_path=args.url_root.rstrip('/')+'/'+args.path.strip('/')
 	else:
 		fs = fsspec.filesystem('file')
@@ -356,11 +325,11 @@ def rmtree(dir2remove):
 def make_vrts(tiles,selected_metrics,args):
 	'''Make the vrts and overviews
 	Example:
-	aws s3 sync s3://sentinel-1-global-coherence-earthbigdata/ . --exclude "*" --include "N*W*/*summer_vv_COH12',"
+	aws s3 sync s3://ebd-sentinel-1-l3-coherence/ . --exclude "*" --include "N*W*/*summer_vv_COH12',"
 	gdalbuildvrt -srcnodata 0 -vrtnodata 0 NA_summer_vv_COH12.vrt */*tif
 	gdaladdo -r average -ro NA_summer_vv_COH12.vrt 3 9 27 81
-	aws s3 cp NA_summer_vv_COH12.vrt s3://sentinel-1-global-coherence-earthbigdata/NA_summer_vv_COH12.vrt
-	aws s3 cp NA_summer_vv_COH12.vrt.ovr s3://sentinel-1-global-coherence-earthbigdata/NA_summer_vv_COH12.vrt.ovr
+	aws s3 cp NA_summer_vv_COH12.vrt s3://ebd-sentinel-1-l3-coherence/NA_summer_vv_COH12.vrt
+	aws s3 cp NA_summer_vv_COH12.vrt.ovr s3://ebd-sentinel-1-l3-coherence/NA_summer_vv_COH12.vrt.ovr
 
 	Loop over metrics, find the tifs, cache the tifs locally, build vrt, make overviews, write back to bucket
 	'''
@@ -373,13 +342,12 @@ def make_vrts(tiles,selected_metrics,args):
 
 	CWD=os.getcwd()
 
-	cmd_cache_root='aws s3 sync --region us-west-2' if args.url_root.startswith('s3://') else '/bin/cp -R -n'
+	cmd_cache_root='aws s3 sync' if args.url_root.startswith('s3://') else '/bin/cp -R -n'
 
 	vrtnames=[]
 	cognames=[]
 
 	for metric in selected_metrics:
-		print(f'Processing {metric}')
 
 		# 1. Cache files
 		if args.cache_path:
@@ -394,12 +362,11 @@ def make_vrts(tiles,selected_metrics,args):
 				if args.url_root.startswith('s3://'):
 
 					tilepath='' if not args.path else args.path.strip('/')
-					url_root=args.url_root.rstrip('/')+'/'+tilepath+'/'
+					url_root=args.url_root.rstrip('/')+'/'+tilepath
 					tile_url_src=url_root+tile
 					tile_url_dst=os.path.join(dst_tilepath,tile)
-					os.environ['aws_access_key_id'.upper()]=aws_access_key_id
-					os.environ['aws_secret_access_key'.upper()]=aws_secret_access_key
-					cmd=f'{cmd_cache_root} {tile_url_src} {tile_url_dst} --size-only --quiet --exclude * --include *{metric}.tif'
+
+					cmd=f'aws s3 sync {tile_url_src} {tile_url_dst} --size-only --quiet --exclude * --include *{metric}.tif'
 					cmds.append(cmd)
 			if args.verbose:
 				if tilecount<=10:
@@ -409,7 +376,7 @@ def make_vrts(tiles,selected_metrics,args):
 					print('... (first 10 only shown above)')
 
 			if not args.DryRun:
-				execute_parallel(cmds,timeout=7200,maxthreads=args.threads,verbose=args.verbose)
+				execute_parallel(cmds,timeout=7200,maxthreads=args.threads)
 			else:
 				workers=min(MAXWORKERS,cpu_count())  
 				workers=min(workers,len(cmds))
@@ -424,9 +391,6 @@ def make_vrts(tiles,selected_metrics,args):
 		vrtname=f'{vrtname}_{metric}.vrt'
 		vrtnames.append(vrtname) # add the vrtname to the list of vrtnames
 		optfile=make_optfile(tiles,metric,dst_tilepath,optfilename=None)
-		if not optfile:
-			print(f'**** WARNING: No Metric --{metric}-- available for selected tiles ****')
-			continue
 		#print(optfile)
 		if isinstance(optfile,str):
 			build_vrt_command=f'gdalbuildvrt -srcnodata 0 -vrtnodata 0 -input_file_list {optfile} {vrtname}'
@@ -435,8 +399,7 @@ def make_vrts(tiles,selected_metrics,args):
 
 		# build_vrt_commands.append(build_vrt_command)
 		if not args.DryRun:
-			if args.verbose:
-				print(build_vrt_command)
+			print(build_vrt_command)
 			out=gdal.BuildVRT(vrtname,optfile,srcNodata=0,VRTNodata=0)
 			out=None
 			if isinstance(optfile,str):
@@ -448,8 +411,7 @@ def make_vrts(tiles,selected_metrics,args):
 		if args.save_to_s3:
 			cmdvrt   =f'aws s3 cp {vrtname} {url_root}{vrtname}'
 			if url_root and not args.DryRun:
-				if args.verbose:
-					print(cmdvrt)
+				print(cmdvrt)
 				sp.check_call(cmdvrt.split())
 			elif not url_root:
 				print('Replace "None" with appropriate s3 URL and run command from commandline (also check permissions for bucket).')
@@ -457,17 +419,42 @@ def make_vrts(tiles,selected_metrics,args):
 				print(f'{DRYRUN} {cmdvrt}')
 
 		# 3. Make COGs if target_resolution is provided
-		if args.make_geotiff:
-			args.target_resolution=[0.000833333330000,-0.000833333330000]
 		if args.target_resolution:
 			cogname=make_COG(args,vrtname)
 			cognames.append(cognames)
 
+		# 4. Build overviews 
+		'''
+		TODO CHANGE APPROACH with recursive building of overviews...
+
+		Solution from: 
+		
+		http://osgeo-org.1560.x6.nabble.com/gdal-dev-gdaladdo-taking-very-long-time-to-build-overviews-for-large-extent-mosaic-td5384701.html
+
+		Yes, this is a well known issue due to costly 'context switching' in the
+		libtiff library. A solution is to create external overviews, and one level at
+		a time, and repeat the creation of a new level on the .ovr of the previous
+		level.
+
+		So:
+		gdaladdo -ro [options here] mosaic.tif 2 (actually you can do it on the .vrt
+		file directly to, and rename the .vrt.ovr as mosaic.tif.ovr)
+		gdaladdo -ro [options here] mosaic.tif.ovr 2
+		gdaladdo -ro [options here] mosaic.tif.ovr.ovr 2
+		gdaladdo -ro [options here] mosaic.tif.ovr.ovr.ovr 2
+		etc
+
+		If you want a single file at the end, you then do:
+
+		gdal_translate mosaic.tif final.tif -co COPY_SRC_OVERVIEWS=YES [other options]
+
+		In that case, you'd better drop the JPEG compression in the first
+		gdal_translate and gdaladdo steps, and only apply it in the final stage.
+'''
 		if args.make_overviews:
 			build_overviews_command=f"gdaladdo -ro -r average {vrtname} {' '.join([str(x) for x in args.overview_levels])}"
 			if not args.DryRun:
-				if args.verbose:
-					print(build_overviews_command)
+				print(build_overviews_command)
 				sp.check_call(build_overviews_command.split())
 			else:
 				print(f'{DRYRUN}',build_overviews_command)
@@ -476,8 +463,7 @@ def make_vrts(tiles,selected_metrics,args):
 		if args.save_to_s3 and args.make_overviews:
 			cmdvrtovr=f'aws s3 cp {vrtname}.ovr {url_root}{vrtname}.ovr'
 			if url_root and not args.DryRun:
-				if args.verbose:
-					print(cmdvrtovr)
+				print(cmdvrtovr)
 				sp.check_call(cmdvrtovr.split())
 
 			elif not url_root:
@@ -512,8 +498,6 @@ def make_COG(args,vrtname):
 
 	if args.outdir:
 		fstype='s3' if args.outdir.startswith('s3://') else 'file'
-		if fstype=='file':
-			os.makedirs(args.outdir,exist_ok=True)
 		fs=fsspec.filesystem(fstype)
 		lpath=os.path.join(os.getcwd(),cogname)
 		rpath=os.path.join(args.outdir,os.path.basename(cogname))
@@ -526,15 +510,14 @@ def make_COG(args,vrtname):
 	return cogname
 
 
-def execute_parallel(cmds,timeout=7200,maxthreads=None,verbose=False):
+def execute_parallel(cmds,timeout=7200,maxthreads=None):
 	workers=min(MAXWORKERS,cpu_count())  
 	workers=min(workers,len(cmds))
 	if maxthreads:
 		workers=min(workers,maxthreads)
 
 	pars=cmds
-	if verbose:
-		print(f'Executing {len(cmds)} jobs with {workers} threads...',end='')
+	print(f'Executing {len(cmds)} jobs with {workers} threads...',end='')
 	sys.stdout.flush()
 	with cf.ThreadPoolExecutor(max_workers=workers) as executor:
 		# Start the wrapper
@@ -544,29 +527,8 @@ def execute_parallel(cmds,timeout=7200,maxthreads=None,verbose=False):
 				future.result(timeout=timeout)  # Give it 30 minutes max
 			except cf.TimeoutError as e:
 				print('Timeout error',e)
-	if verbose:
-		print('done.')
+	print('done.')
 
-
-def make_https_urls(tiles,selected_metrics,outfile):
-	try:
-		os.makedirs(os.path.basename(outfile),exist_ok=True)
-		with open(outfile,"w") as f:
-			f.write('')
-	except:
-		print(f'Cannot generate {outfile}')
-		return 0
-
-	urls=[]
-	for t in tiles:
-		for m in selected_metrics:
-			url=f'https://sentinel-1-global-coherence-earthbigdata.s3.us-west-2.amazonaws.com/data/tiles/{t}/{t}_{m}.tif'
-			urls.append(url)
-
-	with open(outfile,"w") as f:
-		f.write('\n'.join(urls))
-
-	return len(urls)
 
 
 def processing(args):
@@ -575,38 +537,26 @@ def processing(args):
 		sys.stdout.write('\n'.join(METRICS))
 		return 
 	# Get tiles 
-	print(f"\nEarth Big Data's TOOL FOR SUBSETTING GLOBAL COHERENCE DATA SET\n")
-	# Get Metrics
-	selected_metrics = get_metrics(args)
-	print(f'Metric(s) to be produced: {len(selected_metrics)}')
-	if args.verbose:
-		print('\n'.join(selected_metrics))
-	sys.stdout.flush()
-	print("Locating tiles...",end='')
-	sys.stdout.flush()
 	tiles            = get_tiles(args)
-	print('done')
-	sys.stdout.flush()
 	if not tiles:
 		return
-
-	if args.http_urls:
-			nurls = make_https_urls(tiles,selected_metrics,args.http_urls)
-			print(f'Wrote {nurls} URLs to file {args.http_urls}')
-			return
-
-	print(f'Making mosaics for {len(tiles)} tile(s).')
+	print(f'\nMaking vrts for {len(tiles)} tile(s).')
 	if args.verbose:
 		if len(tiles) > 100:
 			print(f'Listing 100 of {len(tiles)} tiles:')
-			print(' '.join(tiles[:10]),'\n...\n',' '.join(tiles[-10:]))
+			print(' '.join(tiles[:50]),'\n...\n',' '.join(tiles[-50:]))
 		else:
 			print(' '.join(tiles))
 
+	# Get Metrics
+	selected_metrics = get_metrics(args)
+	print(f'\nMetric(s) to be produced: {len(selected_metrics)}')
+	if args.verbose:
+		print('\n'.join(selected_metrics))
 
 	vrtnames,cognames = make_vrts(tiles,selected_metrics,args)
 
-	print(f'Results in\n{args.outdir}')
+
 
 def main(a):
 
