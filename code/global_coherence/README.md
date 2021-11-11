@@ -21,7 +21,7 @@ step-4.1-mosaics.py
 
 ### 2. Subsetting/Mosaicking tool to access the data located on AWS in the bucket s3://sentinel-1-global-coherence-earthbigdata
 
-Execute check_modules.py to verify that required python modules are available.
+Execute `check_modules.py` to verify that required python modules are available.
 Note that this tool only runs on Linux and MAC OSX operating systems.
 
 External software requirements: 
