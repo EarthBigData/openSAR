@@ -1,32 +1,35 @@
 # Global Seasonal Sentinel-1 Interferometric Coherence and Backscatter Data Set
-# Software tools to generate and visualize coherence and backscatter data
+## Software tools to generate and visualize coherence and backscatter data
 
-1. Scripts for generating the data set
+### 1. Scripts for generating the data set
 
 Note that these scripts only run on Linux OS.
 
 These scripts are source code based on Gamma Remote Sensing AG Software to generate 
+
 - seasonal backscatter and coherence metrics
 - coherence decay model parameters
 - incidence angle and layover shadow files
 
-step-1-1-slc2bursts.py
-step-1-2-bursts2burstGroups.py
-step-2-1-insar_processor.py
-step-3-1-compositing.py
-step-4.1-mosaics.py
+- step-1-1-slc2bursts.py
+- step-1-2-bursts2burstGroups.py
+- step-2-1-insar_processor.py
+- step-3-1-compositing.py
+- step-4.1-mosaics.py
 
 
-2. Subsetting/Mosaicking tool to access the data located on AWS in the bucket s3://sentinel-1-global-coherence-earthbigdata
+### 2. Subsetting/Mosaicking tool to access the data located on AWS in the bucket s3://sentinel-1-global-coherence-earthbigdata
 
 Execute check_modules.py to verify that required python modules are available.
 Note that this tool only runs on Linux and MAC OSX operating systems.
 
 External software requirements: 
+
 1) AWSCLI Client (aws). Obtain at: https://aws.amazon.com/cli
+
 2) GDAL Software. Obtain at: https://gdal.org
 
-
+```
 usage: global_coherence_mosaic_tool.py [-h] [-sm] [-n NAME]
                                        [-tileids [TILEIDS [TILEIDS ...]]]
                                        [-m [METRICS [METRICS ...]]]
@@ -149,3 +152,4 @@ optional arguments:
                         No other action performed. (default: None)
   -dryrun, --DryRun     DryRun. (default: False)
   -v, --verbose         Verbose output (default: False)
+```
