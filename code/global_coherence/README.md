@@ -75,6 +75,9 @@ usage: global_coherence_mosaic_tool.py [-h] [-sm] [-n NAME]
 	
 EXAMPLES:
 
+******* Get the list of selectable metrics:
+global_coherence_mosaic_tool.py -sm
+
 ******* Get http download urls for AWS resource:
 global_coherence_mosaic_tool.py -ullr -115 50 -105 40 -http /tmp/coherence/download_urls.txt
 

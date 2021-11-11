@@ -160,6 +160,9 @@ def myargsparse(a):
 
 
 	\nEXAMPLES:
+	\r******* Get the list of selectable metrics:
+	\r{thisprog} -sm
+
 	\r******* Get http download urls for AWS resource:
 	\r{thisprog} -ullr -115 50 -105 40 -http /tmp/coherence/download_urls.txt
 
