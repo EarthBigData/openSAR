@@ -111,7 +111,7 @@ optional arguments:
   -tileids [TILEIDS [TILEIDS ...]], --tileids [TILEIDS [TILEIDS ...]]
                         List of tileids OR file with tileids. (default: None)
   -m [METRICS [METRICS ...]], --metrics [METRICS [METRICS ...]]
-                        List of metrics or file with metrics.. Defaults to all 
+                        List of metrics or file with metrics. Defaults to all 
 			(see -sm for valid selections) (default: None)
   -ullr ULlon ULlat LRlon LRlat, --ullr ULlon ULlat LRlon LRlat
                         Extent of region given by upper left lon/lat and lower
