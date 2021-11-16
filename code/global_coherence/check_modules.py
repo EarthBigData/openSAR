@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 import sys
 sys.tracebacklimit = 0
+MIN_PYTHON=(3,6)
+assert sys.version_info >= MIN_PYTHON, f"requires Python {'.'.join([str(n) for n in MIN_PYTHON])} or newer"
+
 
 import fsspec
 import shutil
