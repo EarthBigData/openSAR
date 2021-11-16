@@ -128,7 +128,7 @@ def myargsparse(a):
 	############################################################################
 
 	epilog=\
-	f"""
+	f'''
 	\r**************************************************************
 	\r*                                                            *
 	\r*  Earth Big Data LLC/Gamma Remote Sensing                   *
@@ -180,7 +180,7 @@ def myargsparse(a):
 
 	\r******* No caching, e.g., assuming all tiles are available in /home/me/tiles
 	\r {thisprog} -n ULLR -ullr -115 50 -100 40 -m winter_hh_AMP -u / -p home/me/tiles -c ""
-	"""
+	'''
 
 	help_url_root="\
 	\r  Source of tiles on cloud or locally. Options:\
