@@ -28,6 +28,14 @@ External software requirements:
 
 1) AWSCLI Client (aws). Obtain at: https://aws.amazon.com/cli
 
+This client can be used without credentials supplied simply by executing
+
+	aws configure
+	
+	leave key and screct key question blank
+	region = us-west-2
+	format = json 
+	
 2) GDAL Software. Obtain at: https://gdal.org
 
 ```
