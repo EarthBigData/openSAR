@@ -3,7 +3,12 @@
 '''
 SEPPO RGB Generator from VRT Stacks
 
+Author: Josef Kellndorfer
+(c) 2015- Earth Big Data LLC
+
 Generate grayscale or RGBs for tiles based on dates
+
+see http://remotesensing.earth
 
 Choose up to three dates.
 Choose blue or red flags for two date images where second date is in the blue or red channel
