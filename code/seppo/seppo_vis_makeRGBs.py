@@ -281,6 +281,9 @@ def processing(args):
     filesystem = make_filesystem(args.keyfile)
     vrtlist    = make_vrtlist(args,filesystem)
 
+    if not vrtlist:
+        print('No Data found. Please check your parameters.')
+
     if args.verbose:
         print('VRTLIST:')
         for v in vrtlist:
