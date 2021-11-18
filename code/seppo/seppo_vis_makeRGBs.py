@@ -50,7 +50,7 @@ def myargsparse(argv):
     ############################################################################
 
     epilog=\
-    """*********************************************************************************
+    f"""*********************************************************************************
     \r *  SEPPO RGB Generator from VRT Stacks
     \r *  
     \r *  Generate grayscale or RGBs for tiles based on dates
@@ -60,8 +60,12 @@ def myargsparse(argv):
     \r *     is in the blue or red channel
     \r**********************************************************************************
     \rEXAMPLES:
+    \r*** Two Dates RGB
     \r{thisprog} -t 14UPU -fd A -ro 136 -d 20200329 20200411 -pol vh -o /tmp/geotiffs
-     """.format(thisprog=thisprog)
+    \r*** One Date Grayscale with Description
+    \r{thisprog} -t 14UPU -d 20200330 -blue -o /tmp/geotiffs -ro 136 -pol vh -v -desc "Sentinel-1 SAR Backscatter"
+     """
+
 
     
     p = argparse.ArgumentParser(usage=None,description=epilog,prog=thisprog,formatter_class=CustomFormatter)
