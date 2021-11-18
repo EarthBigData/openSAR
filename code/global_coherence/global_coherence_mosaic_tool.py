@@ -21,10 +21,6 @@ from pathlib import Path
 
 import datetime
 
-# S3 access credentials for opendata
-aws_access_key_id = 'AKIAYDYYUJYBIJWSVDW5'
-aws_secret_access_key = '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'
-
 
 MAXWORKERS=12
 
@@ -132,7 +128,7 @@ def myargsparse(a):
 	############################################################################
 
 	epilog=\
-	f"""
+	f'''
 	\r**************************************************************
 	\r*                                                            *
 	\r*  Earth Big Data LLC/Gamma Remote Sensing                   *
@@ -184,7 +180,7 @@ def myargsparse(a):
 
 	\r******* No caching, e.g., assuming all tiles are available in /home/me/tiles
 	\r {thisprog} -n ULLR -ullr -115 50 -100 40 -m winter_hh_AMP -u / -p home/me/tiles -c ""
-	"""
+	'''
 
 	help_url_root="\
 	\r  Source of tiles on cloud or locally. Options:\
@@ -194,7 +190,7 @@ def myargsparse(a):
 
 	p = argparse.ArgumentParser(description=epilog,prog=thisprog,formatter_class=CustomFormatter)
 	p.add_argument("-sm","--show_metrics",required=False,help='Show all available metrics',action='store_true',default=False)
-	p.add_argument("-n","--name",required=False,help='Name prefix for region of interest (Note: "_" in name will be replaced with "-"). If "ULLR", name will be generated from Lon/Lat ranges extracted from the selected tiles, e.g. UL-N50W090-LR-N48W088' ,action='store',default='ULLR')
+	p.add_argument("-n","--name",required=True,help='Name prefix for region of interest (Note: "_" in name will be replaced with "-"). If "ULLR", name will be generated from Lon/Lat ranges extracted from the selected tiles, e.g. UL-N50W090-LR-N48W088' ,action='store')
 	p.add_argument("-tileids","--tileids",nargs='*',help="List of tileids OR file with tileids.",action='store',default=None)
 	p.add_argument("-m","--metrics",required=False,help='List of metrics OR file with metrics. Defaults to all (see -sm for valid selections)',action='store',default=None,nargs='*')
 	p.add_argument("-ullr","--ullr",nargs=4,type=float,required=False,help='Extent of region given by upper left lon/lat and  lower right lon/lat coordinates (can be fractional)', action='store',default=None,metavar=('ULlon','ULlat','LRlon','LRlat'))
@@ -288,7 +284,7 @@ def make_optfile(tiles,metric,dst_tilepath,optfilename=None):
 
 def get_tiles(args):
 	if args.url_root.startswith('s3://'):
-		fs = fsspec.filesystem('s3',key=aws_access_key_id,secret=aws_secret_access_key,client_kwargs={'endpoint_url':'https://s3.us-west-2.amazonaws.com'})
+		fs = fsspec.filesystem('s3',anon=True,client_kwargs={'endpoint_url':'https://s3.us-west-2.amazonaws.com'})
 		src_path=args.url_root.rstrip('/')+'/'+args.path.strip('/')
 	else:
 		fs = fsspec.filesystem('file')
@@ -376,7 +372,7 @@ def make_vrts(tiles,selected_metrics,args):
 
 	CWD=os.getcwd()
 
-	cmd_cache_root='aws s3 sync --region us-west-2' if args.url_root.startswith('s3://') else '/bin/cp -R -n'
+	cmd_cache_root='aws s3 sync --region us-west-2 --no-sign-request' if args.url_root.startswith('s3://') else '/bin/cp -R -n'
 
 	vrtnames=[]
 	cognames=[]
@@ -400,8 +396,6 @@ def make_vrts(tiles,selected_metrics,args):
 					url_root=args.url_root.rstrip('/')+'/'+tilepath+'/'
 					tile_url_src=url_root+tile
 					tile_url_dst=os.path.join(dst_tilepath,tile)
-					os.environ['aws_access_key_id'.upper()]=aws_access_key_id
-					os.environ['aws_secret_access_key'.upper()]=aws_secret_access_key
 					cmd=f'{cmd_cache_root} {tile_url_src} {tile_url_dst} --size-only --quiet --exclude * --include *{metric}.tif'
 					cmds.append(cmd)
 			if args.verbose:
