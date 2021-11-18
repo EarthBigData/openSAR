@@ -32,7 +32,7 @@ if DEVEL:
     relOrbits=[136]
     blue=False
     red=False
-    keyfile=os.path.join(os.environ['HOME'],'.ebd','ebd_key_wasabi_public.txt'))
+    keyfile=os.path.join(os.environ['HOME'],'.ebd','ebd_key_wasabi_public.txt')
 
 
 def myargsparse(argv):
@@ -190,13 +190,13 @@ def make_vrtlist(args,filesystem):
         
         relOrbits_vrts=[]
         if not args.relOrbits:
-            vrtlist=pol_vrts
+            vrtlist+=pol_vrts
         else:
-            for ro in relOrbits:
+            for ro in args.relOrbits:
                 ro_string=f'_{ro:03d}_'
                 ros=[x for x in vrts if x.find(ro_string)>-1]
                 relOrbits_vrts+=ros
-            vrtlist=relOrbits_vrts
+            vrtlist+=relOrbits_vrts
 
     return vrtlist
 
@@ -206,6 +206,10 @@ def processing(args):
     filesystem = make_filesystem(args.keyfile)
     vrtlist    = make_vrtlist(args,filesystem)
 
+    print('VRTLIST:')
+    for v in vrtlist:
+        print(v)
+    print()
 
     for vrtfile in vrtlist:
         print('\nWorking on',vrtfile)
