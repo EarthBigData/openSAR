@@ -83,8 +83,12 @@ def myargsparse(argv):
     p.add_argument("-red","--red",required=False,help='For two dates, assigns the first date in date list to red, duplicates 2nd date for blue band',action='store_true',default=False)
     p.add_argument("-blue","--blue",required=False,help='For two dates, assigns the first date in date list to blue, duplicates 2nd date for red band. Ignored when -red is set',action='store_true',default=False)
     p.add_argument("-desc","--description",required=False,help='Description of Data Set e.g. "Sentinel-1 SAR Backscatter"',action='store',default=None)
+    p.add_argument("-site","--site_name",required=False,help='Name of a site, e.g. "PNWFlood202111"',action='store',default=None)
     p.add_argument("-k","--keyfile",required=False,help='Path to key file to unlock credentials',action='store',default=os.path.join(os.environ['HOME'],'.ebd','ebd_key_wasabi_public.txt'))
+    p.add_argument("-mre","--make_realEarth_output",required=False,help='make output in realEarth format',action='store_true',default=False)
+    p.add_argument("-no_vrt","--no_vrt",required=False,help='Do not build VRT mosaics of the selected tiles ',action='store_true',default=False)
     p.add_argument("-dryrun","--dryrun",required=False,help='Dryrun Mode. Shows selected Stack VRTs and selectded bands and dates.',action='store_true',default=False)
+default=False)
     p.add_argument("-v","--verbose",required=False,help='Verbose output',action='store_true',default=False)
 
     args=p.parse_args(argv[1:])
@@ -276,6 +280,24 @@ def seppo_SetMetadata(src_dataset,band_names=None,description=None):
     except Exception as e:
         print('Exception in seppo_SetMetadata:',e)
 
+def make_vrts(geotiffs,site_name='NoName'):
+    # Lets group the geotiffs into paths and polarizations
+    vrt_dict={}
+    for geotiff in geotiffs:
+        g_basename=os.path.basename(geotiff)
+        tokens=geotiff.split('_')
+        key=tokens[2:5]
+        if not key in vrt_dict:
+            vrt_dict[key]=[]
+        vrt_dict[key].append(geotiff)
+
+    for key in vrt_dict:
+        vrtname=site_name.replace('_','')
+
+
+
+
+
 def processing(args):
 
     filesystem = make_filesystem(args.keyfile)
@@ -290,12 +312,26 @@ def processing(args):
             print(v)
         print()
 
+    # Make geotiffs
+    geotiffs=[]
     for vrtfile in vrtlist:
         print('\n***** Working on',vrtfile)
         geotiff = make_geotiff(vrtfile,args.dates,outdir=args.outdir,red=args.red,blue=args.blue,description=args.description,verbose=args.verbose,dryrun=args.dryrun)
         if geotiff:
             print('Produced',geotiff)
-    
+            geotiffs.append(geotiff)
+
+    # Make vrts
+    if not args.no_vrt:
+        vrts = make_vrts(geotiffs,site=args.site_name)
+    else:
+        vrts= None 
+
+    # Make RealEarth compatible products
+    if args.make_realEarth and vrts:
+        re_tiffs = make_realEarth(vrts)
+
+
 
 def main(a):
     args = myargsparse(a)
