@@ -16,7 +16,7 @@
 # In[ ]:
 
 
-import os
+import os,sys
 import fsspec
 import geoviews as gv
 from geoviews import tile_sources as gvts
@@ -37,6 +37,14 @@ imagecodecs.numcodecs.register_codecs()  # register the TIFF codec
 pn.extension()  # viz
 
 
+# In[ ]:
+
+
+# TURN WARNINGS OFF
+import warnings
+warnings.filterwarnings("ignore")
+
+
 # ## Set Local or Server Mode
 # 
 # Via two variables we can adjust how we want to run this notebook. In server_mode we generate a **servable** which can be accessed via a web server. Otherwise we **show** the application in our local browser. Typically we want to cache data masks.
@@ -44,8 +52,9 @@ pn.extension()  # viz
 # In[ ]:
 
 
+cache_s3=False # Read the cached mask data from s3 s3://sentinel-1-global-coherence-earthbigdata/data/wrappers/mask_ds.zarr
 cache_local = True # Set to false if mask data should not be cached as local zarr stores
-server_mode = True # Set to false if you want to run the notebook locally and visualize in a browser
+server_mode = True # Set to false if you want to run the notebook locally and visualize in a browser tab, True for display inside notebook or via webserver
 
 
 # ## Load JSON File containing zarr store Simulation of the Global Data Set
@@ -76,7 +85,7 @@ dataset = xr.open_dataset(
 
 
 if not server_mode:
-    dataset
+    print(dataset)
 
 
 # In[ ]:
@@ -160,36 +169,46 @@ def zarr_key(variable: xr.DataArray, coords: dict, chunks: dict, indexes: dict) 
 
 chunks = {"latitude": 1200, "longitude": 1200}
 
-mask_path=os.path.join(os.environ['HOME'],'mask_ds')
-mask_ds_zarr=os.path.join(mask_path,'mask_ds.zarr')
-if not os.path.exists(mask_ds_zarr):
-    for var in mask_ds.data_vars:
-        print(f'Processing {var}...')
-        chunks = {dim: chunks.get(dim, 1) for i, dim in enumerate(dataset[var].dims)}
-        # chunks = {dim:dataset[var].chunks[i][0] for i, dim in enumerate(dataset[var].dims)}
-        indexes = {dim: dataset[var].indexes[dim] for dim in dataset[var].dims}
-        total = mask_ds[var].size
-        mask = np.full(total, np.nan, dtype=np.float16)
-        for i, coords in enumerate(itertools.product(*(new_coords[var].values()))):
-            coords = dict(zip(new_coords[var].keys(), coords))
-            zkey = zarr_key(dataset[var], coords, chunks, indexes)
-            mask[i] = zkey in zkeys
-        mask = mask.reshape(mask_ds[var].shape)
-        mask = np.where(mask == 0, np.nan, 1)
-        mask_ds[var].values = mask
-    print("done")
-    if cache_local:
-        # Now cache to disk
-        os.makedirs(mask_path,exist_ok=True)
-        mask_ds.to_zarr(store=mask_ds_zarr,mode='w',consolidated=True,compute=True)
+if not cache_s3:
+    mask_path=os.path.join(os.environ['HOME'],'mask_ds')
+    mask_ds_zarr=os.path.join(mask_path,'mask_ds.zarr')
+    if not os.path.exists(mask_ds_zarr):
+        for var in mask_ds.data_vars:
+            print(f'Processing {var}...')
+            chunks = {dim: chunks.get(dim, 1) for i, dim in enumerate(dataset[var].dims)}
+            # chunks = {dim:dataset[var].chunks[i][0] for i, dim in enumerate(dataset[var].dims)}
+            indexes = {dim: dataset[var].indexes[dim] for dim in dataset[var].dims}
+            total = mask_ds[var].size
+            mask = np.full(total, np.nan, dtype=np.float16)
+            for i, coords in enumerate(itertools.product(*(new_coords[var].values()))):
+                coords = dict(zip(new_coords[var].keys(), coords))
+                zkey = zarr_key(dataset[var], coords, chunks, indexes)
+                mask[i] = zkey in zkeys
+            mask = mask.reshape(mask_ds[var].shape)
+            mask = np.where(mask == 0, np.nan, 1)
+            mask_ds[var].values = mask
+        print("done")
+        if cache_local:
+            # Now cache to disk
+            print('Caching mask_ds to local',mask_ds_zarr)
+            os.makedirs(mask_path,exist_ok=True)
+            mask_ds.to_zarr(store=mask_ds_zarr,mode='w',consolidated=True,compute=True)
+    else:
+        # Load the cached data set
+        print('Loading mask_ds from local cache', mask_ds_zarr)
+        mask_ds=xr.open_zarr(mask_ds_zarr,consolidated=True)
+        mask_ds = mask_ds.load()
 else:
-    # Load the cached data set
-    print('Loading mask_ds from cache', mask_ds_zarr)
-    mask_ds=xr.open_zarr(mask_ds_zarr,consolidated=True)
-    mask_ds = mask_ds.load()
+    mask_ds_s3='s3://sentinel-1-global-coherence-earthbigdata/data/wrappers/mask_ds.zarr'
+    print('Loading mask_ds from s3 cache', mask_ds_s3)
+    # Get a mapper for the mask data cached on s3 and open the data set
+    fsz=fsspec.get_mapper(mask_ds_s3)
+    mask_ds=xr.open_zarr(fsz,consolidated=True)
+    mask_ds.load()
 
 
-# ## Setup and Deploy the Visuzlization Tool 
+
+# ## Setup and Deploy the Visualization Tool 
 # 
 # We use a custom viz tool to be able to navigate the data space. As coded here, this will open in a separate browser tab (server_mode=False) or generate a servable (server_mode=True) that can be deployed with a call to `panel serve` via commandline on a webserver.
 # 
@@ -202,10 +221,10 @@ hv.config.image_rtol = 0.01
 
 class ZarrExplorer(param.Parameterized):
     base_map_select = param.Selector(doc='Basemap:', default=gvts.OSM,objects=gvts.tile_sources)
-    local_map_extent = param.Number(default=1)
+    local_map_extent = param.Number(default=1.5)
     variable = param.Selector(doc='Dataset Variable', default='COH', objects=list(mask_ds.data_vars))
-    stream_tap_global = param.ClassSelector(hv.streams.SingleTap, hv.streams.SingleTap(x=-70.6, y=41.6), precedence=-1)
-    update_localmap = param.Action(lambda x: x.param.trigger('update_localmap'), label='Click to load data after panning/zooming')
+    stream_tap_global = param.ClassSelector(hv.streams.SingleTap, hv.streams.SingleTap(x=-70.6, y=41.9), precedence=-1)
+    update_localmap = param.Action(lambda x: x.param.trigger('update_localmap'), label='Click to load data after panning / zooming / parameter change')
 
     def __init__(self, **params):
         super().__init__(**params)
@@ -300,7 +319,7 @@ html_header='''
 <br><font size="+3">Global Sentinel-1 Coherence and Backscatter Data Set</font_size>
 <font size="+0"><br>Contains modified Copernicus Sentinel-1 Data acquired from 1.Dec.2019 to 30.Nov.2020
 <p><font size="+0">Choose from variables, polarizations, and time steps to see global coverage and select regions to visualize the data.
-<br>Scaling for coherence such that  coherence   = COH * 100.
+<br>Scaling for coherence such that  coherence   = COH / 100.
 <br>Scaling for amplitudes such that backscatter [dB] = 20  * log10(AMP) -83.</font size>
 <br>For a detailed data set descriction <a href="http://sentinel-1-global-coherence-earthbigdata.s3-website-us-west-2.amazonaws.com/" target="_blank" rel="noopener noreferrer">click here</a>.
 </p>
@@ -344,4 +363,6 @@ if not server_mode:
     app.show(title='Global Interferometric Coherence and Backscatter from Sentinel-1',open=True)
 else:
     app.servable(title='Global Interferometric Coherence and Backscatter from Sentinel-1')
+
+
 
