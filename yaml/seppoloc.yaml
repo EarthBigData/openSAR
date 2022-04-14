@@ -1,11 +1,10 @@
-name: seppoloc
+name: seppoloc2
 channels: [conda-forge]
 dependencies: [adlfs, aiobotocore, awscli, bokeh=2.2.3, boto3, cartopy, dask-labextension,
   dask ==2.30.0, distributed ==2.30.1, dask-gateway ==0.9.0, ffmpeg, folium, fsspec,
-  gcsfs, geoviews, go, graphviz, h5netcdf, h5py, hologridgen, holoviews=1.14.1, hvplot,
+  gcsfs, geoviews, go, graphviz, h5netcdf, h5py, hologridgen, holoviews=1.14.6, hvplot,
   intake, intake-geopandas, intake-stac, intake-xarray, ipykernel, ipyleaflet, ipywidgets,
-  jinja2, jq, lxml, lz4, metpy, nbgitpuller, nodejs, nomkl, numba, opencv, owslib,
-  pandas=1.2, panel, pip, psycopg2, pyepsg, python-gist, python=3.8, pyyaml, rasterio, rechunker,
+  jinja2=3.0.1, jq, lxml, lz4, metpy, nbgitpuller, nodejs, nomkl, numba, opencv, owslib,
+  pandas=1.2, panel, pip, psycopg2, pyepsg, python-gist, python=3.8.10, pyyaml, rasterio, rechunker,
   requests, rioxarray, rsync, s3fs, sat-search, sat-stac, satpy, scikit-image, scikit-learn,
-  scipy, tornado, utide, vim, xarray, xarray-spatial, zarr, cdsdashboards-singleuser>=0.5.6]
-  
+  scipy, tornado, utide, vim, xarray=0.19.0, xarray-spatial, cdsdashboards-singleuser>=0.5.6, jupyterlab=3.1.11, zarr=2.9.5]
