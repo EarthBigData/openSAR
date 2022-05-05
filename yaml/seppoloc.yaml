@@ -1,4 +1,4 @@
-name: seppoloc2
+name: seppoloc
 channels: [conda-forge]
 dependencies: [adlfs, aiobotocore, awscli, bokeh=2.2.3, boto3, cartopy, dask-labextension,
   dask ==2.30.0, distributed ==2.30.1, dask-gateway ==0.9.0, ffmpeg, folium, fsspec,
