@@ -5,8 +5,8 @@
   "homeCamera": {
     "west": -97.2,
     "east": -95.8,
-    "north": 52.0,
-    "south": 46.6
+    "north": 50.5,
+    "south": 47.0
   },
   "baseMapName": "Bing Maps Roads",
   "catalog": [
