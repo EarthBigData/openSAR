@@ -20,7 +20,7 @@
           "zoomOnEnable": true,
           "isEnabled": true,
           "isShown": false,
-          "rectangle": ["-98.2", "46.64", "-95.86", "49.99"],
+          "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2075890_16M9_20220501_001312UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dx80eeE7Z2beCOE06LU3cYaPXAgw%3D%26Expires%3D1660056247"
         },
         {
@@ -29,7 +29,7 @@
           "zoomOnEnable": true,
           "isEnabled": true,
           "isShown": false,
-          "rectangle": ["-98.2", "46.64", "-95.86", "49.99"],
+          "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2076981_16M15_20220502_002112UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DhWrRfxJsx9XG95ZuMBCfmJmny9s%3D%26Expires%3D1660101690"
         },
         {
@@ -38,7 +38,7 @@
           "zoomOnEnable": true,
           "isEnabled": true,
           "isShown": false,
-          "rectangle": ["-98.2", "46.64", "-95.86", "49.99"],
+          "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2078280_5M22_20220503_002912UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DNfoKxlxo34fC5C7pMV47uftnp%2Fw%3D%26Expires%3D1660187748"
         },
         {
@@ -47,7 +47,7 @@
           "zoomOnEnable": true,
           "isEnabled": true,
           "isShown": false,
-          "rectangle": ["-98.2", "46.64", "-95.86", "49.99"],
+          "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2079228_16M2_20220504_000526UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DBgKHjA6%2Ft6tw3QIKZxZtwwiCAW8%3D%26Expires%3D1660274212"
         },
         {
@@ -56,7 +56,7 @@
           "zoomOnEnable": true,
           "isEnabled": true,
           "isShown": false,
-          "rectangle": ["-98.2", "46.64", "-95.86", "49.99"],
+          "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2080248_16M9_20220505_001323UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dk1l81Fr3r6oaGR3SJrrt3p43lc0%3D%26Expires%3D1660360403"
         },
         {
@@ -65,7 +65,6 @@
           "zoomOnEnable": true,
           "isEnabled": true,
           "isShown": true,
-          "rectangle": ["-98.2", "46.64", "-95.86", "49.99"],
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2081510_16M15_20220506_002123UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DKafOvospLfOhPHyhLgRsp6iqJak%253D%26Expires%3D1660446732"
         },
         {
@@ -82,7 +81,6 @@
           "zoomOnEnable": true,
           "isEnabled": true,
           "isShown": true,
-          "rectangle": ["-98.2", "46.64", "-95.86", "49.99"],
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2081935_5M20_20220506_123144UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DKMwGof2SP5hdiIonoY0sGhNfuBU%253D%26Expires%3D1660501277"
         },
         {
@@ -91,7 +89,6 @@
           "zoomOnEnable": true,
           "isEnabled": true,
           "isShown": true,
-          "rectangle": ["-98.2", "46.64", "-95.86", "49.99"],
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2081936_5M19_20220506_123153UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DzY0PpZx4%252BXoW6Po%252FeScjmrpkqlk%253D%26Expires%3D1660501277"
         },
       ]
