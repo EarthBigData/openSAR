@@ -65,6 +65,7 @@
           "zoomOnEnable": true,
           "isEnabled": true,
           "isShown": true,
+          "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2081510_16M15_20220506_002123UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DKafOvospLfOhPHyhLgRsp6iqJak%253D%26Expires%3D1660446732"
         },
         {
@@ -73,6 +74,7 @@
           "zoomOnEnable": true,
           "isEnabled": true,
           "isShown": true,
+          "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2081906_5M19_20220506_123121UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DZfzXj7krv4nBCOSykkdSv%252BX5Pu8%253D%26Expires%3D1660501277"
         },
         {
@@ -81,6 +83,7 @@
           "zoomOnEnable": true,
           "isEnabled": true,
           "isShown": true,
+          "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2081935_5M20_20220506_123144UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DKMwGof2SP5hdiIonoY0sGhNfuBU%253D%26Expires%3D1660501277"
         },
         {
@@ -89,6 +92,7 @@
           "zoomOnEnable": true,
           "isEnabled": true,
           "isShown": true,
+          "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2081936_5M19_20220506_123153UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DzY0PpZx4%252BXoW6Po%252FeScjmrpkqlk%253D%26Expires%3D1660501277"
         },
       ]
