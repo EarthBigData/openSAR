@@ -1,13 +1,14 @@
 {
-    "corsDomains": [
-        "raw.githubusercontent.com"
+  "corsDomains": [
+      "raw.githubusercontent.com"
     ],
-    "homeCamera": {
+  "homeCamera": {
     "west": -97.2,
     "east": -95.8,
     "north": 50.0,
     "south": 46.6
   },
+  "baseMapName": "Bing Maps Roads",
   "catalog": [
     {
       "name": "Flood",
