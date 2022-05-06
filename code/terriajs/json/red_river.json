@@ -74,7 +74,6 @@
           "zoomOnEnable": true,
           "isEnabled": true,
           "isShown": true,
-          "rectangle": ["-98.2", "46.64", "-95.86", "49.99"],
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2081906_5M19_20220506_123121UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DZfzXj7krv4nBCOSykkdSv%252BX5Pu8%253D%26Expires%3D1660501277"
         },
         {
