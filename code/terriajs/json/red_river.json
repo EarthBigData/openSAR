@@ -1,6 +1,6 @@
 {
   "corsDomains": [
-      "raw.githubusercontent.com"
+      "raw.githubusercontent.com","earthbigdata-www.s3.amazonaws.com"
     ],
   "homeCamera": {
     "west": -97.2,
@@ -11,7 +11,7 @@
   "baseMapName": "Bing Maps Roads",
   "catalog": [
     {
-      "name": "Flood",
+      "name": "Flood/RedRiver",
       "type": "group",
       "items": [
         {
@@ -94,7 +94,7 @@
           "isShown": true,
           "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2081936_5M19_20220506_123153UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DzY0PpZx4%252BXoW6Po%252FeScjmrpkqlk%253D%26Expires%3D1660501277"
-        },
+        }
       ]
     }
   ]
