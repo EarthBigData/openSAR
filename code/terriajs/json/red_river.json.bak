@@ -1,8 +1,7 @@
 {
   "corsDomains": [
-    "raw.githubusercontent.com",
-    "earthbigdata-www.s3.amazonaws.com"
-  ],
+      "raw.githubusercontent.com","earthbigdata-www.s3.amazonaws.com"
+    ],
   "homeCamera": {
     "west": -97.2,
     "east": -95.8,
@@ -16,37 +15,10 @@
       "type": "group",
       "items": [
         {
-          "name": "RCM 2022-04-23 00:13:08 UTC",
-          "type": "url-template",
-          "zoomOnEnable": true,
-          "isEnabled": false,
-          "isShown": false,
-          "opacity": 1.0,
-          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1957220_PK2066471_5M8_20220423_001308UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DbxwHnEv2lokmAK9Ag2XoDtelw3E%253D%26Expires%3D1660651803"
-        },
-        {
-          "name": "RCM 2022-04-24 00:21:14 UTC",
-          "type": "url-template",
-          "zoomOnEnable": true,
-          "isEnabled": false,
-          "isShown": false,
-          "opacity": 1.0,
-          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1957220_PK2067633_5M15_20220424_002114UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DyxJNq86SRnV1azOkuHy6N5oP8Y8%253D%26Expires%3D1660651803"
-        },
-        {
-          "name": "RCM 2022-04-24 00:21:44 UTC",
-          "type": "url-template",
-          "zoomOnEnable": true,
-          "isEnabled": false,
-          "isShown": false,
-          "opacity": 1.0,
-          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1957220_PK2067634_5M16_20220424_002144UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DrQUYKp3lA0Osk3Ho%252FyCm3GmDP1M%253D%26Expires%3D1660651803"
-        },
-        {
           "name": "RCM 2022-05-01 00:13:12 UTC",
           "type": "url-template",
           "zoomOnEnable": true,
-          "isEnabled": false,
+          "isEnabled": true,
           "isShown": false,
           "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2075890_16M9_20220501_001312UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dx80eeE7Z2beCOE06LU3cYaPXAgw%3D%26Expires%3D1660056247"
@@ -55,7 +27,7 @@
           "name": "RCM 2022-05-02 00:21:12 UTC",
           "type": "url-template",
           "zoomOnEnable": true,
-          "isEnabled": false,
+          "isEnabled": true,
           "isShown": false,
           "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2076981_16M15_20220502_002112UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DhWrRfxJsx9XG95ZuMBCfmJmny9s%3D%26Expires%3D1660101690"
@@ -64,7 +36,7 @@
           "name": "RCM 2022-05-03 00:29:12 UTC",
           "type": "url-template",
           "zoomOnEnable": true,
-          "isEnabled": false,
+          "isEnabled": true,
           "isShown": false,
           "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2078280_5M22_20220503_002912UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DNfoKxlxo34fC5C7pMV47uftnp%2Fw%3D%26Expires%3D1660187748"
@@ -73,7 +45,7 @@
           "name": "RCM 2022-05-04 00:05:26 UTC",
           "type": "url-template",
           "zoomOnEnable": true,
-          "isEnabled": false,
+          "isEnabled": true,
           "isShown": false,
           "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2079228_16M2_20220504_000526UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DBgKHjA6%2Ft6tw3QIKZxZtwwiCAW8%3D%26Expires%3D1660274212"
@@ -82,7 +54,7 @@
           "name": "RCM 2022-05-05 00:13:23 UTC",
           "type": "url-template",
           "zoomOnEnable": true,
-          "isEnabled": false,
+          "isEnabled": true,
           "isShown": false,
           "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2080248_16M9_20220505_001323UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dk1l81Fr3r6oaGR3SJrrt3p43lc0%3D%26Expires%3D1660360403"
@@ -91,8 +63,8 @@
           "name": "RCM 2022-05-06 00:21:23 UTC",
           "type": "url-template",
           "zoomOnEnable": true,
-          "isEnabled": false,
-          "isShown": false,
+          "isEnabled": true,
+          "isShown": true,
           "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2081510_16M15_20220506_002123UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DKafOvospLfOhPHyhLgRsp6iqJak%253D%26Expires%3D1660446732"
         },
@@ -131,16 +103,7 @@
           "isShown": true,
           "opacity": 1.0,
           "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2082404_5M22_20220507_002923UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DnsYZPsrjnjR%252FZWzXt77TKWFLexM%253D%26Expires%3D1660535885"
-        },
-        {
-          "name": "RCM 2039-12-31 00:00:00 UTC",
-          "type": "url-template",
-          "zoomOnEnable": true,
-          "isEnabled": true,
-          "isShown": true,
-          "opacity": 1.0,
-          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1957220_PK2068065_5M18_20220424_123139UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DkHuPVslB6l3B%252BMn4vcCoG5cMDso%253D%26Expires%3D1660651803"
-        }
+        }      
       ]
     }
   ]
