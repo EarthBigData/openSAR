@@ -1,7 +1,6 @@
 {
   "corsDomains": [
-    "raw.githubusercontent.com",
-    "earthbigdata-www.s3.amazonaws.com"
+    "raw.githubusercontent.com"
   ],
   "homeCamera": {
     "west": -97.2,
