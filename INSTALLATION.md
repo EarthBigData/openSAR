@@ -95,7 +95,7 @@ Alternatively, if you don't use git or prefer not to clone, retrieve a *zip* arc
 
 After *anaconda* is installed, ensure that the environment variables are set correctly to execute "conda" and start a new terminal. 
 
-To work with the code and notebooks, you need to establish virtual environments within Anaconda. The advantage of virtual environments is the complete separation of different dependencies for projects. We provide environemnt files to create kernels in the conda environment to work with. You can obtain these files in the **openSAR/notebooks** folder or download directly from github:
+To work with the code and notebooks, you need to establish virtual environments within Anaconda. The advantage of virtual environments is the complete separation of different dependencies for projects. We provide environment files to create kernels in the conda environment to work with. You can obtain these files in the **openSAR/yaml** folder or download directly from github:
 
 - [jhub.yml](https://raw.githubusercontent.com/EarthBigData/openSAR/master/yaml/jhub.yml)
 - [ebd.yml](https://raw.githubusercontent.com/EarthBigData/openSAR/master/yaml/ebd.yml)
