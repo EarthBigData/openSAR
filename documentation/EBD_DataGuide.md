@@ -8,7 +8,7 @@ Latest Update: 2/2019
 
 # Naming Conventions
 
-Data stacks produced with the Software for Earth Big Data Processing, Prediction Modeling and Organization (SEPPO) are in general delivered as a bundle of GeoTIFF and Virtual Raster Table (VRT) data structures that are ready to use with GDAL compatible software like QGIS. 
+Data stacks produced with the Software for Earth Big Data Processing, Prediction Modeling and Organization (SEPPO) are in general delivered as a bundle of GeoTIFF and Virtual Raster Table (VRT) data structures that are ready to use with GDAL compatible software like QGIS or read with packages like rioxarray to process in python and Jupyter environments. 
 
 Time series data stacks are organized in either custom regions of interest, geographic 1x1 degree or MRGS/Sentinel-2 compatible tiles. Image data are stored in GeoTIFF format containing all georeferencing information. Data stacks (e.g. Timeseries or time series metrics) are organized in VRT formats which can stack the GeoTIFFs in many different ways, e.g. by day of year, seasons, brightness levels, band subsets, etc. 
 
