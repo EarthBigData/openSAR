@@ -6,6 +6,8 @@ Latest Update: 2/2019
 
 ********************
 
+For a list of EBD processed MGRS tiles see [https://earthbigdata-www.s3.amazonaws.com/gis/tiles_and_path.html](https://earthbigdata-www.s3.amazonaws.com/gis/tiles_and_path.html)
+
 # Naming Conventions
 
 Data stacks produced with the Software for Earth Big Data Processing, Prediction Modeling and Organization (SEPPO) are in general delivered as a bundle of GeoTIFF and Virtual Raster Table (VRT) data structures that are ready to use with GDAL compatible software like QGIS or read with packages like rioxarray to process in python and Jupyter environments. 
