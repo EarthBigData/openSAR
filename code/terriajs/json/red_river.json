@@ -1,0 +1,2198 @@
+{
+  "corsDomains": [
+    "raw.githubusercontent.com"
+  ],
+  "homeCamera": {
+    "west": -97.2,
+    "east": -95.8,
+    "north": 50.5,
+    "south": 47.0
+  },
+  "baseMapName": "Bing Maps Roads",
+  "catalog": [
+    {
+      "name": "RCM",
+      "type": "group",
+      "items": [
+        {
+          "name": "RCM 2022-04-23 00:13:08 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1957220_PK2066471_5M8_20220423_001308UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dnzp0PBEkt3XDfyfyD7f3QE%252FQt3A%253D%26Expires%3D1673638801"
+        },
+        {
+          "name": "RCM 2022-04-24 00:21:14 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1957220_PK2067633_5M15_20220424_002114UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DahyIj%252BFt2BU9nGOAYOANBallwvk%253D%26Expires%3D1673638801"
+        },
+        {
+          "name": "RCM 2022-04-24 00:21:44 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1957220_PK2067634_5M16_20220424_002144UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DeC3b2q%252FYvC1pFlVL%252BHr%252BlKoK6MY%253D%26Expires%3D1673638801"
+        },
+        {
+          "name": "RCM 2022-04-24 12:31:39 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1957220_PK2068065_5M18_20220424_123139UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DNxZR5OzecFJfBstE%252Ff%252Bb4mVDpSo%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-04-25 00:29:41 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1957220_PK2068496_5M22_20220425_002941UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DmRH%252FJA5Cx05%252Fa3Fd%252BXWyA2DMPCk%253D%26Expires%3D1673638801"
+        },
+        {
+          "name": "RCM 2022-04-26 00:05:17 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2069971_SC30MCPA_20220426_000517UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DPhDz0dfnXlNOV4l%252Fq2ghk%252FZ9PQs%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-04-26 12:47:14 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1955255_PK2070444_SC30MCPA_20220426_124714UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DwrlJGdP%252BpUfKQpwFgj%252BsD36h19c%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-04-26 12:47:45 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2066089_PK2070423_5M6_20220426_124745UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dc%252FSiIY%252F7%252B%252BlMs5l30ggmVc4ZTFM%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-04-26 12:47:53 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1955255_PK2070446_SC30MCPA_20220426_124753UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D%252Bn2AoRBdcP69tlH%252FfAc82cLoXRE%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-04-27 00:12:57 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2066089_PK2070949_5M8_20220427_001257UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DE7230oEa6ugr24bJlronK1PNA8Q%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-04-27 00:13:08 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2071085_SC30MCPD_20220427_001308UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D03etLZCU38%252FgcK1ulEJ4c9ztHxs%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-04-28 00:20:17 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2071951_SC30MCPD_20220428_002017UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DHqwlpQxGcNWmc0kabjns%252FA6RtXs%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-04-28 00:20:57 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2069422_PK2071931_5M15_20220428_002057UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DiD5dRHsDfyXaXFrXewMwUZ8aJRg%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-04-28 12:31:32 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2072622_5M19_20220428_123132UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DEkeq0fd%252BZsXolZheEBomcc2kqS4%253D%26Expires%3D1673638801"
+        },
+        {
+          "name": "RCM 2022-04-28 12:32:05 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2072532_5M18_20220428_123205UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D6fvdCgZ1REyN4Q735h8k1qJC5ro%253D%26Expires%3D1673638801"
+        },
+        {
+          "name": "RCM 2022-04-28 12:32:19 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2072633_SC30MCPD_20220428_123219UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DG7gadAXbRkwkzh7Y39Ljc1%252BXiTU%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-04-30 00:05:14 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2074539_16M2_20220430_000514UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DHQ9HhcWfmjPhVzBTpdiJHber1%252F8%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-04-30 12:47:53 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2075300_5M6_20220430_124753UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DhYBNWKPq5qptDJbvhj7my9AewGA%253D%26Expires%3D1673638801"
+        },
+        {
+          "name": "RCM 2022-04-30 12:48:02 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2075299_5M5_20220430_124802UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DelJ%252F9Z3U7Czxt4QyX7hAKXZp3Ys%253D%26Expires%3D1673638801"
+        },
+        {
+          "name": "RCM 2022-05-01 00:13:12 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2075890_16M9_20220501_001312UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DKKDUE8ncVJks9Wo6OFRIZ2kujSs%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-01 12:55:43 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2076441_SC30MCPA_20220501_125543UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DjLAc2n%252BErjkLmGS%252Br4sKhdMJY6k%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-02 00:20:41 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1955255_PK2077001_SC30MCPD_20220502_002041UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DoH4XgCJbKTVDn69l9iS%252B%252B%252BAycpM%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-02 00:21:12 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2076981_16M15_20220502_002112UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D1cAWcrBptq14pESTrfliFXRDLc4%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-02 12:31:09 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2071629_PK2077712_5M19_20220502_123109UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DI1CpTmGbFI3v%252Bp2kdHV2T5cmolo%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-02 12:31:27 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2071629_PK2077713_5M18_20220502_123127UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DPyqAco9ffPW57QZYRMeOt3JL%252BXQ%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-02 12:31:32 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2071629_PK2077715_5M20_20220502_123132UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dgp0koO1Nl4ubbbK%252FrWmqd5kUUoI%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-02 12:31:41 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2071629_PK2077714_5M19_20220502_123141UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DW26x6mcxgKSuLRwxDODTJVwlOMg%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-02 12:31:54 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2077723_SC30MCPC_20220502_123154UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DXT3wqWorBosM%252Fo5qBM3cXxetTXU%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-03 00:29:12 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2078280_5M22_20220503_002912UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DAD6zXoU78KjeNcByKJAHmFe5cKM%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-03 12:39:16 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2071629_PK2078737_16M14_20220503_123916UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DceGIB%252BcfZHhgfCKjtTfv88Cny%252Fs%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-03 12:39:27 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2071629_PK2078739_5M12_20220503_123927UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DR%252BMh8IjSSEp%252Fczf1D%252BIvZ3FiL%252Bc%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-03 12:39:43 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2071629_PK2078741_5M12_20220503_123943UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DrnQlkumdA7aJc1Y9wRcPGlkl0pg%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-04 00:05:17 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2079248_SC30MCPB_20220504_000517UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DS8wwqhOLC3eltjhQxYoRnqX4NWY%253D%26Expires%3D1673638801"
+        },
+        {
+          "name": "RCM 2022-05-04 00:05:26 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2079228_16M2_20220504_000526UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DqoGY3NozAcvF12HkDPS4pDkxO0U%253D%26Expires%3D1673638801"
+        },
+        {
+          "name": "RCM 2022-05-04 12:47:00 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2071629_PK2079719_16M7_20220504_124700UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DrzkfzY%252Bge3GSNlGE36zOoZQWVfY%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-04 12:47:25 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2071629_PK2079721_5M5_20220504_124725UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DDpqBdLAcz6EwlTSeLdLcisopG04%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-04 12:47:33 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2071629_PK2079723_5M6_20220504_124733UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dq6gYu3fYl4PoV0H9igQeQUQDSP8%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-04 12:47:40 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2071629_PK2079722_5M5_20220504_124740UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D7AznsedJ8nMZBuW3Xm2Tv87nHvs%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-04 12:47:51 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2079746_SC30MCPA_20220504_124751UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DlH5zuIHDUXjFU6BBBWF9zfuJwJY%253D%26Expires%3D1673638800"
+        },
+        {
+          "name": "RCM 2022-05-05 00:13:23 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2080248_16M9_20220505_001323UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DoS7qic%252FrmS7s9WJtk5RxULo8zs0%253D%26Expires%3D1673638801"
+        },
+        {
+          "name": "RCM 2022-05-06 00:21:23 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2081510_16M15_20220506_002123UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DkBbGJha1NOtiV03xx6u6%252Bi4MAZU%253D%26Expires%3D1660793023"
+        },
+        {
+          "name": "RCM 2022-05-06 12:31:21 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2081906_5M19_20220506_123121UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DYPyJt5HVnZIogqXmYPhFeAINHhY%253D%26Expires%3D1660793023"
+        },
+        {
+          "name": "RCM 2022-05-06 12:31:39 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2081907_5M18_20220506_123139UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DLjZihFvYQWXzCmPEzEyeh67if%252BY%253D%26Expires%3D1660793023"
+        },
+        {
+          "name": "RCM 2022-05-06 12:31:44 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2081935_5M20_20220506_123144UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DQRGqiaj2mtsaqgDx6Aer2bfGtNA%253D%26Expires%3D1660793023"
+        },
+        {
+          "name": "RCM 2022-05-06 12:31:53 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2071629_PK2081936_5M19_20220506_123153UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DgO7DNnQlCJxz6c1MfVkWGhFT43M%253D%26Expires%3D1660793023"
+        },
+        {
+          "name": "RCM 2022-05-06 12:32:06 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1955255_PK2081914_SC30MCPC_20220506_123206UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DwWw43uYMo2LUQBFFTfVgXALYzro%253D%26Expires%3D1660793023"
+        },
+        {
+          "name": "RCM 2022-05-06 23:57:15 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2082392_SC30MCPA_20220506_235715UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DNKNcHd%252B7TR2qKeSarFamAu%252FDewc%253D%26Expires%3D1660793023"
+        },
+        {
+          "name": "RCM 2022-05-07 00:29:23 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2071629_PK2082404_5M22_20220507_002923UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DvE9KUykqNphsu6NmHARB9Lb1uc8%253D%26Expires%3D1660793023"
+        },
+        {
+          "name": "RCM 2022-05-09 00:13:01 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2081963_PK2084494_16M9_20220509_001301UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DFJXocuoq2HwXTD0hvkT%252FHwzZAe4%253D%26Expires%3D1660793023"
+        },
+        {
+          "name": "RCM 2022-05-09 12:55:31 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2081963_PK2084971_5M1_20220509_125531UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DNuWGRghsPGWfAfj1PtvSLbL2nvo%253D%26Expires%3D1660793023"
+        },
+        {
+          "name": "RCM 2022-05-10 00:20:36 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2085437_SC30MCPD_20220510_002036UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DPskxzEH4hluPwqXJ4EvGxTOb9us%253D%26Expires%3D1660793023"
+        },
+        {
+          "name": "RCM 2022-05-10 00:21:00 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2081963_PK2085412_16M15_20220510_002100UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DcSMdMWe8EwtH0W%252Fby5dNA%252Fc8Z0E%253D%26Expires%3D1660793023"
+        },
+        {
+          "name": "RCM 2022-05-10 00:21:21 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2081963_PK2085414_16M16_20220510_002121UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D4RNmjQ4ZLIsCRjtBxz%252B2sgbg3bg%253D%26Expires%3D1660793023"
+        },
+        {
+          "name": "RCM 2022-05-10 12:31:33 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2081963_PK2085893_5M20_20220510_123133UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DmIdr55asSDd1D9eqGJGLmqUVzWE%253D%26Expires%3D1660835680"
+        },
+        {
+          "name": "RCM 2022-05-10 12:32:05 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2081963_PK2085894_5M18_20220510_123205UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DqAgdQ9F0IexbszxoRVAORZn4fzs%253D%26Expires%3D1660835680"
+        },
+        {
+          "name": "RCM 2022-05-10 12:32:17 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2085947_SC30MCPC_20220510_123217UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dh1P8lzlEDQ9o68yHoFzFMRmuOMw%253D%26Expires%3D1660846808"
+        },
+        {
+          "name": "RCM 2022-05-10 23:57:21 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1948107_PK2086553_SC30MCPA_20220510_235721UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DfWq4uoBc2TT5G7vca92m1q50XoA%253D%26Expires%3D1660920893"
+        },
+        {
+          "name": "RCM 2022-05-11 00:29:03 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2081963_PK2086424_5M21_20220511_002903UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D0glJqtGRgv5xnKSrkr4gvSYxBS4%253D%26Expires%3D1660878839"
+        },
+        {
+          "name": "RCM 2022-05-11 12:39:39 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2081963_PK2086989_16M14_20220511_123939UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DxBG0bIXuw9vEAwmlIjhsMwg0V2g%253D%26Expires%3D1660924786"
+        },
+        {
+          "name": "RCM 2022-05-11 12:40:06 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2081963_PK2086990_16M12_20220511_124006UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DXca1GtRs7GGJXJ71bNYwcLqC5Ss%253D%26Expires%3D1660924786"
+        },
+        {
+          "name": "RCM 2022-05-12 00:05:15 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2081963_PK2087462_16M2_20220512_000515UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DM59hkv8N8kT1efqpy8SodGPjlXo%253D%26Expires%3D1660965536"
+        },
+        {
+          "name": "RCM 2022-05-12 12:47:57 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2081963_PK2087981_5M6_20220512_124757UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Di66WRxsd0hFO5Jo2LRN4UybK89o%253D%26Expires%3D1661019261"
+        },
+        {
+          "name": "RCM 2022-05-12 12:48:03 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2081963_PK2087982_16M5_20220512_124803UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DKf4mTL0qBjoYJCke6xdkghm7fmE%253D%26Expires%3D1661019261"
+        },
+        {
+          "name": "RCM 2022-05-13 00:13:21 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2081963_PK2088431_16M9_20220513_001321UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DAqqTBNSIGFslTLdeCOmE2flE4KM%253D%26Expires%3D1661052173"
+        },
+        {
+          "name": "RCM 2022-05-14 00:21:12 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2081963_PK2089614_16M15_20220514_002112UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DWXc8LQvrcX%252BkkorXc9lhuP6W1t0%253D%26Expires%3D1661138010"
+        },
+        {
+          "name": "RCM 2022-05-14 12:31:10 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2088254_PK2090143_5M19_20220514_123110UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DUJO7jEAGqwxUaMhLB1z8LKmqW7E%253D%26Expires%3D1661192425"
+        },
+        {
+          "name": "RCM 2022-05-14 12:31:54 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2090160_SC30MCPD_20220514_123154UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DSWZ72cF0MPrMzMeY7totfQ4xoZs%253D%26Expires%3D1661192425"
+        },
+        {
+          "name": "RCM 2022-05-15 00:29:12 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2088254_PK2090643_5M22_20220515_002912UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D%252BSd80HvQVyp449Hp%252Bncs5eVE2xc%253D%26Expires%3D1661224664"
+        },
+        {
+          "name": "RCM 2022-05-15 12:39:16 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2088254_PK2091095_16M14_20220515_123916UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DL%252Blo0SR%252F8KoSQQ%252Fs2E6AIaxQ6Ls%253D%26Expires%3D1661267578"
+        },
+        {
+          "name": "RCM 2022-05-15 12:39:43 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2088254_PK2091098_16M12_20220515_123943UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DvPoJdGFRopVBAxrDR9Kng4f95FY%253D%26Expires%3D1661267578"
+        },
+        {
+          "name": "RCM 2022-05-16 00:05:27 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2088254_PK2091515_16M2_20220516_000527UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D5HYHK1XIKAJdAoXSJgFvB9wQS%252Fc%253D%26Expires%3D1661311193"
+        },
+        {
+          "name": "RCM 2022-05-16 12:47:10 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2088254_PK2092064_16M7_20220516_124710UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DD9JXwBbpzVj6qGYHS%252BS83H5hLmU%253D%26Expires%3D1661365230"
+        },
+        {
+          "name": "RCM 2022-05-16 12:47:25 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2088254_PK2092067_5M5_20220516_124725UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DI%252BVbWphjxtR6UV8bSCiw1ejwNaE%253D%26Expires%3D1661365230"
+        },
+        {
+          "name": "RCM 2022-05-16 12:47:34 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2088254_PK2092066_16M6_20220516_124734UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DTxMIRSCJtp2tC6WVywi8eppmfzY%253D%26Expires%3D1661365230"
+        },
+        {
+          "name": "RCM 2022-05-16 12:47:52 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2092209_SC30MCPA_20220516_124752UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DPnNXlIDr4jRUi3MbtZeFCfFpOUk%253D%26Expires%3D1661365230"
+        },
+        {
+          "name": "RCM 2022-05-17 00:13:24 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2088254_PK2092521_16M9_20220517_001324UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DgeeXg53efcSyXmBP%252Bht3Iu6jgyw%253D%26Expires%3D1661397250"
+        },
+        {
+          "name": "RCM 2022-05-17 12:55:21 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2093052_SC30MCPA_20220517_125521UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DvxwB74jqMpt%252ByX1KVUg5V6V42sU%253D%26Expires%3D1661451686"
+        },
+        {
+          "name": "RCM 2022-05-18 00:21:24 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2088254_PK2093520_16M15_20220518_002124UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DCSMMwtRohlwTIAZR9wmVQibl7Z4%253D%26Expires%3D1661549246"
+        },
+        {
+          "name": "RCM 2022-05-18 12:31:22 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2088254_PK2093924_5M19_20220518_123122UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D%252BrivgaxfJEWkGx6MEXK58XxifcU%253D%26Expires%3D1661537713"
+        },
+        {
+          "name": "RCM 2022-05-18 12:31:40 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2088254_PK2093926_5M18_20220518_123140UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dw77XxqHPE6Y%252BPHOQXj840ZJADy0%253D%26Expires%3D1661549246"
+        },
+        {
+          "name": "RCM 2022-05-18 12:31:45 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2088254_PK2093932_5M20_20220518_123145UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DNx7aN2zAcUGI2%252BJ%252FMNKcOicD0w4%253D%26Expires%3D1661537713"
+        },
+        {
+          "name": "RCM 2022-05-18 12:31:54 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2088254_PK2093929_5M19_20220518_123154UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DvHSPr3ebrn%252BI1HtLQyRqakrZedo%253D%26Expires%3D1661537713"
+        },
+        {
+          "name": "RCM 2022-05-18 12:32:07 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1955255_PK2093941_SC30MCPC_20220518_123207UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D8m7nrQJcHGqI7D5oCq327TkH2Ug%253D%26Expires%3D1661549246"
+        },
+        {
+          "name": "RCM 2022-05-19 00:29:24 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2088254_PK2094342_5M22_20220519_002924UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D8f4JALI%252FpSzS23Mp9hiT1vFP00A%253D%26Expires%3D1661570052"
+        },
+        {
+          "name": "RCM 2022-05-19 12:39:28 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2088254_PK2094802_16M14_20220519_123928UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DYF0Ms0fvScDNGrJI6SXdHfA%252BZwU%253D%26Expires%3D1661613382"
+        },
+        {
+          "name": "RCM 2022-05-19 12:39:55 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2088254_PK2094805_16M12_20220519_123955UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D36FS3VHfEuSFgHl8PoIaNrm4liE%253D%26Expires%3D1661613382"
+        },
+        {
+          "name": "RCM 2022-05-20 00:05:04 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2088254_PK2095521_16M2_20220520_000504UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DQsv8n%252BqzAx%252F8M%252BPafxVBIpbbuF0%253D%26Expires%3D1661680530"
+        },
+        {
+          "name": "RCM 2022-05-20 12:47:28 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2088254_PK2096286_16M8_20220520_124728UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DqczgLU%252FuQBKXxyxi130mcDBY%252Fs8%253D%26Expires%3D1661710773"
+        },
+        {
+          "name": "RCM 2022-05-20 12:47:37 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2088254_PK2096287_5M5_20220520_124737UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DjSo7OJ9O2y3a5bFqW7H%252Fs13CSFc%253D%26Expires%3D1661710773"
+        },
+        {
+          "name": "RCM 2022-05-20 12:47:45 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2088254_PK2096288_5M6_20220520_124745UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D8wDCBP1yEfDRnl8OT6%252Fvq9jlbLE%253D%26Expires%3D1661710773"
+        },
+        {
+          "name": "RCM 2022-05-20 12:47:52 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2088254_PK2096333_16M5_20220520_124752UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DXzgfXkGhVaj5ZERlymiVYUM85tI%253D%26Expires%3D1661710773"
+        },
+        {
+          "name": "RCM 2022-05-21 00:13:01 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2088254_PK2096926_16M9_20220521_001301UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D%252BJXX%252B80ys8bK06Pm2rvDeCRGSoo%253D%26Expires%3D1661742825"
+        },
+        {
+          "name": "RCM 2022-05-22 00:20:19 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2098000_SC30MCPD_20220522_002019UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D%252F9hNkFz5zOeKVa7FjAO8Y3%252Fdg8c%253D%26Expires%3D1661840518"
+        },
+        {
+          "name": "RCM 2022-05-22 00:21:01 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2096441_PK2097968_16M15_20220522_002101UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DFzXZU4RnwolGqBFCl%252BKnj3yCe5Q%253D%26Expires%3D1661840518"
+        },
+        {
+          "name": "RCM 2022-05-22 00:21:19 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1948107_PK2097979_SC30MCPD_20220522_002119UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D2WV%252BxGV5jrJc3TRlbnzZXVL9Ihw%253D%26Expires%3D1661872945"
+        },
+        {
+          "name": "RCM 2022-05-22 12:30:54 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2098396_SC30MCPD_20220522_123054UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dse%252FoFLbRgP7Z6KEqMcWNqLyvDco%253D%26Expires%3D1661872945"
+        },
+        {
+          "name": "RCM 2022-05-22 12:32:03 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2096441_PK2098388_5M19_20220522_123203UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DpHafaM6xJWN7bLg%252BnFSvsPlNdG8%253D%26Expires%3D1661872945"
+        },
+        {
+          "name": "RCM 2022-05-22 12:32:18 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2098450_SC30MCPD_20220522_123218UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DfD1%252Bzh%252F%252FxQ1Je2z924jYnT4gA4o%253D%26Expires%3D1661883592"
+        },
+        {
+          "name": "RCM 2022-05-23 00:29:01 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2096441_PK2098949_5M22_20220523_002901UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DpZjyGsz5WxJRXYGc5guHj5pNUZ4%253D%26Expires%3D1661970147"
+        },
+        {
+          "name": "RCM 2022-05-23 12:39:27 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2099490_SC30MCPD_20220523_123927UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dsf3kwqXrd%252B2MeuwIzz%252FfWBDfMK8%253D%26Expires%3D1661970147"
+        },
+        {
+          "name": "RCM 2022-05-23 12:40:04 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2096441_PK2099473_16M12_20220523_124004UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D%252BhYzNSDVN4b02qFWTvNU%252F73miY4%253D%26Expires%3D1661970147"
+        },
+        {
+          "name": "RCM 2022-05-24 12:47:55 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2096441_PK2100419_5M6_20220524_124755UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DMYbZasXAa%252F7eSHbd0VkijdO%252F%252Bp8%253D%26Expires%3D1662056350"
+        },
+        {
+          "name": "RCM 2022-05-24 12:48:04 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2096441_PK2100420_5M5_20220524_124804UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DfL6jmRmhJMZ2MJXfDoH3mDh1Q9Y%253D%26Expires%3D1662056350"
+        },
+        {
+          "name": "RCM 2022-05-25 00:13:13 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2096441_PK2100802_16M9_20220525_001313UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Da8KXjndN3VTpTb0HN3CkX7VPjoM%253D%26Expires%3D1662088595"
+        },
+        {
+          "name": "RCM 2022-05-25 00:13:39 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1955255_PK2100809_SC30MCPD_20220525_001339UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DbDD4KgyhQFMZjk9Yd10TfCX%252Befo%253D%26Expires%3D1662088595"
+        },
+        {
+          "name": "RCM 2022-05-26 00:20:54 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1955255_PK2102000_SC30MCPD_20220526_002054UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DGuzltP2gLevqwggNhhwhBqrv7P8%253D%26Expires%3D1662175054"
+        },
+        {
+          "name": "RCM 2022-05-26 00:21:13 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2096441_PK2101986_16M15_20220526_002113UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DzmSMbdPVtiCoNaiOpXQEImTLHrM%253D%26Expires%3D1662175054"
+        },
+        {
+          "name": "RCM 2022-05-26 12:31:11 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2096441_PK2102450_5M19_20220526_123111UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DDPiqs6eYmld%252F39N5T5toHkqABhU%253D%26Expires%3D1662218534"
+        },
+        {
+          "name": "RCM 2022-05-26 12:31:29 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2096441_PK2102451_5M18_20220526_123129UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DmnTEsoZiPg3SY8ziF79UBYvi9ag%253D%26Expires%3D1662218534"
+        },
+        {
+          "name": "RCM 2022-05-26 12:31:34 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2096441_PK2102453_5M20_20220526_123134UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DiF%252B7glv30wzEvn5LGaEmYTUGNGk%253D%26Expires%3D1662218534"
+        },
+        {
+          "name": "RCM 2022-05-26 12:31:43 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2096441_PK2102452_5M19_20220526_123143UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D8GgzL1uXEaAxTi9jDASK2M5OsB0%253D%26Expires%3D1662218534"
+        },
+        {
+          "name": "RCM 2022-05-26 12:31:55 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2102457_SC30MCPD_20220526_123155UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DDCF7eumBUlSFZLbMTxNP6%252Bbf1Eo%253D%26Expires%3D1662218534"
+        },
+        {
+          "name": "RCM 2022-05-27 00:29:13 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2096441_PK2103201_5M22_20220527_002913UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DdQxf1jXavwDMrrBDkJgPUx%252FCLT4%253D%26Expires%3D1662261471"
+        },
+        {
+          "name": "RCM 2022-05-27 12:39:17 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2096441_PK2103681_16M14_20220527_123917UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DVb0awudOjnRgBXyPNiM%252Fonhoo%252FA%253D%26Expires%3D1662304480"
+        },
+        {
+          "name": "RCM 2022-05-27 12:39:44 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2096441_PK2103683_16M12_20220527_123944UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DN9uYV78v%252FRJEFCUrq7Zh21ju3qs%253D%26Expires%3D1662304480"
+        },
+        {
+          "name": "RCM 2022-05-28 00:05:27 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2096441_PK2104430_16M2_20220528_000527UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DLShdh%252BQG11bYzGZzwpziTUs5hMk%253D%26Expires%3D1662347948"
+        },
+        {
+          "name": "RCM 2022-05-29 00:13:33 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2105505_SC30MCPD_20220529_001333UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D0rBzMB65IoF9%252F83%252Bgt0ZsJ%252F7%252BrA%253D%26Expires%3D1662445468"
+        },
+        {
+          "name": "RCM 2022-05-29 12:55:08 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2105986_SC30MCPA_20220529_125508UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DFfvuQvx28L9E0QUM3jJVYpHqOlM%253D%26Expires%3D1662572866"
+        },
+        {
+          "name": "RCM 2022-05-30 00:21:39 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2106406_SC30MCPD_20220530_002139UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DWIaBVXvBLaADdvkr8m%252FbnosU2gU%253D%26Expires%3D1662572866"
+        },
+        {
+          "name": "RCM 2022-06-01 00:05:31 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2109577_SC30MCPA_20220601_000531UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DOgLIASk10%252Fgmc6YfYx2d06MBGaU%253D%26Expires%3D1662693597"
+        },
+        {
+          "name": "RCM 2022-06-01 12:47:56 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2108726_PK2110144_16M5_20220601_124756UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D6NhvxNjNqBrWE8Is8k2QOtnYrdo%253D%26Expires%3D1662856029"
+        },
+        {
+          "name": "RCM 2022-06-03 00:21:02 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2108726_PK2112159_16M15_20220603_002102UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DUB3XcuMEeYhqYPpuiHtvwH83NX0%253D%26Expires%3D1662909252"
+        },
+        {
+          "name": "RCM 2022-06-03 12:30:37 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2112157_SC30MCPD_20220603_123037UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DFsiFtgYRrW4E91SaYFd1iREV6ig%253D%26Expires%3D1662964024"
+        },
+        {
+          "name": "RCM 2022-06-04 00:29:02 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2108726_PK2113760_5M21_20220604_002902UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DsCA4OdF%252F55CEtU6n9k1x6EVkA2g%253D%26Expires%3D1662964116"
+        },
+        {
+          "name": "RCM 2022-06-04 12:39:34 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2108726_PK2114269_16M13_20220604_123934UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DoX5utWAanBVrf9WerxGP5tCm9Tc%253D%26Expires%3D1662995618"
+        },
+        {
+          "name": "RCM 2022-06-04 12:40:06 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2108726_PK2114315_16M12_20220604_124006UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DpHL%252BedsrYUQAF3OhQjXfaF%252F0oos%253D%26Expires%3D1663006385"
+        },
+        {
+          "name": "RCM 2022-06-05 00:05:17 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2108726_PK2115375_16M2_20220605_000517UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D2ehuVxIsW4pkA5xQPvCBD4scLdM%253D%26Expires%3D1663049660"
+        },
+        {
+          "name": "RCM 2022-06-05 12:48:07 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2108726_PK2115825_5M5_20220605_124807UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DAnbMiNo5X3dSWxBe9AyrFw0iMdQ%253D%26Expires%3D1663093079"
+        },
+        {
+          "name": "RCM 2022-06-06 00:13:14 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2108726_PK2116322_16M9_20220606_001314UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DR1sceAlTbRJpckOXR85FfZKxjes%253D%26Expires%3D1663179511"
+        },
+        {
+          "name": "RCM 2022-06-07 00:21:22 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1955255_PK2117422_SC30MCPD_20220607_002122UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DMXqOQM1jGS5wB2HVT%252F3WdKTg1O0%253D%26Expires%3D1663266522"
+        },
+        {
+          "name": "RCM 2022-06-07 12:31:08 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2118361_SC30MCPD_20220607_123108UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dvl%252FcLPSqdZGiS167J%252BNh3ElwSTw%253D%26Expires%3D1663266522"
+        },
+        {
+          "name": "RCM 2022-06-07 12:31:45 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2118323_SC30MCPD_20220607_123145UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D3pAy1KIQFt4Tlgv4Iyy77lgnWWI%253D%26Expires%3D1663266522"
+        },
+        {
+          "name": "RCM 2022-06-08 12:38:44 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2120150_SC30MCPD_20220608_123844UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DtQllU8MEyDv%252BDEMKa%252Bc97KFJnvM%253D%26Expires%3D1663363621"
+        },
+        {
+          "name": "RCM 2022-06-09 12:47:29 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2121709_SC30MCPA_20220609_124729UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DtyISyjy6vUXDHxfWROnQtgdV1ek%253D%26Expires%3D1663450458"
+        },
+        {
+          "name": "RCM 2022-06-10 00:13:40 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1971441_PK2122934_SC30MCPC_20220610_001340UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DDKTU9HR%252F5hjY3bWWgYrDgZ7tmmQ%253D%26Expires%3D1663503570"
+        },
+        {
+          "name": "RCM 2022-06-11 12:31:57 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1955255_PK2124149_SC30MCPC_20220611_123157UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D3QPHwLotAVsnRvc1RE2RxCek2mY%253D%26Expires%3D1663600878"
+        },
+        {
+          "name": "RCM 2022-06-12 12:39:29 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1955255_PK2125004_SC30MCPD_20220612_123929UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Di%252BNc37GW3OMxZm0k1BYup0FKDYI%253D%26Expires%3D1663697986"
+        },
+        {
+          "name": "RCM 2022-06-13 00:05:20 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1971441_PK2125675_SC30MCPA_20220613_000520UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D6UvDluSBwdcKjyh7yg6a5DuyQog%253D%26Expires%3D1663786169"
+        },
+        {
+          "name": "RCM 2022-06-14 00:13:11 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1971441_PK2126896_SC30MCPD_20220614_001311UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D3vDRT%252Bu%252FOnslrkmut0oCxVQvicw%253D%26Expires%3D1663874536"
+        },
+        {
+          "name": "RCM 2022-06-15 12:31:35 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2128121_SC30MCPD_20220615_123135UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dmg2TE2LjjZrqBEC2uw6NX3%252BuFus%253D%26Expires%3D1663971031"
+        },
+        {
+          "name": "RCM 2022-06-16 12:39:27 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2129761_SC30MCPD_20220616_123927UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DdkGYQEevKh%252BRkww2uyzgGuzBnls%253D%26Expires%3D1664044311"
+        },
+        {
+          "name": "RCM 2022-06-19 12:31:46 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2132657_SC30MCPD_20220619_123146UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D%252BT7Y7HH5AS%252BcL4epLE6qkNpMhR8%253D%26Expires%3D1664303084"
+        },
+        {
+          "name": "RCM 2022-06-20 12:38:45 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2133508_SC30MCPD_20220620_123845UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DrWOeBsMYphjv3vAKSwYGgAmlsWo%253D%26Expires%3D1664389581"
+        },
+        {
+          "name": "RCM 2022-06-21 00:05:41 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2134222_SC30MCPB_20220621_000541UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DvBrMH555HDZYwss%252BecJP1xq%252Fu0k%253D%26Expires%3D1664421697"
+        },
+        {
+          "name": "RCM 2022-06-22 00:13:35 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1971441_PK2135216_SC30MCPD_20220622_001335UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DLZF72u4Y%252FrvUO4a8ZXZE1s5tl98%253D%26Expires%3D1664551492"
+        },
+        {
+          "name": "RCM 2022-06-23 00:21:40 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1971441_PK2136168_SC30MCPD_20220623_002140UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DaQ3LVbHGBRpVHoD83MunoGUHYI4%253D%26Expires%3D1664659608"
+        },
+        {
+          "name": "RCM 2022-06-23 12:31:55 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1955255_PK2136622_SC30MCPD_20220623_123155UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DseEGZqgGRoVT9B%252Bv2wPbV4HOFNU%253D%26Expires%3D1664659608"
+        },
+        {
+          "name": "RCM 2022-06-24 12:39:36 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1955255_PK2137724_SC30MCPD_20220624_123936UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DAn%252BSjtG8DxVeRNWJbkxsNQ6dktM%253D%26Expires%3D1664735163"
+        },
+        {
+          "name": "RCM 2022-06-25 00:05:21 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2138355_SC30MCPA_20220625_000521UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D0w9qy6aWqo2mMEohYP9aFvz6DkY%253D%26Expires%3D1664777977"
+        },
+        {
+          "name": "RCM 2022-06-25 12:47:40 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK1955255_PK2138894_SC30MCPA_20220625_124740UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DOJGQJjhWMlacyI1JaEyliVJbuL8%253D%26Expires%3D1664821823"
+        },
+        {
+          "name": "RCM 2022-06-26 00:13:12 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK1955255_PK2139188_SC30MCPD_20220626_001312UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DIoj5OHS1BBSOIR5e%252FxvRj5aGVd8%253D%26Expires%3D1664853334"
+        },
+        {
+          "name": "RCM 2022-06-27 12:31:03 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2140621_SC30MCPD_20220627_123103UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DQf%252BnMX5QcMVvt5Lo1eYVxjerWuY%253D%26Expires%3D1664984384"
+        },
+        {
+          "name": "RCM 2022-06-27 12:32:05 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK1955255_PK2140714_SC30MCPC_20220627_123205UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DyPOeULXogk%252By6ezlhRgk0Nv1AuA%253D%26Expires%3D1664995404"
+        },
+        {
+          "name": "RCM 2022-07-02 12:38:43 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2146508_SC30MCPD_20220702_123843UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DOHbOWoZxoSfzdpspF9uIIEnm5CI%253D%26Expires%3D1665426150"
+        },
+        {
+          "name": "RCM 2022-07-03 12:47:16 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2147862_SC30MCPA_20220703_124716UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DzSzqCA%252FZqFfoKUcw%252FHUzUtpckvY%253D%26Expires%3D1665512372"
+        },
+        {
+          "name": "RCM 2022-07-13 12:29:28 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2163179_SC30MCPD_20220713_122928UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DqEkCuYXzBwdPYL%252FMguNIvm2i0ZM%253D%26Expires%3D1666376972"
+        },
+        {
+          "name": "RCM 2022-07-14 12:36:22 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2164401_SC30MCPD_20220714_123622UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DLU3pxdUwO%252BFXSGxi5GvsuJ64mgI%253D%26Expires%3D1666462805"
+        },
+        {
+          "name": "RCM 2022-07-19 00:05:26 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2170369_SC30MCPA_20220719_000526UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D75LbV0diLvzETEsWdETgKrBsFEE%253D%26Expires%3D1666840888"
+        },
+        {
+          "name": "RCM 2022-07-25 12:29:29 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2178739_SC30MCPD_20220725_122929UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D4PqHXJ6PmtYP6CtWjB9Vm6fv0no%253D%26Expires%3D1667413680"
+        },
+        {
+          "name": "RCM 2022-07-26 12:37:23 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2180021_SC30MCPD_20220726_123723UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DF3cn7CuOWwfsH%252BdzeWE1Qt51BAc%253D%26Expires%3D1667499632"
+        },
+        {
+          "name": "RCM 2022-07-28 00:13:34 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2065086_PK2181780_SC30MCPD_20220728_001334UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DStWFA8IVywXNiVPhgghsJLvon1c%253D%26Expires%3D1667618166"
+        },
+        {
+          "name": "RCM 2022-07-28 00:13:46 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2065086_PK2181939_SC30MCPC_20220728_001346UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dr8%252BRoH8pjie8DdG9Dt2E%252Bs48EiM%253D%26Expires%3D1667629293"
+        },
+        {
+          "name": "RCM 2022-08-06 12:29:21 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2196047_SC30MCPD_20220806_122921UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D52broWV1pJTfimdSzhz4R5RgWBI%253D%26Expires%3D1668450059"
+        },
+        {
+          "name": "RCM 2022-08-07 12:37:27 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2197415_SC30MCPD_20220807_123727UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DGBR6WQeCsHjV%252Fm853Vn2cNLvDxw%253D%26Expires%3D1668536356"
+        },
+        {
+          "name": "RCM 2022-08-08 00:05:49 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2065086_PK2197873_SC30MCPA_20220808_000549UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dso91fJQz%252Be5%252BGBEEVuNa2NExR%252BE%253D%26Expires%3D1668579638"
+        },
+        {
+          "name": "RCM 2022-08-09 00:13:35 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2065086_PK2200330_SC30MCPD_20220809_001335UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D%252BpyioRPehA%252Bnzwzx9Lpem1MBtd0%253D%26Expires%3D1668666159"
+        },
+        {
+          "name": "RCM 2022-08-16 00:05:36 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2184973_PK2210501_SC30MCPA_20220816_000536UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dpk3x%252BCsm%252B01y7dUFOcxZ%252BA9YwNQ%253D%26Expires%3D1669314076"
+        },
+        {
+          "name": "RCM 2022-08-17 00:13:30 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2184973_PK2211562_SC30MCPD_20220817_001330UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DFz%252BDqDNvs%252FGD%252BY3lItVviKUJsPA%253D%26Expires%3D1669389728"
+        },
+        {
+          "name": "RCM 2022-08-18 12:29:28 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2213642_SC30MCPD_20220818_122928UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DaLyzDdpsEJC1%252Bbwy1MRB%252BmpHp%252Bs%253D%26Expires%3D1669487163"
+        },
+        {
+          "name": "RCM 2022-08-19 12:37:25 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2215023_SC30MCPD_20220819_123725UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DB4Z8oM7DJTeCR03I4pXtAGGYeZo%253D%26Expires%3D1669573294"
+        },
+        {
+          "name": "RCM 2022-08-20 00:05:42 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2065086_PK2215409_SC30MCPB_20220820_000542UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D6maeEpJRJWmz1SZvKmKtPslK2WY%253D%26Expires%3D1669605945"
+        },
+        {
+          "name": "RCM 2022-08-21 00:13:36 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2065086_PK2216845_SC30MCPD_20220821_001336UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D9oTYK%252FXsTSjAQ7vQ4QMOqg8tKm0%253D%26Expires%3D1669692178"
+        },
+        {
+          "name": "RCM 2022-08-24 00:05:24 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2220901_SC30MCPA_20220824_000524UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DUwoIj1bqCTUOoRoeBOAX7PPVNKs%253D%26Expires%3D1669962010"
+        },
+        {
+          "name": "RCM 2022-08-25 00:13:15 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2184973_PK2222286_SC30MCPD_20220825_001315UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DYh572VhWz9mEpSJlEDakhrW5a5I%253D%26Expires%3D1670092094"
+        },
+        {
+          "name": "RCM 2022-08-31 12:39:10 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2231361_SC30MCPD_20220831_123910UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DjR0K9D%252FulY7Svc2PvGOzWh7NQN0%253D%26Expires%3D1670610203"
+        },
+        {
+          "name": "RCM 2022-09-01 00:05:48 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2184973_PK2232520_SC30MCPA_20220901_000548UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DauG%252BcqlBsfSs0a5d4%252B%252FsZl8f1H8%253D%26Expires%3D1670675046"
+        },
+        {
+          "name": "RCM 2022-09-02 00:13:45 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2065086_PK2234479_SC30MCPD_20220902_001345UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DYIgQ4dmgmU3u%252BZ37ql1W7IK9dqo%253D%26Expires%3D1670728911"
+        },
+        {
+          "name": "RCM 2022-09-03 00:21:57 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2065086_PK2237394_SC30MCPD_20220903_002157UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D4uwFssHs8qjvygJUUiQ3gBQrD3w%253D%26Expires%3D1670825824"
+        },
+        {
+          "name": "RCM 2022-09-03 12:31:31 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2065086_PK2238528_SC30MCPD_20220903_123131UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DEC0VsNllmUzVjeBMaoO9exMfLrA%253D%26Expires%3D1670858438"
+        },
+        {
+          "name": "RCM 2022-09-04 12:39:34 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2236476_PK2240022_SC30MCPD_20220904_123934UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DwNIwxUDbjcUxSTbbw1uvGJOrOeM%253D%26Expires%3D1670955549"
+        },
+        {
+          "name": "RCM 2022-09-05 00:05:37 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2236476_PK2240764_SC30MCPA_20220905_000537UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D%252FJ69E1pS6GG53batf1GhQh9tE2k%253D%26Expires%3D1670999046"
+        },
+        {
+          "name": "RCM 2022-09-06 00:13:13 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2236476_PK2242315_SC30MCPD_20220906_001313UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DFOcOCtuaPiSFkyFYXneAF6s1ivA%253D%26Expires%3D1671074205"
+        },
+        {
+          "name": "RCM 2022-09-10 00:13:46 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2184973_PK2249695_SC30MCPB_20220910_001346UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DqE2FuNbqJzJCUiwqjRaA%252F3FaVtQ%253D%26Expires%3D1671462967"
+        },
+        {
+          "name": "RCM 2022-09-11 12:29:41 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2251994_SC30MCPD_20220911_122941UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dee95mI3wSeqpwWdwg4IOoKAE6wo%253D%26Expires%3D1671582491"
+        },
+        {
+          "name": "RCM 2022-09-12 12:36:26 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2065086_PK2253413_SC30MCPD_20220912_123626UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D9g2quVvfsS43ox2q7RV%252FjS%252BVmTs%253D%26Expires%3D1671646765"
+        },
+        {
+          "name": "RCM 2022-09-13 00:05:43 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2065086_PK2254070_SC30MCPB_20220913_000543UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3De5WDFdP3EVLPFMvPcHKa2XynU%252FY%253D%26Expires%3D1671733386"
+        },
+        {
+          "name": "RCM 2022-09-14 00:13:37 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2065086_PK2255562_SC30MCPD_20220914_001337UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DJFFUdKS1K6W8SEu6zS8qduEJdNE%253D%26Expires%3D1671776600"
+        },
+        {
+          "name": "RCM 2022-09-15 00:21:49 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2065086_PK2258525_SC30MCPD_20220915_002149UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dnxbm9tOTkVp2a31KeWrALo4q6X0%253D%26Expires%3D1671927750"
+        },
+        {
+          "name": "RCM 2022-09-15 12:32:22 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2040252_PK2258283_SC30MCPD_20220915_123222UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DjEkFOMwk829z7eDlSFHp%252FDov5hY%253D%26Expires%3D1671905946"
+        },
+        {
+          "name": "RCM 2022-09-16 12:39:38 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2040252_PK2259757_SC30MCPD_20220916_123938UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D4KMJzmYO6t7OmGPw7tG2MzLHhjY%253D%26Expires%3D1671992880"
+        },
+        {
+          "name": "RCM 2022-09-19 12:32:14 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2040252_PK2263972_SC30MCPD_20220919_123214UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DW7YcJcS%252FU7DeJbcDDWlSnqZRXbc%253D%26Expires%3D1672452777"
+        },
+        {
+          "name": "RCM 2022-09-19 23:57:31 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2184973_PK2264674_SC30MCPA_20220919_235731UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DSygoRlf98d2%252FQjR2ZrKVUZUFalo%253D%26Expires%3D1672452777"
+        },
+        {
+          "name": "RCM 2022-09-20 12:39:49 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2040252_PK2265388_SC30MCPD_20220920_123949UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D8jqtGgyUbSLc%252FJhT9Ucknl6xiO8%253D%26Expires%3D1672338201"
+        },
+        {
+          "name": "RCM 2022-09-21 00:05:40 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2040252_PK2266007_SC30MCPA_20220921_000540UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DjRAUgiQbB2dfIUkYwUzJe%252FPhSLM%253D%26Expires%3D1672381256"
+        },
+        {
+          "name": "RCM 2022-09-21 12:48:04 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2040252_PK2266579_SC30MCPA_20220921_124804UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DA3%252BZ7z%252BHG%252BNo6AhzH9%252F2ls2Mp40%253D%26Expires%3D1672452777"
+        },
+        {
+          "name": "RCM 2022-09-22 00:13:04 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2040252_PK2267331_SC30MCPD_20220922_001304UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dri32Zb%252BknkSGlmbgIMecllAoJ6s%253D%26Expires%3D1672469387"
+        },
+        {
+          "name": "RCM 2022-09-23 00:20:37 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2184973_PK2268594_SC30MCPD_20220923_002037UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DuQ66rVcDSdfSfaJiu1oK7dGWsmE%253D%26Expires%3D1672624325"
+        },
+        {
+          "name": "RCM 2022-09-23 12:31:21 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2040252_PK2269027_SC30MCPD_20220923_123121UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D%252FabdkFu6fa%252FBrNCFtXAWk4nu5hU%253D%26Expires%3D1672624325"
+        },
+        {
+          "name": "RCM 2022-09-24 12:39:27 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2040252_PK2270736_SC30MCPD_20220924_123927UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DjItBxNxcpSIv7sIf8SjC%252FuxyGPo%253D%26Expires%3D1672683332"
+        },
+        {
+          "name": "RCM 2022-09-25 00:06:04 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2040252_PK2271312_SC30MCPA_20220925_000604UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DtisatEA%252B7dZxKT4%252FF3nWLy16zgo%253D%26Expires%3D1672715952"
+        },
+        {
+          "name": "RCM 2022-09-27 00:21:49 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2184973_PK2273908_SC30MCPD_20220927_002149UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dtn3bks8%252BDT9XvJGGD5R8%252FcEPKcA%253D%26Expires%3D1672920940"
+        },
+        {
+          "name": "RCM 2022-10-01 00:20:26 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2137408_PK2278267_SC30MCPD_20221001_002026UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DxtwPDs3A7eLGxA9w2IpwPNQGQU4%253D%26Expires%3D1673230843"
+        },
+        {
+          "name": "RCM 2022-10-01 12:30:46 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2246897_PK2279220_SC30MCPD_20221001_123046UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D6471FzjkfXSA3t1VeCWpjPyak04%253D%26Expires%3D1673288285"
+        },
+        {
+          "name": "RCM 2022-10-01 12:32:04 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2246897_PK2278839_SC30MCPC_20221001_123204UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DF9o1dFJgfOHUKgVoHjISpAjMovQ%253D%26Expires%3D1673275402"
+        },
+        {
+          "name": "RCM 2022-10-02 12:39:56 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2246897_PK2280525_SC30MCPB_20221002_123956UTC-EBD_PCT_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DTR8gHcD3TfZWqiwph2mMiOHDYG4%253D%26Expires%3D1673367763"
+        },
+        {
+          "name": "RCM 2022-10-03 00:05:38 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2137408_PK2281285_SC30MCPA_20221003_000538UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DAhEi%252BbeoJ5wzPUG3C10WFWjc%252B20%253D%26Expires%3D1673406766"
+        },
+        {
+          "name": "RCM 2022-10-06 12:39:31 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2246897_PK2286817_SC30MCPD_20221006_123931UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DWOpbpKrgIYWxvJbs7C7hmetYRgM%253D%26Expires%3D1673730987"
+        },
+        {
+          "name": "RCM 2022-10-07 12:47:27 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2137408_PK2288284_SC30MCPA_20221007_124727UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DeTU3%252BjIQgTjW4pqE7JzCR5690sg%253D%26Expires%3D1673806526"
+        },
+        {
+          "name": "RCM 2022-10-09 00:20:58 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2137408_PK2290413_SC30MCPD_20221009_002058UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DhnCu6HqKhQoYbh%252F4reuQu8aXmAQ%253D%26Expires%3D1673987061"
+        },
+        {
+          "name": "RCM 2022-10-09 12:31:59 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2137408_PK2291238_SC30MCPC_20221009_123159UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D49GoT%252Fxxbkd5SpZJC%252FOWe1wg2wY%253D%26Expires%3D1674019455"
+        },
+        {
+          "name": "RCM 2022-10-10 12:39:32 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2229361_PK2292241_SC30MCPD_20221010_123932UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DSudfXUrQk4Oz52mBLWUG0osyP4U%253D%26Expires%3D1674058656"
+        },
+        {
+          "name": "RCM 2022-10-11 00:05:23 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2137408_PK2293041_SC30MCPB_20221011_000523UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DEt12MpLtlCXATj7b9LVRdLKRiQ8%253D%26Expires%3D1674094892"
+        },
+        {
+          "name": "RCM 2022-10-12 00:12:53 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2137408_PK2294479_SC30MCPB_20221012_001253UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dzu5u2Cx2d%252BagDlrzmXdbiAwQvp0%253D%26Expires%3D1674188238"
+        },
+        {
+          "name": "RCM 2022-10-12 00:13:14 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2137408_PK2294477_SC30MCPD_20221012_001314UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DVr95SkkI1HtDKLt8GBiLcY%252Fsjj4%253D%26Expires%3D1674188238"
+        },
+        {
+          "name": "RCM 2022-10-12 00:13:38 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2229361_PK2294481_SC30MCPC_20221012_001338UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DFKSQ2Kjm0y9bco%252BsrxGmdu9s3aI%253D%26Expires%3D1674188238"
+        },
+        {
+          "name": "RCM 2022-10-13 00:20:26 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2137408_PK2295705_SC30MCPD_20221013_002026UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dg8PUvmxPT%252FhP2f2SFAYK60MLDMM%253D%26Expires%3D1674267659"
+        },
+        {
+          "name": "RCM 2022-10-13 12:30:46 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2229361_PK2296295_SC30MCPD_20221013_123046UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D3M8bd8jvgG6kPVgfk0zqlqZQaxY%253D%26Expires%3D1674310723"
+        },
+        {
+          "name": "RCM 2022-10-13 12:32:34 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2137408_PK2296447_SC30MCPC_20221013_123234UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D1EXZaHPyCyjju1uXchcw04XROvQ%253D%26Expires%3D1674378462"
+        },
+        {
+          "name": "RCM 2022-10-13 23:57:35 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2246897_PK2297350_SC30MCPA_20221013_235735UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DmW77BmEY%252BcDiVuS5VnTrHdiyCpY%253D%26Expires%3D1674368655"
+        },
+        {
+          "name": "RCM 2022-10-15 00:05:46 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2137408_PK2298680_SC30MCPA_20221015_000546UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DpMRNs%252FUyQXTXPaaLRvAMo4QpZOI%253D%26Expires%3D1674447289"
+        },
+        {
+          "name": "RCM 2022-10-16 00:13:02 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2246897_PK2299894_SC30MCPD_20221016_001302UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DPQa8PWZSQoefYYvcbEmzzJXqMaY%253D%26Expires%3D1674533812"
+        },
+        {
+          "name": "RCM 2022-10-17 00:20:52 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2137408_PK2301471_SC30MCPD_20221017_002052UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DApzrCukosC3MX6%252BCU%252BbNcLUudBM%253D%26Expires%3D1674634614"
+        },
+        {
+          "name": "RCM 2022-10-17 12:31:27 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2229361_PK2302071_SC30MCPD_20221017_123127UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DUqNfxNwOOKg3qbjQ8CSOVxHPdCU%253D%26Expires%3D1674664185"
+        },
+        {
+          "name": "RCM 2022-10-18 12:39:32 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2137408_PK2303703_SC30MCPD_20221018_123932UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DH1DGx%252BXCmD6CCBZ0As3VnEXVujM%253D%26Expires%3D1674756941"
+        },
+        {
+          "name": "RCM 2022-10-19 00:05:57 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2137408_PK2304333_SC30MCPA_20221019_000557UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DBvz1%252FjdoFhx83DRP%252FPIsY206nwk%253D%26Expires%3D1674785989"
+        },
+        {
+          "name": "RCM 2022-10-20 00:13:15 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2137408_PK2305889_SC30MCPD_20221020_001315UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D9OLAIow7mXJc54aZiv5I83kRwlw%253D%26Expires%3D1674872788"
+        },
+        {
+          "name": "RCM 2022-10-21 00:20:49 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2229361_PK2307150_SC30MCPD_20221021_002049UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Dt341X2rhpedH8fivDgC8Tpgq6KM%253D%26Expires%3D1674958889"
+        },
+        {
+          "name": "RCM 2022-10-21 12:31:57 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2137408_PK2307671_SC30MCPC_20221021_123157UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DFmW1ixjKT%252BcfxSe3R0jH6lnlVIE%253D%26Expires%3D1675001904"
+        },
+        {
+          "name": "RCM 2022-10-22 12:39:42 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2137408_PK2308893_SC30MCPC_20221022_123942UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DB8qDPS97s1onwpnpZ66sbfCmtiI%253D%26Expires%3D1675095612"
+        },
+        {
+          "name": "RCM 2022-10-23 00:05:38 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2137408_PK2309778_SC30MCPB_20221023_000538UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D1NxS8WB98bdKV0LZVnpeuD6aINg%253D%26Expires%3D1675135028"
+        },
+        {
+          "name": "RCM 2022-10-24 00:12:56 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2137408_PK2311074_SC30MCPD_20221024_001256UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DnTxVl80o%252B3%252Fkru4Q8b0KWW0uYDI%253D%26Expires%3D1675221347"
+        },
+        {
+          "name": "RCM 2022-10-25 00:20:26 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": false,
+          "isShown": false,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2137408_PK2312164_SC30MCPD_20221025_002026UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DPhANnqbSAIhp9cdMdrxIhhel%252F0c%253D%26Expires%3D1675308060"
+        },
+        {
+          "name": "RCM 2022-10-25 12:30:46 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": true,
+          "isShown": true,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2246897_PK2312998_SC30MCPD_20221025_123046UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DF6iWoTtrNe71hpNTRJ7B%252FvgbBPc%253D%26Expires%3D1675362272"
+        },
+        {
+          "name": "RCM 2022-10-27 00:05:45 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": true,
+          "isShown": true,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2229361_PK2314861_SC30MCPA_20221027_000545UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DQuNbeS%252F5RSaUkYbw0MtVmibPw44%253D%26Expires%3D1675491615"
+        },
+        {
+          "name": "RCM 2022-10-28 00:13:02 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": true,
+          "isShown": true,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2246897_PK2316084_SC30MCPB_20221028_001302UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DeJBd4jKU90n0zeqb2NWJ3RQGR1E%253D%26Expires%3D1675581444"
+        },
+        {
+          "name": "RCM 2022-10-29 00:20:37 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": true,
+          "isShown": true,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2137408_PK2317278_SC30MCPD_20221029_002037UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DO%252F%252Fu5bt8tf1QokTw9sjG5A2x%252FLI%253D%26Expires%3D1675654330"
+        },
+        {
+          "name": "RCM 2022-10-29 12:31:51 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": true,
+          "isShown": true,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2137408_PK2317866_SC30MCPC_20221029_123151UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DTrIsAVfDaxqH27z0xUxJe2ZyecE%253D%26Expires%3D1675707607"
+        },
+        {
+          "name": "RCM 2022-10-29 23:57:40 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": true,
+          "isShown": true,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2229361_PK2318532_SC30MCPA_20221029_235740UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DQB%252BHhqmK%252FC9Wr0OIyh3I9chlOVg%253D%26Expires%3D1675740142"
+        },
+        {
+          "name": "RCM 2022-10-30 12:40:06 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": true,
+          "isShown": true,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2137408_PK2319163_SC30MCPC_20221030_124006UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3DkT8PdEKgTQG8ugvmJSNj7d9wLGE%253D%26Expires%3D1675793946"
+        },
+        {
+          "name": "RCM 2022-10-31 00:05:28 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": true,
+          "isShown": true,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM3_OK2137408_PK2319711_SC30MCPA_20221031_000528UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D1d1yS91aHZqNar5hwyzyRHY2pMw%253D%26Expires%3D1675826249"
+        },
+        {
+          "name": "RCM 2022-11-03 12:39:32 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": true,
+          "isShown": true,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM2_OK2229361_PK2324454_SC30MCPD_20221103_123932UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3D12F%252B6myIc1pOHyxqqH39A6su%252FaA%253D%26Expires%3D1676140560"
+        },
+        {
+          "name": "RCM 2022-11-04 00:05:38 UTC",
+          "type": "url-template",
+          "zoomOnEnable": true,
+          "isEnabled": true,
+          "isShown": true,
+          "opacity": 1.0,
+          "url": "https://titiler.xyz/cog/tiles/{z}/{x}/{y}?url=https%3A%2F%2Febd-clients-w.s3.amazonaws.com%2FNOAA%2FRCM%2FCOG%2FRCM1_OK2229361_PK2325261_SC30MCPB_20221104_000538UTC-EBD_HEQ_8bit.tif%3FAWSAccessKeyId%3DAKIAJFTC5FRGKQV5C5KQ%26Signature%3Db7WCtNdVdf8XJnzIJaCVR0JUTH4%253D%26Expires%3D1676171711"
+        }
+      ]
+    }
+  ]
+}
