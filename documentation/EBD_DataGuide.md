@@ -203,7 +203,7 @@ SAR backscatter data processed with the SEPPO Software are typically available w
 *Incidence angle data:*
 
 * unsigned 8 bit:
-    - radians = DN * 100
+    - radians = DN / 100
 
 *Layover/Shadow masks:*
 
