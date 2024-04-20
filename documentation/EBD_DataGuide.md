@@ -209,6 +209,11 @@ SAR backscatter data processed with the SEPPO Software are typically available w
 
 * unsigned 8 bit  (Gamma Remote Sensing convention):
 
+  Values from the table below are combined logically to numbers in the masks files:
+  e.g.
+  - tested pixels with **layover** = 1 + 4  = **5**
+  - tested pixels with **shadow**  = 1 + 16 = **17**
+
     | Value | Effect        | Description                       |
     |-------|---------------|-----------------------------------|
     | 0     | NOT_TESTED    | No effect                         |
