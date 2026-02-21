@@ -204,6 +204,14 @@ To install QGIS please see download and installation instructions at [qgis.org](
 We will also make use of plugins for QGIS.
 Install plugins with the menu in Qgis
 
+```{note}
+You might need to install `matplotlib` before the installation of the plugins.
+Open the python console from the Plugins menu and then
+
+	import pip
+	pip.main(["install","matplotlib"])
+``` 
+
     > Plugins > Manage and Install Plugins
 
 - MultiQml
